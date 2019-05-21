@@ -1,0 +1,21 @@
+.container {
+  background-color: var(--off-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact {
+  color: white;
+}
+
+.hamburger-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

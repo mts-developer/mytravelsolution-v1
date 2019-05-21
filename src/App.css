@@ -1,6 +1,29 @@
 /* Global CSS Styles */
 
 :root {
+  /* Colors */
   --primary-color: #5800ff;
   --secondary-color: #b914cc;
+  --white: #ffffff;
+  --off-white: #e8e8e8;
+}
+
+.logo--sml {
+  height: 50px;
+}
+
+.font-size--sml {
+  font-size: 14px;
+}
+
+.font--bold {
+  font-family: "Fira Sans Bold";
+}
+
+.font--semi-bold {
+  font-family: "Fira Sans Semi Bold";
+}
+
+.font--thin {
+  font-family: "Fira Sans Thin";
 }

@@ -5,10 +5,9 @@ import Header from "./Header";
 
 function Home() {
   return (
-    <section className="wrapper">
+    <section>
       <header className="header">
         <Header />
-        <h1>Welcome to My Travel Solution</h1>
       </header>
     </section>
   );
