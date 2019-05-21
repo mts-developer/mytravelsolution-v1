@@ -27,5 +27,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "- https://mytravelsolution.com.au - https://2ctheworldtravelandcruise.com.au",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mts-developer/mytravelsolution.git"
+  },
+  "author": "MTS Developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mts-developer/mytravelsolution/issues"
+  },
+  "homepage": "https://github.com/mts-developer/mytravelsolution#readme"
 }

@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Fira Sans Regular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Custom Fonts */
+@font-face {
+  font-family: "Fira Sans Regular";
+  src: url("./assets/fonts/FiraSans/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans Thin";
+  src: url("./assets/fonts/FiraSans/FiraSans-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans Semi Bold";
+  src: url("./assets/fonts/FiraSans/FiraSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans Bold";
+  src: url("./assets/fonts/FiraSans/FiraSans-Bold.ttf");
 }
