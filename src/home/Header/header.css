@@ -1,20 +1,17 @@
-.container {
+.header-container {
   background-color: var(--off-white);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
 
-.contact {
+.header__contact--white {
   color: white;
+  margin-right: 10px;
 }
 
-.hamburger-menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container--right {
+.header__container--right {
   display: flex;
   flex-direction: row;
   align-items: center;

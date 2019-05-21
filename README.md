@@ -9,7 +9,7 @@ See [MyTraveSolution Styleguide](./Styleguide.md)
 
 ## Front End
 - React
-- Sass
+- Material UI
 
 # Starting the application
 

@@ -8,12 +8,24 @@
   --off-white: #e8e8e8;
 }
 
-.logo--sml {
+a {
+  text-decoration: none;
+}
+
+.logo--xs {
   height: 50px;
 }
 
-.font-size--sml {
+.font--sm {
   font-size: 14px;
+}
+
+.font--md {
+  /*  */
+}
+
+.font--lg {
+  /*  */
 }
 
 .font--bold {
