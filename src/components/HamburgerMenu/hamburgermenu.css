@@ -1,0 +1,33 @@
+.hamburgermenu__bar {
+  height: 2px;
+  width: 20px;
+  background: var(--white);
+  transition: all 0.2s ease;
+}
+
+.hamburgermenu__bar--top {
+  transform-origin: top left;
+  margin-bottom: 5px;
+}
+
+.hamburgermenu__bar--bottom {
+  transform-origin: top left;
+  margin-top: 5px;
+}
+
+.hamburgermenu__bar--top--open {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  margin-bottom: 5px;
+}
+
+.hamburgermenu__bar--middle--open {
+  opacity: 0;
+  transform: translateX(-16px);
+}
+
+.hamburgermenu__bar--bottom--open {
+  transform: translateX(-1px) rotate(-45deg);
+  transform-origin: top left;
+  margin-top: 5px;
+}
