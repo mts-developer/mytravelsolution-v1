@@ -16,26 +16,11 @@ class HamburgerMenu extends React.Component {
   };
 
   toggleHamburgerMenu = () => {
-    return this.state.open ? (
+    return (
       <div>
-        <div>
-          <div className={"hamburgermenu__bar hamburgermenu__bar--top--open"} />
-          <div
-            className={"hamburgermenu__bar hamburgermenu__bar--middle--open"}
-          />
-          <div
-            className={"hamburgermenu__bar hamburgermenu__bar--bottom--open"}
-          />
-        </div>
-        <div>
-          <HeaderMenu open={this.state.open} />
-        </div>
-      </div>
-    ) : (
-      <div>
-        <div className={"hamburgermenu__bar hamburgermenu__bar--top"} />
-        <div className={"hamburgermenu__bar"} />
-        <div className={"hamburgermenu__bar hamburgermenu__bar--bottom"} />
+        <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--top--open" : "hamburgermenu__bar--top"}`} />
+        <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--middle--open" : "hamburgermenu__bar--middle"}`} />
+        <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--bottom--open" : "hamburgermenu__bar--bottom"}`} />
       </div>
     );
   };
