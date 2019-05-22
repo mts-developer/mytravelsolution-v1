@@ -15,9 +15,16 @@ class HamburgerMenu extends React.Component {
     });
   };
 
+  handleClose = e => {
+    e.preventDefault()
+    this.setState({
+      open: false
+    })
+  }
+
   toggleHamburgerMenu = () => {
     return (
-      <div>
+      <div onClick={e => this.toggleClick(e)}>
         <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--top--open" : "hamburgermenu__bar--top"}`} />
         <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--middle--open" : "hamburgermenu__bar--middle"}`} />
         <div className={`hamburgermenu__bar ${this.state.open ? "hamburgermenu__bar--bottom--open" : "hamburgermenu__bar--bottom"}`} />
@@ -25,11 +32,24 @@ class HamburgerMenu extends React.Component {
     );
   };
 
+  toggleHeaderMenu = () => {
+    return (
+      <div
+        className={`hamburgermenu__headermenu ${this.state.open ? "hamburgermenu__headermenu--open" : null}`}
+        // Pass as prop later for close button.
+        onClick={e => this.handleClose(e)}
+      >
+        <HeaderMenu />
+      </div>
+    )
+  }
+
   render() {
     return (
       <div>
-        <div onClick={e => this.toggleClick(e)}>
+        <div>
           {this.toggleHamburgerMenu()}
+          {this.toggleHeaderMenu()}
         </div>
       </div>
     );
