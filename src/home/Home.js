@@ -1,13 +1,13 @@
 import React from "react";
 import "../app.css";
 import "./home.css";
-import Header from "./Header";
+import Hero from "./Hero";
 
 function Home() {
   return (
     <section>
-      <header className="header">
-        <Header />
+      <header className="home__header-container">
+        <Hero />
       </header>
     </section>
   );

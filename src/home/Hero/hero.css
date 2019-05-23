@@ -1,0 +1,19 @@
+.hero-container {
+  background-image: url("../../assets/images/bg/test_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -10px;
+  /* background-color: var(--off-white); */
+  height: 50vh;
+  padding: 70px 20px 20px 20px;
+
+  position: relative;
+  top: -50px;
+  transform: skewY(-10deg);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw)); */
+}
+
+.hero-container--skew {
+  /* This value compensates for  */
+  transform: skewY(10deg);
+}

@@ -3,6 +3,7 @@
 # Colour Palette
 - <span style="color: #5800ff">**Primary Color**</span>: #5800ff;
 - <span style="color: #b914cc">**Secondary Color**</span>: #b914cc;
+- <span style="color: #444444">**Dark Grey**</span>: #444444;
 - **White**: #ffffff;
 - <span style="color: #e8e8e8">**Off-white**</span>: #e8e8e8;
 
@@ -11,8 +12,8 @@
 - [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
 
 ## Sizes
-
-Small: 14px
+- Extra Small: 13px
+- Small: 14px
 
 # CSS
 ## Class Naming Conventions

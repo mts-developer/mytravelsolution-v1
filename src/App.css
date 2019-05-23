@@ -4,27 +4,60 @@
   /* Colors */
   --primary-color: #5800ff;
   --secondary-color: #b914cc;
+  --dark-grey: #444444;
   --white: #ffffff;
   --off-white: #e8e8e8;
 }
 
 a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-decoration: none;
+}
+
+ul:first-child {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.logo--xxs {
+  height: 40px;
 }
 
 .logo--xs {
   height: 50px;
 }
 
+.icon--xxs {
+  height: 18px;
+}
+
+.icon--xs {
+  height: 20px;
+}
+
+.font--xs {
+  font-size: 13px;
+  color: var(--dark-grey);
+}
+
 .font--sm {
-  font-size: 14px;
+  font-size: 16px;
+  color: var(--dark-grey);
 }
 
 .font--md {
+  color: var(--dark-grey);
   /*  */
 }
 
 .font--lg {
+  color: var(--dark-grey);
   /*  */
 }
 

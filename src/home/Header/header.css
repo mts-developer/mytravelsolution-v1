@@ -1,14 +1,13 @@
 .header-container {
-  background-color: var(--off-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
-.header__contact--white {
+.header__container--right__link {
   color: white;
-  margin-right: 10px;
+  padding: 0 15px 0 5px;
 }
 
 .header__container--right {
