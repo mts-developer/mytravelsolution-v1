@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
-import HamburgerMenu from "../../components/HamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
 
 class Header extends React.Component {
   render() {

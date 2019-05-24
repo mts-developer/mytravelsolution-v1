@@ -1,6 +1,6 @@
 import React from "react";
 import "./menucontents.css";
-import services from "../Services";
+import services from "../../Services";
 
 const MenuContents = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
-import "./headermenu.css";
+import "./menuheader.css";
 import MenuContents from "../MenuContents";
-import logos from "../../assets/images/logos";
-import icons from "../../assets/images/icons";
+import logos from "../../../assets/images/logos";
+import icons from "../../../assets/images/icons";
 
-const HeaderMenu = props => {
+const MenuHeader = props => {
   const onClick = props.onClick;
   return (
     <div className="headermenu-container">
@@ -35,4 +35,4 @@ const HeaderMenu = props => {
   );
 };
 
-export default HeaderMenu;
+export default MenuHeader;
