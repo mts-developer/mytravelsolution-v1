@@ -27,7 +27,7 @@ class HamburgerMenu extends React.Component {
 
   toggleMenu = () => {
     return (
-      <div className={`menu ${this.state.open ? "menu--open" : ""}`}>
+      <div className={`menu box-shadow ${this.state.open ? "menu--open" : ""}`}>
         <MenuHeader onClick={this.toggleClick} />
       </div>
     );

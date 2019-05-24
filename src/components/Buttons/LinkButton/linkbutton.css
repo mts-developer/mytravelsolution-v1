@@ -1,0 +1,7 @@
+.linkbutton {
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color) 30%,
+    var(--secondary-color-light) 100%
+  );
+}

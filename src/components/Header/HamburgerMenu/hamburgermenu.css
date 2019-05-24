@@ -35,13 +35,11 @@
 
 .menu {
   position: absolute;
-  top: 0;
-  right: 5%;
-  width: 90%;
+  top: -20px;
+  right: 0;
+  width: 100%;
   background-color: var(--white);
   border-radius: 3px;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
 
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -50,8 +48,8 @@
 }
 
 .menu--open {
-  top: 18px;
-  right: 5%;
+  top: 0;
+  right: 0;
   visibility: visible;
   opacity: 1;
 }

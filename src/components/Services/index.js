@@ -4,7 +4,7 @@ const services = [
   {
     label: "Airfares & Featured Flights",
     white_image: icons.flight_white,
-    grey_image: icons.flight_grey,
+    grey_image: icons.phone_grey,
     url: "http://localhost:3000"
   },
   {

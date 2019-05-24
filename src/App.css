@@ -1,15 +1,22 @@
 /* Global CSS Styles */
 
 :root {
-  /* Colors */
   --primary-color: #5800ff;
+  --primary-color-light: #00cbff;
+  --secondary-color-light: #ff00f6;
   --secondary-color: #b914cc;
   --dark-grey: #444444;
+  --light-grey: #777777;
   --white: #ffffff;
   --off-white: #e8e8e8;
 }
 
 /* Color Palette */
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 .white {
   color: var(--white);
 }
@@ -23,11 +30,16 @@
 }
 
 /* Elements */
+
 a {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 ul:first-child {
@@ -40,11 +52,17 @@ ul {
 }
 
 hr {
-  border: 0.2px solid;
+  border: 0.5px solid;
   border-color: var(--off-white);
 }
 
 /* Position Modifiers */
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
 .align-middle {
   display: flex;
   align-items: center;
@@ -53,6 +71,11 @@ hr {
 .align-top {
   display: flex;
   align-items: flex-start;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Spacers */
@@ -67,6 +90,7 @@ hr {
 }
 
 /* Images */
+
 .logo--xxs {
   height: 40px;
 }
@@ -83,14 +107,21 @@ hr {
   height: 20px;
 }
 
+.icon-circle {
+  height: 35px;
+  width: 35px;
+  border: 1.5px solid var(--light-grey);
+  border-radius: 50%;
+}
+
 /* Fonts */
 
 .font--small {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .font--medium {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .font--large {
@@ -107,4 +138,30 @@ hr {
 
 .thin {
   font-family: "Fira Sans Thin";
+}
+
+/* Shadows, Blurs & Opacity */
+
+.box-shadow {
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+
+.button {
+  border-radius: 5px;
+  height: 10px;
+  min-width: 80px;
+}
+
+.button-shadow {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.button-shadow:active {
+  -webkit-box-shadow: initial;
+  box-shadow: initial;
 }

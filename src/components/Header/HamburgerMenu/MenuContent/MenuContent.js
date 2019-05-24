@@ -8,13 +8,17 @@ const MenuContent = () => {
       {services.map((service, i) => {
         return (
           <ul key={i}>
-            <a href={service["url"]}>
-              <img
-                className="icon--small button-padding"
-                src={service["grey_image"]}
-                alt="Service Icon"
-              />
-              <p className="font--medium dark-grey">{service["label"]}</p>
+            <a className="menucontent-link" href={service["url"]}>
+              <div className="icon-circle dark-grey align-center align-middle">
+                <img
+                  className="icon--small"
+                  src={service["grey_image"]}
+                  alt="Service Icon"
+                />
+              </div>
+              <p className="label-spacing-left font--medium dark-grey">
+                {service["label"]}
+              </p>
             </a>
           </ul>
         );
