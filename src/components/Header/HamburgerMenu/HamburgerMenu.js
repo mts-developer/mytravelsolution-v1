@@ -1,5 +1,5 @@
 import React from "react";
-import MenuHeader from "../MenuHeader";
+import MenuHeader from "./MenuHeader";
 import "./hamburgermenu.css";
 
 class HamburgerMenu extends React.Component {
@@ -17,39 +17,17 @@ class HamburgerMenu extends React.Component {
 
   toggleHamburgerMenu = () => {
     return (
-      <div onClick={e => this.toggleClick(e)}>
-        <div
-          className={`hamburgermenu__bar ${
-            this.state.open
-              ? "hamburgermenu__bar--top--open"
-              : "hamburgermenu__bar--top"
-          }`}
-        />
-        <div
-          className={`hamburgermenu__bar ${
-            this.state.open
-              ? "hamburgermenu__bar--middle--open"
-              : "hamburgermenu__bar--middle"
-          }`}
-        />
-        <div
-          className={`hamburgermenu__bar ${
-            this.state.open
-              ? "hamburgermenu__bar--bottom--open"
-              : "hamburgermenu__bar--bottom"
-          }`}
-        />
+      <div className="button-padding" onClick={e => this.toggleClick(e)}>
+        <div className={`bar ${this.state.open ? "bar-1--open" : "bar-1"}`} />
+        <div className={`bar ${this.state.open ? "bar-2--open" : "bar-2"}`} />
+        <div className={`bar ${this.state.open ? "bar-3--open" : "bar-3"}`} />
       </div>
     );
   };
 
-  toggleHeaderMenu = () => {
+  toggleMenu = () => {
     return (
-      <div
-        className={`hamburgermenu__headermenu ${
-          this.state.open ? "hamburgermenu__headermenu--open" : ""
-        }`}
-      >
+      <div className={`menu ${this.state.open ? "menu--open" : ""}`}>
         <MenuHeader onClick={this.toggleClick} />
       </div>
     );
@@ -59,7 +37,7 @@ class HamburgerMenu extends React.Component {
     return (
       <div>
         {this.toggleHamburgerMenu()}
-        {this.toggleHeaderMenu()}
+        {this.toggleMenu()}
       </div>
     );
   }

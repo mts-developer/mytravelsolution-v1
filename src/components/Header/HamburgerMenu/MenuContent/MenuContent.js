@@ -1,22 +1,20 @@
 import React from "react";
-import "./menucontents.css";
-import services from "../../Services";
+import "./menucontent.css";
+import services from "../../../Services";
 
-const MenuContents = () => {
+const MenuContent = () => {
   return (
-    <div>
+    <div className="menucontent">
       {services.map((service, i) => {
         return (
           <ul key={i}>
             <a href={service["url"]}>
               <img
-                className="icon--xs menucontents__service-icon"
+                className="icon--small button-padding"
                 src={service["grey_image"]}
                 alt="Service Icon"
               />
-              <p className="font--sm menucontents__service-label">
-                {service["label"]}
-              </p>
+              <p className="font--medium dark-grey">{service["label"]}</p>
             </a>
           </ul>
         );
@@ -25,4 +23,4 @@ const MenuContents = () => {
   );
 };
 
-export default MenuContents;
+export default MenuContent;

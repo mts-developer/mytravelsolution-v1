@@ -1,4 +1,4 @@
-.hamburgermenu__bar {
+.bar {
   height: 2px;
   width: 20px;
   background: var(--white);
@@ -6,34 +6,34 @@
   -webkit-transition: all 0.2s ease;
 }
 
-.hamburgermenu__bar--top {
+.bar-1 {
   transform-origin: top left;
   margin-bottom: 5px;
 }
 
-.hamburgermenu__bar--bottom {
+.bar-3 {
   transform-origin: top left;
   margin-top: 5px;
 }
 
-.hamburgermenu__bar--top--open {
+.bar-1--open {
   transform: rotate(45deg);
   transform-origin: top left;
   margin-bottom: 5px;
 }
 
-.hamburgermenu__bar--middle--open {
+.bar-2--open {
   opacity: 0;
   transform: translateX(-16px);
 }
 
-.hamburgermenu__bar--bottom--open {
+.bar-3--open {
   transform: translateX(-1px) rotate(-45deg);
   transform-origin: top left;
   margin-top: 5px;
 }
 
-.hamburgermenu__headermenu {
+.menu {
   position: absolute;
   top: 0;
   right: 5%;
@@ -49,7 +49,7 @@
   opacity: 0;
 }
 
-.hamburgermenu__headermenu--open {
+.menu--open {
   top: 18px;
   right: 5%;
   visibility: visible;
