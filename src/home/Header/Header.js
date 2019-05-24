@@ -7,9 +7,9 @@ import HamburgerMenu from "../../components/HamburgerMenu";
 class Header extends React.Component {
   render() {
     return (
-      <div className="header-container">
+      <div className="header middle">
         <img
-          className="logo--xs logo"
+          className="logo--xs"
           src={logos.mts_logo_full_white}
           alt="MTS Logo"
         />

@@ -4,8 +4,8 @@ import Header from "../Header";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
-      <div className="hero-container--skew">
+    <div className="hero hero-background hero-background--angle">
+      <div className="hero-background--reset-angle">
         <Header />
         <div>More Shit</div>
       </div>
