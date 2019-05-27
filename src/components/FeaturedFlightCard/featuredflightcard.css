@@ -1,0 +1,32 @@
+.featuredflightcard {
+  margin: 10px;
+}
+
+.featuredflightcard-title {
+  background-color: blueviolet;
+  position: absolute;
+  height: 30px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.featuredflightcard-top {
+  background-image: url("../../assets/images/bg/beach_boat_clouds_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+.featuredflightcard-bottom {
+  background-color: var(--white);
+  border-radius: 0 0 3px 3px;
+}
+
+.featuredflightcard-height {
+  height: 232px;
+}
+
+.featuredflightcard-grid {
+  margin-top: 20px;
+  grid-gap: 20px;
+}

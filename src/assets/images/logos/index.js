@@ -7,10 +7,14 @@ import mts_logo_full_white from "./mts_logo_full_white.png";
 import mts_alt_logo from "./2c_logo.png";
 import mts_alt_full from "./2c_logo_full.png";
 
+// Parter Logos
+import qantas_logo from "./qantas_logo.png";
+
 export default {
   mts_logo,
   mts_logo_full,
   mts_logo_full_white,
   mts_alt_logo,
-  mts_alt_full
+  mts_alt_full,
+  qantas_logo
 };

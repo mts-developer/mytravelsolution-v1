@@ -89,17 +89,31 @@ hr {
 }
 
 .column {
+  display: flex;
   flex-direction: column;
 }
 
 .row {
+  display: flex;
   flex-direction: row;
 }
 
 /* Spacers */
 
+.margin--none {
+  margin: 0;
+}
+
+.margin-20 {
+  margin: 20px;
+}
+
 .padding-20 {
   padding: 20px;
+}
+
+.padding--none {
+  padding: 0;
 }
 
 .button-padding {
@@ -109,15 +123,11 @@ hr {
 .grid-columns-2 {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
 }
 
-.margin--none {
-  margin: 0;
-}
-
-.padding--none {
-  padding: 0;
+.full-width {
+  width: 100%;
 }
 
 /* Images */
@@ -180,6 +190,11 @@ hr {
 .box-shadow {
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-shadow {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
