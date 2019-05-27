@@ -19,7 +19,7 @@ class Header extends React.Component {
           <a className="font--medium white" href="tel:0393146957">
             <img
               className="icon--medium button-padding"
-              src={icons.phone_white}
+              src={icons.phone_white_svg}
               alt="MTS Phone"
             />
           </a>

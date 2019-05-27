@@ -21,14 +21,14 @@ const MenuHeader = props => {
           <a className="button-padding" href="tel:0393146957">
             <img
               className="icon--small"
-              src={icons.phone_grey}
+              src={icons.phone_grey_svg}
               alt="MTS Phone"
             />
           </a>
           <img
             onClick={e => onClick(e)}
             className="icon--small button-padding"
-            src={icons.close_grey}
+            src={icons.close_grey_svg}
             alt="MTS Close"
           />
         </div>
