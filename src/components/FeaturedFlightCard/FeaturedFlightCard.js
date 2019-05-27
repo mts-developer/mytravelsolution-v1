@@ -7,14 +7,14 @@ const FeaturedFlightCard = () => {
   return (
     <div className="featuredflightcard center full-width column card-shadow">
       <div className="featuredflightcard-title center middle">
-        <h2 className="font--large white">Winter Getaway Promo</h2>
+        <h2 className="font--large white">Australia Day Special</h2>
       </div>
       <div className="featuredflightcard-top featuredflightcard-height full-width" />
       <div className="featuredflightcard-bottom featuredflightcard-height full-width">
         <div className="padding-20">
           <div className="center">
             <img
-              className="logo--xxs"
+              className="logo--small"
               src={logos.qantas_logo}
               alt="Qantas Logo"
             />

@@ -12,7 +12,7 @@ const MenuHeader = props => {
       <div className="menuheader-container top">
         <div className="menuheader-left">
           <img
-            className="logo--xxs"
+            className="logo--small"
             src={logos.mts_logo_full}
             alt="MTS Logo Full"
           />

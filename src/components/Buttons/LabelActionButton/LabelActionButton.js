@@ -7,7 +7,7 @@ const LabelActionButton = props => {
 
   return (
     <p
-      className="labelactionbutton button button-padding middle center bold"
+      className="labelactionbutton ripple button button-padding middle center bold"
       role="button"
       style={{ width: `${width}` }}
     >

@@ -10,7 +10,7 @@ class Header extends React.Component {
       <div className="header top">
         <div className="header-left">
           <img
-            className="logo--xs"
+            className="logo--medium"
             src={logos.mts_logo_full_white}
             alt="MTS Logo"
           />

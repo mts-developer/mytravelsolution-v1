@@ -9,6 +9,7 @@
   --light-grey: #777777;
   --white: #ffffff;
   --off-white: #e8e8e8;
+  --red: #d90000;
 }
 
 /* Color Palette */
@@ -31,6 +32,10 @@
 
 .dark-grey {
   color: var(--dark-grey);
+}
+
+.red {
+  color: var(--red);
 }
 
 /* Elements */
@@ -132,11 +137,11 @@ hr {
 
 /* Images */
 
-.logo--xxs {
+.logo--small {
   height: 40px;
 }
 
-.logo--xs {
+.logo--medium {
   height: 50px;
 }
 
@@ -166,7 +171,7 @@ hr {
 }
 
 .font--large {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .font--header {
@@ -193,8 +198,8 @@ hr {
 }
 
 .card-shadow {
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
@@ -205,12 +210,53 @@ hr {
 }
 
 .button-shadow {
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
 }
 
 .button-shadow:active {
   -webkit-box-shadow: initial;
   box-shadow: initial;
+}
+
+/* Container Angles */
+
+.angled-top {
+  position: relative;
+}
+
+.angled-top:before {
+  background: inherit;
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-8deg);
+  -webkit-transform: skewY(-8deg);
+  transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+}
+
+.angled-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.angled-bottom:after {
+  background: inherit;
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: skewY(-8deg);
+  transform: skewY(-8deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  z-index: -1;
 }
