@@ -9,13 +9,11 @@ const MenuFooter = () => {
       <div className="grid-columns-2">
         {quickLinks.map((quickLink, i) => {
           return (
-            <div>
-              <ul key={i}>
-                <a className="button-padding" href={quickLink["url"]}>
-                  <p className="font--small dark-grey">{quickLink["label"]}</p>
-                </a>
-              </ul>
-            </div>
+            <ul key={i}>
+              <a className="button-padding" href={quickLink["url"]}>
+                <p className="font--small dark-grey">{quickLink["label"]}</p>
+              </a>
+            </ul>
           );
         })}
       </div>
