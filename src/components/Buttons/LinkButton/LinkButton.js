@@ -8,7 +8,7 @@ const LinkButton = props => {
 
   return (
     <a
-      className="linkbutton button button-padding button-shadow align-middle align-center"
+      className="linkbutton button button-padding button-shadow middle center"
       role="button"
       style={{ width: `${width}` }}
       href={url}

@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
           <h2 className="white font--large thin">Discover the world today</h2>
         </div>
-        <div className="align-column">
+        <div className="column">
           <ActionButton label="Book Now" width="80px" />
           <p className="hero__hours-text white font--small">
             Or call our office 7 days a week

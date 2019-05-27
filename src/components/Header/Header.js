@@ -7,7 +7,7 @@ import HamburgerMenu from "./HamburgerMenu";
 class Header extends React.Component {
   render() {
     return (
-      <div className="header align-top">
+      <div className="header top">
         <div className="header-left">
           <img
             className="logo--xs"

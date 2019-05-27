@@ -9,7 +9,7 @@ const MenuContent = () => {
         return (
           <ul key={i}>
             <a className="menucontent-link" href={service["url"]}>
-              <div className="icon-circle dark-grey align-center align-middle">
+              <div className="icon-circle dark-grey center middle">
                 <img
                   className="icon--small"
                   src={service["grey_image"]}

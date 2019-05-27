@@ -13,6 +13,10 @@
 
 /* Color Palette */
 
+.primary-color {
+  color: var(--primary-color);
+}
+
 .secondary-color {
   color: var(--secondary-color);
 }
@@ -58,37 +62,45 @@ hr {
 
 /* Position Modifiers */
 
-.align-center {
+.center {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.align-middle {
+.middle {
   display: flex;
   align-items: center;
 }
 
-.align-top {
+.top {
   display: flex;
   align-items: flex-start;
 }
 
-.align-right {
+.right {
   display: flex;
   justify-content: flex-end;
 }
 
-.align-left {
+.left {
   display: flex;
   justify-content: flex-start;
 }
 
-.align-column {
-  display: flex;
+.column {
   flex-direction: column;
 }
 
+.row {
+  flex-direction: row;
+}
+
 /* Spacers */
+
+.padding-20 {
+  padding: 20px;
+}
 
 .button-padding {
   padding: 15px;
@@ -100,11 +112,11 @@ hr {
   grid-template-rows: auto;
 }
 
-.margin-none {
+.margin--none {
   margin: 0;
 }
 
-.padding-none {
+.padding--none {
   padding: 0;
 }
 

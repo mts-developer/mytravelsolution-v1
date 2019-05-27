@@ -7,7 +7,7 @@ const ActionButton = props => {
 
   return (
     <p
-      className="actionbutton button button-padding button-shadow align-middle align-center font--medium white bold"
+      className="actionbutton button button-padding button-shadow middle center font--medium white bold"
       role="button"
       style={{ width: `${width}` }}
     >

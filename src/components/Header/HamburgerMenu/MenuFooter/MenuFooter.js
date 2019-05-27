@@ -17,7 +17,7 @@ const MenuFooter = () => {
           );
         })}
       </div>
-      <div className="align-right">
+      <div className="right">
         <LinkButton label="Contact Us" url="tel:0393146957" />
       </div>
     </div>

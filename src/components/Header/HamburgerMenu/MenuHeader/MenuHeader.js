@@ -9,7 +9,7 @@ const MenuHeader = props => {
   const onClick = props.onClick;
   return (
     <div className="menuheader">
-      <div className="menuheader-container align-top">
+      <div className="menuheader-container top">
         <div className="menuheader-left">
           <img
             className="logo--xxs"
