@@ -1,5 +1,5 @@
 .hero {
-  height: 60vh;
+  /* height: 100%; */
 }
 
 .hero-background {
@@ -18,4 +18,12 @@
 
 .hero-background--reset-angle {
   transform: skewY(10deg);
+}
+
+.hero-title {
+  margin: 60px 0;
+}
+
+.hero__hours-text {
+  margin: 5px 0 100px 0;
 }

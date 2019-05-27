@@ -78,7 +78,18 @@ hr {
   justify-content: flex-end;
 }
 
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align-column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Spacers */
+
 .button-padding {
   padding: 15px;
 }
@@ -87,6 +98,14 @@ hr {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.padding-none {
+  padding: 0;
 }
 
 /* Images */
@@ -125,7 +144,11 @@ hr {
 }
 
 .font--large {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.font--header {
+  font-size: 30px;
 }
 
 .bold {
@@ -152,7 +175,6 @@ hr {
 .button {
   border-radius: 5px;
   height: 10px;
-  min-width: 80px;
 }
 
 .button-shadow {
