@@ -40,7 +40,6 @@
   width: 100%;
   background-color: var(--white);
   border-radius: 3px;
-
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   visibility: hidden;

@@ -3,8 +3,15 @@
 import phone_white_svg from "./svg/mts-icon-white_phone.svg";
 import phone_grey_svg from "./svg/mts-icon-grey_phone.svg";
 import close_grey_svg from "./svg/mts-icon-grey_close.svg";
-import flight_white_svg from "./svg/mts-category-white_flight.svg";
 import flight_grey_svg from "./svg/mts-category-grey_flight.svg";
+
+import flight_white_svg from "./svg/mts-category-white_flight.svg";
+import hotel_white_svg from "./svg/mts-category-white_hotel.svg";
+import car_white_svg from "./svg/mts-category-white_car.svg";
+import cruise_white_svg from "./svg/mts-category-white_cruise.svg";
+import packaged_deals_white_svg from "./svg/mts-category-white_package-deals.svg";
+import insurance_white_svg from "./svg/mts-category-white_insurance.svg";
+import railway_white_svg from "./svg/mts-category-white_railway.svg";
 
 // PNG
 
@@ -20,8 +27,14 @@ export default {
   phone_white_svg,
   phone_grey_svg,
   close_grey_svg,
-  flight_white_svg,
   flight_grey_svg,
+  flight_white_svg,
+  hotel_white_svg,
+  car_white_svg,
+  cruise_white_svg,
+  packaged_deals_white_svg,
+  insurance_white_svg,
+  railway_white_svg,
   flight_grey_png,
   hotel_grey_png,
   car_grey_png,

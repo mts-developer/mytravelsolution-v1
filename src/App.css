@@ -105,19 +105,35 @@ hr {
 
 /* Spacers */
 
-.margin--none {
+.margin-none {
   margin: 0;
+}
+
+.margin-10 {
+  margin: 10px;
 }
 
 .margin-20 {
   margin: 20px;
 }
 
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
 .padding-20 {
   padding: 20px;
 }
 
-.padding--none {
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-none {
   padding: 0;
 }
 
@@ -156,7 +172,7 @@ hr {
 .icon-circle {
   height: 35px;
   width: 35px;
-  border: 1.5px solid var(--light-grey);
+  border: 1.5px solid;
   border-radius: 50%;
 }
 

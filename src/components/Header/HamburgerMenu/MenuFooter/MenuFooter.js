@@ -5,7 +5,7 @@ import LinkButton from "../../../Buttons/LinkButton";
 
 const MenuFooter = () => {
   return (
-    <div className="menufooter">
+    <div className="padding-top-10">
       <div className="grid-columns-2">
         {quickLinks.map((quickLink, i) => {
           return (

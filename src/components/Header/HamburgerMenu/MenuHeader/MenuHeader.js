@@ -33,7 +33,9 @@ const MenuHeader = props => {
           />
         </div>
       </div>
-      <MenuContent />
+      <div className="padding-10">
+        <MenuContent theme="dark" />
+      </div>
       <hr className="off-white" />
       <MenuFooter />
     </div>
