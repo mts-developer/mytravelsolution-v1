@@ -4,6 +4,8 @@ import "./home.css";
 import Hero from "./Hero";
 import Featured from "./Featured";
 import Services from "./Services";
+import Visa from "./Visa";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -14,10 +16,15 @@ function Home() {
       <section className="featured-section">
         <Featured />
       </section>
-      <section className="our-services">
+      <section className="services-section">
         <Services />
       </section>
-      <section>Need a Travel Visa?</section>
+      <section className="visa-section">
+        <Visa />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }

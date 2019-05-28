@@ -1,6 +1,10 @@
+:root {
+  --border-radius: 4px;
+}
+
 .featuredflightcard {
   margin: 20px;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 
 .featuredflightcard-title {
@@ -15,12 +19,12 @@
   background-image: url("../../assets/images/bg/beach_boat_clouds_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 3px 3px 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .featuredflightcard-bottom {
   background-color: var(--white);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .featuredflightcard-height {

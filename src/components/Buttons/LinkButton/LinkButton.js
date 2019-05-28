@@ -5,10 +5,16 @@ const LinkButton = props => {
   let url = props.url;
   let label = props.label;
   let width = props.width;
+  var color =
+    props.color === "primary"
+      ? // eslint-disable-next-line
+        (color = "button-color-primary")
+      : // eslint-disable-next-line
+        (color = "button-color-secondary");
 
   return (
     <a
-      className="linkbutton button button-padding button-shadow middle center"
+      className={`${color} button button-padding button-shadow middle center`}
       role="button"
       style={{ width: `${width}` }}
       href={url}
@@ -19,7 +25,8 @@ const LinkButton = props => {
 };
 
 LinkButton.defaultProps = {
-  label: "Link Button"
+  label: "Link Button",
+  color: "secondary"
 };
 
 export default LinkButton;

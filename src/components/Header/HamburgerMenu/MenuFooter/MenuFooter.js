@@ -18,7 +18,7 @@ const MenuFooter = () => {
         })}
       </div>
       <div className="right">
-        <LinkButton label="Call Us" url="tel:0393146957" />
+        <LinkButton label="Call Us" url="tel:0393146957" width="80px" />
       </div>
     </div>
   );

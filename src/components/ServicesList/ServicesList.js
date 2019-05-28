@@ -6,8 +6,10 @@ const ServicesList = props => {
   var theme,
     iconTheme =
       props.theme === "dark"
-        ? ((theme = "light-grey"), (iconTheme = "dark"))
-        : ((theme = "white"), (iconTheme = "light"));
+        ? // eslint-disable-next-line
+          ((theme = "light-grey"), (iconTheme = "dark"))
+        : // eslint-disable-next-line
+          ((theme = "white"), (iconTheme = "light"));
 
   return (
     <div className="serviceslist">

@@ -4,10 +4,16 @@ import "./actionbutton.css";
 const ActionButton = props => {
   let label = props.label;
   let width = props.width;
+  var color =
+    props.color === "primary"
+      ? // eslint-disable-next-line
+        (color = "button-color-primary")
+      : // eslint-disable-next-line
+        (color = "button-color-secondary");
 
   return (
     <p
-      className="actionbutton button button-padding button-shadow middle center font--medium white bold"
+      className={`${color} button button-padding button-shadow middle center font--medium white bold`}
       role="button"
       style={{ width: `${width}` }}
     >
@@ -17,7 +23,8 @@ const ActionButton = props => {
 };
 
 ActionButton.defaultProps = {
-  label: "Action Button"
+  label: "Action Button",
+  color: "primary"
 };
 
 export default ActionButton;
