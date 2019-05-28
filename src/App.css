@@ -178,11 +178,11 @@ hr {
 }
 
 .icon--small {
-  height: 18px;
+  height: 20px;
 }
 
 .icon--medium {
-  height: 20px;
+  height: 50px;
 }
 
 .icon-circle {
@@ -307,4 +307,12 @@ hr {
   -webkit-transform-origin: 100%;
   transform-origin: 100%;
   z-index: -1;
+}
+
+/* Horizontal Rules */
+
+.vertical-rule {
+  border: 0.5px solid;
+  border-color: var(--off-white);
+  height: 30px;
 }

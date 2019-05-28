@@ -11,8 +11,13 @@ const ActionButton = props => {
       : // eslint-disable-next-line
         (color = "button-color-secondary");
 
+  const showAlert = () => {
+    alert(props.label);
+  };
+
   return (
     <p
+      onClick={() => showAlert()}
       className={`${color} button button-padding button-shadow middle center font--medium white bold`}
       role="button"
       style={{ width: `${width}` }}
