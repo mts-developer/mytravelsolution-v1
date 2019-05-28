@@ -1,20 +1,20 @@
 import React from "react";
-import "./menucontent.css";
-import services from "../../../Services";
+import "./serviceslist.css";
+import services from "../Services";
 
-const MenuContent = props => {
+const ServicesList = props => {
   var theme,
     iconTheme =
       props.theme === "dark"
-        ? ((theme = "dark-grey"), (iconTheme = "dark"))
+        ? ((theme = "light-grey"), (iconTheme = "dark"))
         : ((theme = "white"), (iconTheme = "light"));
 
   return (
-    <div className="menucontent">
+    <div className="serviceslist">
       {services.map((service, i) => {
         return (
           <ul key={i}>
-            <a className="menucontent-link" href={service["url"]}>
+            <a className="serviceslist-link" href={service["url"]}>
               <div className={`icon-circle center middle ${theme}`}>
                 <img
                   className="icon--small"
@@ -33,8 +33,8 @@ const MenuContent = props => {
   );
 };
 
-MenuContent.defaultProps = {
+ServicesList.defaultProps = {
   theme: "dark"
 };
 
-export default MenuContent;
+export default ServicesList;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./services.css";
-import MenuContent from "../../components/Header/HamburgerMenu/MenuContent";
+import ServicesList from "../../components/ServicesList";
 
 const Services = () => {
   return (
@@ -10,8 +10,8 @@ const Services = () => {
         <p className="font--small white">
           Tailor your holiday with our premium services
         </p>
-        <div className="padding-top-20">
-          <MenuContent theme="light" />
+        <div className="padding-20">
+          <ServicesList theme="light" />
         </div>
       </div>
     </div>

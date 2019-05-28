@@ -1,6 +1,6 @@
 import React from "react";
 import "./menuheader.css";
-import MenuContent from "../MenuContent";
+import ServicesList from "../../../ServicesList";
 import MenuFooter from "../MenuFooter";
 import logos from "../../../../assets/images/logos";
 import icons from "../../../../assets/images/icons";
@@ -34,7 +34,7 @@ const MenuHeader = props => {
         </div>
       </div>
       <div className="padding-10">
-        <MenuContent theme="dark" />
+        <ServicesList theme="dark" />
       </div>
       <hr className="off-white" />
       <MenuFooter />

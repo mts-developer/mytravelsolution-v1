@@ -16,8 +16,8 @@ function Home() {
       </section>
       <section className="our-services">
         <Services />
-        And some more shitttt
       </section>
+      <section>Need a Travel Visa?</section>
     </div>
   );
 }

@@ -33,8 +33,8 @@ const FeaturedFlightCard = () => {
               <p className="font--small semi-bold">1 May - 30 Nov</p>
             </div>
           </div>
+          <p className="font--small light-grey">* Conditions Apply</p>
           <div className="right">
-            <LabelActionButton label="Learn More" />
             <LabelActionButton label="Book Now" />
           </div>
         </div>
