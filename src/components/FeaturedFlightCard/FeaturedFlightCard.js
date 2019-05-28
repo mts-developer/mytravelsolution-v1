@@ -34,6 +34,7 @@ const FeaturedFlightCard = () => {
             </div>
           </div>
           <div className="right">
+            <LabelActionButton label="Learn More" />
             <LabelActionButton label="Book Now" />
           </div>
         </div>

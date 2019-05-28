@@ -35,20 +35,20 @@
 
 .menu {
   position: absolute;
-  top: -20px;
+  top: -30px;
   right: 0;
   width: 100%;
   background-color: var(--white);
   border-radius: 3px;
 
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   visibility: hidden;
   opacity: 0;
 }
 
 .menu--open {
-  top: 0;
+  top: -10px;
   right: 0;
   visibility: visible;
   opacity: 1;
