@@ -7,7 +7,7 @@ import HamburgerMenu from "./HamburgerMenu";
 class Header extends React.Component {
   render() {
     return (
-      <div className="header middle">
+      <div className="header space-between middle">
         <img
           className="logo--medium"
           src={logos.mts_logo_full_white}

@@ -1,5 +1,5 @@
 import React from "react";
-import MenuHeader from "./MenuHeader";
+import Dialog from "../../Dialog";
 import "./hamburgermenu.css";
 
 class HamburgerMenu extends React.Component {
@@ -28,7 +28,7 @@ class HamburgerMenu extends React.Component {
   toggleMenu = () => {
     return (
       <div className={`menu box-shadow ${this.state.open ? "menu--open" : ""}`}>
-        <MenuHeader onClick={this.toggleClick} />
+        <Dialog onClick={this.toggleClick} />
       </div>
     );
   };

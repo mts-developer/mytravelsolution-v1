@@ -1,7 +1,7 @@
 import React from "react";
-import "./menufooter.css";
-import quickLinks from "../../../QuickLinks";
-import LinkButton from "../../../Buttons/LinkButton";
+import "./dialogfooter.css";
+import quickLinks from "../QuickLinks";
+import LinkButton from "../Buttons/LinkButton";
 
 const MenuFooter = () => {
   return (

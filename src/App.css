@@ -97,6 +97,11 @@ hr {
   justify-content: flex-start;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .column {
   display: flex;
   flex-direction: column;

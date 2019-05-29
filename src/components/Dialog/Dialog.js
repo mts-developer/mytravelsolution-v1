@@ -1,15 +1,15 @@
 import React from "react";
-import "./menuheader.css";
-import ServicesList from "../../../ServicesList";
-import MenuFooter from "../MenuFooter";
-import logos from "../../../../assets/images/logos";
-import icons from "../../../../assets/images/icons";
+import "./dialog.css";
+import ServicesList from "../ServicesList";
+import MenuFooter from "../DialogFooter";
+import logos from "../../assets/images/logos";
+import icons from "../../assets/images/icons";
 
-const MenuHeader = props => {
+const Dialog = props => {
   const onClick = props.onClick;
   return (
-    <div className="menuheader padding-20">
-      <div className="menuheader-container middle">
+    <div className="dialog padding-20">
+      <div className="space-between middle">
         <img
           className="logo--small"
           src={logos.mts_logo_full}
@@ -40,4 +40,4 @@ const MenuHeader = props => {
   );
 };
 
-export default MenuHeader;
+export default Dialog;
