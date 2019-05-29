@@ -8,6 +8,7 @@ import fb_white_svg from "./svg/mts-icon-white_facebook.svg";
 import phone_grey_svg from "./svg/mts-icon-grey_phone.svg";
 import close_grey_svg from "./svg/mts-icon-grey_close.svg";
 import flight_grey_svg from "./svg/mts-category-grey_flight.svg";
+import mail_grey_svg from "./svg/mts-icon-grey_mail.svg";
 
 // PNG
 
@@ -36,6 +37,7 @@ export default {
   close_grey_svg,
   flight_grey_svg,
   flight_grey_png,
+  mail_grey_svg,
   hotel_grey_png,
   car_grey_png,
   cruise_grey_png,

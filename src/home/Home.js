@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import "./home.css";
 import Hero from "./Hero";
 import Featured from "./Featured";
