@@ -1,6 +1,6 @@
 import React from "react";
 import "./visa.css";
-import logos from "../../assets/images/logos";
+// import logos from "../../assets/images/logos";
 
 const Visa = () => {
   return (

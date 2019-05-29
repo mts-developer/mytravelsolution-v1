@@ -26,12 +26,6 @@ class Home extends React.Component {
     });
   };
 
-  showDialog = () => {
-    this.setState({
-      open: true
-    });
-  };
-
   toggleDialog = () => {
     return (
       <div
@@ -44,6 +38,12 @@ class Home extends React.Component {
         </Dialog>
       </div>
     );
+  };
+
+  showDialog = () => {
+    this.setState({
+      open: true
+    });
   };
 
   setTimeout = seconds => {

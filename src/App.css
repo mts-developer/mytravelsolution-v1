@@ -168,6 +168,10 @@ hr {
   grid-template-rows: auto auto;
 }
 
+.textfield-width {
+  width: 270px;
+}
+
 .full-width {
   width: 100%;
 }
