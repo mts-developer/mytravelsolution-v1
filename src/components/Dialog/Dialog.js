@@ -1,7 +1,5 @@
 import React from "react";
 import "./dialog.css";
-import ServicesList from "../ServicesList";
-import MenuFooter from "../DialogFooter";
 import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
 
@@ -31,11 +29,7 @@ const Dialog = props => {
           />
         </div>
       </div>
-      <div className="padding-10">
-        <ServicesList />
-      </div>
-      <hr className="off-white" />
-      <MenuFooter />
+      {props.children}
     </div>
   );
 };

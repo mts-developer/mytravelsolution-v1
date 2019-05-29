@@ -1,5 +1,7 @@
 import React from "react";
 import Dialog from "../../Dialog";
+import ServicesList from "../../ServicesList";
+import DialogFooter from "../../DialogFooter/";
 import "./hamburgermenu.css";
 
 class HamburgerMenu extends React.Component {
@@ -28,7 +30,13 @@ class HamburgerMenu extends React.Component {
   toggleMenu = () => {
     return (
       <div className={`menu box-shadow ${this.state.open ? "menu--open" : ""}`}>
-        <Dialog onClick={this.toggleClick} />
+        <Dialog onClick={this.toggleClick}>
+          <div className="padding-10">
+            <ServicesList />
+          </div>
+          <hr className="off-white" />
+          <DialogFooter />
+        </Dialog>
       </div>
     );
   };
