@@ -5,8 +5,9 @@ import icons from "../../assets/images/icons";
 
 const Dialog = props => {
   const onClick = props.onClick;
+
   return (
-    <div className="dialog padding-20">
+    <div className="padding-20">
       <div className="space-between middle">
         <img
           className="logo--small"

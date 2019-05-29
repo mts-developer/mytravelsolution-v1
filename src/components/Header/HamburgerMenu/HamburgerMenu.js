@@ -27,9 +27,11 @@ class HamburgerMenu extends React.Component {
     );
   };
 
-  toggleMenu = () => {
+  toggleDialog = () => {
     return (
-      <div className={`menu box-shadow ${this.state.open ? "menu--open" : ""}`}>
+      <div
+        className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
+      >
         <Dialog onClick={this.toggleClick}>
           <div className="padding-10">
             <ServicesList />
@@ -45,7 +47,7 @@ class HamburgerMenu extends React.Component {
     return (
       <div>
         {this.toggleHamburgerMenu()}
-        {this.toggleMenu()}
+        {this.toggleDialog()}
       </div>
     );
   }

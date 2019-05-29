@@ -273,6 +273,29 @@ hr {
   box-shadow: initial;
 }
 
+/* Dialog Animations */
+
+.dialog {
+  z-index: 1;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 3px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dialog--open {
+  top: -10px;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Container Angles */
 
 .angled-top {
