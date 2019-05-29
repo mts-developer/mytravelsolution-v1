@@ -12,7 +12,11 @@ import Dialog from "../components/Dialog";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { open: true };
+    this.state = { open: false };
+  }
+
+  componentDidMount() {
+    this.setTimeout(5);
   }
 
   toggleClick = e => {
@@ -22,16 +26,28 @@ class Home extends React.Component {
     });
   };
 
+  showDialog = () => {
+    this.setState({
+      open: true
+    });
+  };
+
   toggleDialog = () => {
     return (
       <div
         className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
       >
         <Dialog onClick={this.toggleClick}>
-          <div className="center padding-20">/ Booking Engine /</div>
+          <div className="center padding-20">
+            <Subscribe />
+          </div>
         </Dialog>
       </div>
     );
+  };
+
+  setTimeout = seconds => {
+    setTimeout(() => this.showDialog(), seconds * 1000);
   };
 
   render() {
