@@ -3,12 +3,6 @@
   padding-bottom: 20px;
 }
 
-.header-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .header-right {
   display: flex;
 }

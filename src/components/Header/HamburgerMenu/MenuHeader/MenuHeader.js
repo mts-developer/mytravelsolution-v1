@@ -8,16 +8,14 @@ import icons from "../../../../assets/images/icons";
 const MenuHeader = props => {
   const onClick = props.onClick;
   return (
-    <div className="menuheader">
-      <div className="menuheader-container top">
-        <div className="menuheader-left">
-          <img
-            className="logo--small"
-            src={logos.mts_logo_full}
-            alt="MTS Logo Full"
-          />
-        </div>
-        <div className="menuheader-right">
+    <div className="menuheader padding-20">
+      <div className="menuheader-container middle">
+        <img
+          className="logo--small"
+          src={logos.mts_logo_full}
+          alt="MTS Logo Full"
+        />
+        <div className="row">
           <a className="button-padding" href="tel:0393146957">
             <img
               className="icon--small"
@@ -34,7 +32,7 @@ const MenuHeader = props => {
         </div>
       </div>
       <div className="padding-10">
-        <ServicesList theme="dark" />
+        <ServicesList />
       </div>
       <hr className="off-white" />
       <MenuFooter />

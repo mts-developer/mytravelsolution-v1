@@ -7,15 +7,13 @@ import HamburgerMenu from "./HamburgerMenu";
 class Header extends React.Component {
   render() {
     return (
-      <div className="header top">
-        <div className="header-left">
-          <img
-            className="logo--medium"
-            src={logos.mts_logo_full_white}
-            alt="MTS Logo"
-          />
-        </div>
-        <div className="header-right">
+      <div className="header middle">
+        <img
+          className="logo--medium"
+          src={logos.mts_logo_full_white}
+          alt="MTS Logo"
+        />
+        <div className="row">
           <a className="font--medium white" href="tel:0393146957">
             <img
               className="icon--small button-padding"

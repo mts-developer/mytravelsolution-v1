@@ -1,17 +1,3 @@
-.menuheader {
-  padding: 20px;
-}
-
 .menuheader-container {
   justify-content: space-between;
-}
-
-.menuheader-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menuheader-right {
-  display: flex;
 }
