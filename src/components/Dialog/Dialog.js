@@ -4,7 +4,7 @@ import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
 
 const Dialog = props => {
-  const onClick = props.onClick;
+  const action = props.action;
 
   return (
     <div className="padding-20">
@@ -23,7 +23,7 @@ const Dialog = props => {
             />
           </a>
           <img
-            onClick={e => onClick(e)}
+            onClick={e => action(e)}
             className="icon--small button-padding"
             src={icons.close_grey_svg}
             alt="MTS Close"

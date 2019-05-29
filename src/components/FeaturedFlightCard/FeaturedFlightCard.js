@@ -3,7 +3,9 @@ import "./featuredflightcard.css";
 import LabelActionButton from "../Buttons/LabelActionButton";
 import logos from "../../assets/images/logos";
 
-const FeaturedFlightCard = () => {
+const FeaturedFlightCard = props => {
+  const action = props.action;
+
   return (
     <div className="featuredflightcard center full-width column card-shadow">
       <div className="featuredflightcard-title center middle">
@@ -35,7 +37,7 @@ const FeaturedFlightCard = () => {
           </div>
           <p className="font--small light-grey">* Conditions Apply</p>
           <div className="right">
-            <LabelActionButton label="Book Now" />
+            <LabelActionButton label="Book Now" onClick={e => action(e)} />
           </div>
         </div>
       </div>

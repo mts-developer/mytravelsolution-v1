@@ -22,7 +22,7 @@ class Hero extends React.Component {
       <div
         className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
       >
-        <Dialog onClick={this.toggleClick}>
+        <Dialog action={this.toggleClick}>
           <div className="center padding-20">/ Booking Engine /</div>
         </Dialog>
       </div>
@@ -48,7 +48,7 @@ class Hero extends React.Component {
             </div>
             <div className="column">
               <ActionButton
-                onClick={e => this.toggleClick(e)}
+                action={e => this.toggleClick(e)}
                 label="Book Now"
                 width="80px"
               />

@@ -32,7 +32,7 @@ class HamburgerMenu extends React.Component {
       <div
         className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
       >
-        <Dialog onClick={this.toggleClick}>
+        <Dialog action={this.toggleClick}>
           <div className="padding-10">
             <ServicesList />
           </div>

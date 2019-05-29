@@ -2,7 +2,7 @@ import React from "react";
 import "./actionbutton.css";
 
 const ActionButton = props => {
-  let onClick = props.onClick;
+  let action = props.action;
   let label = props.label;
   let width = props.width;
   var color =
@@ -14,7 +14,7 @@ const ActionButton = props => {
 
   return (
     <p
-      onClick={onClick}
+      onClick={action}
       className={`${color} button button-padding button-shadow middle center font--medium white bold`}
       role="button"
       style={{ width: `${width}` }}
