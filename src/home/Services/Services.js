@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="services angled-top">
       <div className="padding-20">
-        <h1 className="font--large bold white">Our Services</h1>
+        <h1 className="font--header bold white">Our Services</h1>
         <p className="font--small white">
           Tailor your holiday with our premium services
         </p>

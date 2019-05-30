@@ -38,7 +38,7 @@ class Featured extends React.Component {
         {this.toggleDialog()}
         <div className="column center">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
-          <h1 className="font--large bold primary-color">Featured Flights</h1>
+          <h1 className="font--header bold primary-color">Featured Flights</h1>
         </div>
         <div className="column center">
           <FeaturedFlightCard action={this.toggleClick} />

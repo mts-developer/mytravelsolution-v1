@@ -9,7 +9,7 @@ import mts_alt_full from "./2c_logo_full.png";
 
 // Partner Logos
 import qantas_logo from "./qantas_logo.png";
-import cibt_logo from "./cibt_logo.png";
+import visalink_logo from "./visalink_logo.png";
 
 export default {
   mts_logo,
@@ -18,5 +18,5 @@ export default {
   mts_alt_logo,
   mts_alt_full,
   qantas_logo,
-  cibt_logo
+  visalink_logo
 };

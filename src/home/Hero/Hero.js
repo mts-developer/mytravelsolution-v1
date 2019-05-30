@@ -37,7 +37,7 @@ class Hero extends React.Component {
           <div className="hero-container hero-background--reset-angle">
             <Header />
             <div className="hero-title">
-              <h1 className="margin-none white font--header">
+              <h1 className="margin-none white font--header bold">
                 Your journey
                 <br />
                 begins

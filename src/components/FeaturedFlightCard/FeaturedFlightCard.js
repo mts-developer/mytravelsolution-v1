@@ -9,7 +9,7 @@ const FeaturedFlightCard = props => {
   return (
     <div className="featuredflightcard center full-width column card-shadow">
       <div className="featuredflightcard-title center middle">
-        <h2 className="font--large white">Australia Day Special</h2>
+        <h2 className="font--large white bold">Australia Day Special</h2>
       </div>
       <div className="featuredflightcard-top featuredflightcard-height full-width" />
       <div className="featuredflightcard-bottom featuredflightcard-height full-width">
