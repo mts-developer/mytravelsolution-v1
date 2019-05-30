@@ -4,3 +4,7 @@
     var(--secondary-color-light) 100%
   );
 }
+
+.footer-container {
+  flex-wrap: wrap;
+}

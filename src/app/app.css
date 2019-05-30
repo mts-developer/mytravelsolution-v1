@@ -11,6 +11,8 @@
   --off-white: #f6f9fc;
   --red: #d90000;
   --visalink-red: #a41e23;
+
+  --container-angle: -8deg;
 }
 
 /* Color Palette */
@@ -145,6 +147,10 @@ hr {
   margin-top: 20px;
 }
 
+.margin-50 {
+  margin: 50px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -212,7 +218,7 @@ hr {
 .icon-circle {
   height: 35px;
   width: 35px;
-  border: 3px solid;
+  border: 2.5px solid;
   border-radius: 50%;
 }
 
@@ -330,8 +336,8 @@ hr {
   left: 0;
   right: 0;
   z-index: -1;
-  transform: skewY(-8deg);
-  -webkit-transform: skewY(-8deg);
+  transform: skewY(var(--container-angle));
+  -webkit-transform: skewY(var(--container-angle));
   transform-origin: 0 100%;
   -webkit-transform-origin: 0 100%;
 }
@@ -350,8 +356,8 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-transform: skewY(-8deg);
-  transform: skewY(-8deg);
+  -webkit-transform: skewY(var(--container-angle));
+  transform: skewY(var(--container-angle));
   -webkit-transform-origin: 100%;
   transform-origin: 100%;
   z-index: -1;
@@ -363,4 +369,16 @@ hr {
   border: 0.5px solid;
   border-color: var(--off-white);
   height: 30px;
+}
+
+/* Media Queries */
+
+@media (min-width: 767px) {
+  :root {
+    --container-angle: -5deg;
+  }
+
+  .featuredflightcard {
+    max-width: 340px;
+  }
 }

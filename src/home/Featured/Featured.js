@@ -8,17 +8,23 @@ import logos from "../../assets/images/logos";
 const Featured = props => {
   let toggleBookingEngine = props.toggleBookingEngine;
   return (
-    <div className="featured padding-20">
-      <div className="column center">
+    <div className="featured">
+      <div className="column center padding-20">
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
-        <h1 className="font--header bold primary-color">Featured Flights</h1>
+        <h1 className="font--header bold primary-color margin-none">
+          Featured Flights
+        </h1>
+        <p className="font--medium dark-grey">
+          See our range of great value flights
+        </p>
       </div>
-      <div className="column center">
+      <div className="featured-container center">
+        <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
         <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
         <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
         <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
       </div>
-      <div className="more-deals-button center">
+      <div className="more-deals-button center padding-20">
         <LinkButton label="View More" />
       </div>
     </div>

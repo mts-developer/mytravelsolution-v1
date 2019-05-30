@@ -5,7 +5,7 @@ import services from "../Services";
 const ServicesList = props => {
   var theme,
     iconTheme =
-      props.theme === "dark_grey"
+      props.theme === "dark-grey"
         ? // eslint-disable-next-line
           ((theme = "light-grey"), (iconTheme = "grey"))
         : // eslint-disable-next-line
@@ -24,7 +24,7 @@ const ServicesList = props => {
                   alt="Service Icon"
                 />
               </div>
-              <p className={`label-spacing-left font--medium ${theme}`}>
+              <p className={`label-spacing-left font--medium bold ${theme}`}>
                 {service["label"]}
               </p>
             </a>
@@ -36,7 +36,7 @@ const ServicesList = props => {
 };
 
 ServicesList.defaultProps = {
-  theme: "dark_grey"
+  theme: "dark-grey"
 };
 
 export default ServicesList;

@@ -11,7 +11,7 @@ const ContactUs = props => {
   let email = props.email;
 
   return (
-    <div className="contactus">
+    <div className="contactus margin-20">
       <h1 className="font--header white bold">Call us today</h1>
       <a href={addressUrl} className="row margin-top-20 middle">
         <img
