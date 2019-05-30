@@ -11,6 +11,10 @@ import mts_alt_full from "./2c_logo_full.png";
 import qantas_logo from "./qantas_logo.png";
 import visalink_logo from "./visalink_logo.png";
 
+// Accreditation Logos
+import atas_white_logo from "./atas_white_logo.png";
+import afta_white_logo from "./afta_white_logo.png";
+
 export default {
   mts_logo,
   mts_logo_full,
@@ -18,5 +22,7 @@ export default {
   mts_alt_logo,
   mts_alt_full,
   qantas_logo,
-  visalink_logo
+  visalink_logo,
+  atas_white_logo,
+  afta_white_logo
 };

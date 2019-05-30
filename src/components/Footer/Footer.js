@@ -24,13 +24,13 @@ const Footer = () => {
       <div className="center row middle">
         <img
           className="logo--small"
-          src={logos.mts_logo_full_white}
+          src={logos.afta_white_logo}
           alt="MTS Logo"
         />
         <hr className="vertical-rule margin-10" />
         <img
           className="logo--small"
-          src={logos.mts_alt_logo}
+          src={logos.atas_white_logo}
           alt="MTS Alt Logo"
         />
       </div>

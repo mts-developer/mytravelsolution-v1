@@ -12,7 +12,7 @@ const ContactUs = props => {
 
   return (
     <div className="contactus margin-20">
-      <h1 className="font--header white bold">Call us today</h1>
+      <h1 className="font--header white bold left">Call us today</h1>
       <a href={addressUrl} className="row margin-top-20 middle">
         <img
           className="icon--small margin-right-10"

@@ -31,7 +31,7 @@ class Home extends React.Component {
         action={this.clickBookingEngine}
         open={this.state.openBookingEngine}
       >
-        <div className="center padding-20">/ Booking Engine /</div>
+        <div className="center padding-20">/ Sabre Booking Engine /</div>
       </Dialog>
     );
   };
