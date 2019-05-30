@@ -23,7 +23,7 @@ const Visa = () => {
             color="primary"
           />
         </div>
-        <div className="row padding-50">
+        <div className="row margin-top-50">
           <img
             className="logo--small margin-20"
             src={logos.visalink_logo}
