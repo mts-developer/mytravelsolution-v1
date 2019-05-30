@@ -11,53 +11,68 @@ import Dialog from "../components/Dialog";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { open: false };
+    this.state = { openSubscribe: false, openBookingEngine: false };
   }
 
   componentDidMount() {
     // this.setTimeout(5);
   }
 
-  toggleClick = e => {
+  clickBookingEngine = e => {
     e.preventDefault();
     this.setState({
-      open: !this.state.open
+      openBookingEngine: !this.state.openBookingEngine
     });
   };
 
-  toggleDialog = () => {
+  toggleBookingEngine = () => {
     return (
-      <div
-        className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
+      <Dialog
+        action={this.clickBookingEngine}
+        open={this.state.openBookingEngine}
       >
-        <Dialog action={this.toggleClick}>
-          <div className="center padding-20">
-            <Subscribe />
-          </div>
-        </Dialog>
-      </div>
+        <div className="center padding-20">/ Booking Engine /</div>
+      </Dialog>
     );
   };
 
-  showDialog = () => {
+  clickSubscribe = e => {
+    e.preventDefault();
     this.setState({
-      open: true
+      openSubscribe: !this.state.openSubscribe
+    });
+  };
+
+  toggleSubscribeDialog = () => {
+    return (
+      <Dialog action={this.clickSubscribe} open={this.state.openSubscribe}>
+        <div className="center padding-20">
+          <Subscribe />
+        </div>
+      </Dialog>
+    );
+  };
+
+  showSubscribe = () => {
+    this.setState({
+      openSubscribe: true
     });
   };
 
   setTimeout = seconds => {
-    setTimeout(() => this.showDialog(), seconds * 1000);
+    setTimeout(() => this.showSubscribe(), seconds * 1000);
   };
 
   render() {
     return (
       <div className="home">
-        {this.toggleDialog()}
+        {this.toggleSubscribeDialog()}
+        {this.toggleBookingEngine()}
         <section className="hero-section">
-          <Hero />
+          <Hero toggleBookingEngine={this.clickBookingEngine} />
         </section>
         <section className="featured-section">
-          <Featured />
+          <Featured toggleBookingEngine={this.clickBookingEngine} />
         </section>
         <section className="services-section">
           <Services />

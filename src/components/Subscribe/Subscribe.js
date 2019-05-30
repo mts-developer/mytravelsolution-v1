@@ -11,7 +11,7 @@ class Subscribe extends React.Component {
   render() {
     return (
       <div className="subscribe center column">
-        <h1 className="font--large primary-color">Never miss a deal</h1>
+        <h1 className="font--header primary-color bold">Never miss a deal</h1>
         <p className="font--medium dark-grey">Subscribe to our mailing list!</p>
         <div className="padding-20">
           <Input

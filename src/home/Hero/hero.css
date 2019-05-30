@@ -1,21 +1,11 @@
-.hero-container {
-  padding: 50px 20px;
+.hero {
+  padding-bottom: 50px;
 }
 
 .hero-background {
   background-image: url("../../assets/images/bg/test_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.hero-background--angle {
-  transform: skewY(-8deg);
-}
-
-.hero-background--reset-angle {
-  transform: skewY(8deg);
 }
 
 .hero-title {

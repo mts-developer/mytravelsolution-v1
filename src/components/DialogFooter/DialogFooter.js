@@ -3,9 +3,9 @@ import "./dialogfooter.css";
 import quickLinks from "../QuickLinks";
 import LinkButton from "../Buttons/LinkButton";
 
-const MenuFooter = () => {
+const DialogFooter = () => {
   return (
-    <div className="padding-top-10">
+    <div className="dialogfooter padding-top-10">
       <div className="grid-columns-2">
         {quickLinks.map((quickLink, i) => {
           return (
@@ -24,4 +24,4 @@ const MenuFooter = () => {
   );
 };
 
-export default MenuFooter;
+export default DialogFooter;

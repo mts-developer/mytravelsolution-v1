@@ -7,7 +7,7 @@ const Services = () => {
     <div className="services angled-top">
       <div className="padding-20">
         <h1 className="font--header bold white">Our Services</h1>
-        <p className="font--small white">
+        <p className="font--medium white">
           Tailor your holiday with our premium services
         </p>
         <div className="padding-20">

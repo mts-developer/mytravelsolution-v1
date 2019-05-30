@@ -212,7 +212,7 @@ hr {
 .icon-circle {
   height: 35px;
   width: 35px;
-  border: 1.5px solid;
+  border: 3px solid;
   border-radius: 50%;
 }
 
@@ -295,8 +295,7 @@ hr {
 /* Dialog Animations */
 
 .dialog {
-  z-index: 1;
-  position: fixed;
+  z-index: 2;
   top: -120px;
   transform: translateY(-120px);
   width: 95%;
@@ -312,8 +311,7 @@ hr {
 }
 
 .dialog--open {
-  top: 20px;
-  transform: translateY(20px);
+  transform: translateY(130px);
   visibility: visible;
   opacity: 1;
 }

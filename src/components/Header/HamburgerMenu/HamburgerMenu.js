@@ -29,17 +29,17 @@ class HamburgerMenu extends React.Component {
 
   toggleDialog = () => {
     return (
-      <div
-        className={`dialog box-shadow ${this.state.open ? "dialog--open" : ""}`}
+      <Dialog
+        action={this.toggleClick}
+        open={this.state.open}
+        position="absolute"
       >
-        <Dialog action={this.toggleClick}>
-          <div className="padding-10">
-            <ServicesList />
-          </div>
-          <hr className="off-white" />
-          <DialogFooter />
-        </Dialog>
-      </div>
+        <div className="padding-10">
+          <ServicesList />
+        </div>
+        <hr className="off-white" />
+        <DialogFooter />
+      </Dialog>
     );
   };
 
