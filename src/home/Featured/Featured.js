@@ -2,7 +2,6 @@ import React from "react";
 import "./featured.css";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import LinkButton from "../../components/Buttons/LinkButton";
-import Dialog from "../../components/Dialog";
 import logos from "../../assets/images/logos";
 
 const Featured = props => {
