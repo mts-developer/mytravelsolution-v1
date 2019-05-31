@@ -6,7 +6,7 @@ import logos from "../../assets/images/logos";
 const Services = () => {
   return (
     <div className="services angled-top">
-      <div className="responsive-width responsive-height">
+      <div className="responsive-width">
         <div className="row middle padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
           <div className="column label-spacing-left">
