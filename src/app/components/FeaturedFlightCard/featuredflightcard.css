@@ -12,6 +12,16 @@
   transform: translateY(-4px);
 }
 
+.featuredflightcard-expiry {
+  background-color: var(--dark-grey);
+  position: absolute;
+  transform: translateY(-250px);
+  height: 25px;
+  padding: 0 10px;
+  text-align: right;
+  border-radius: 12px;
+}
+
 .featuredflightcard-title {
   background-color: var(--red);
   position: absolute;

@@ -37,7 +37,7 @@ const Footer = () => {
         />
       </div>
       <div className="center padding-20">
-        <p className="font--small white">© 2019 MY TRAVEL SOLUTION</p>
+        <p className="font--small white">© 2019 The Digital Butler</p>
       </div>
     </div>
   );

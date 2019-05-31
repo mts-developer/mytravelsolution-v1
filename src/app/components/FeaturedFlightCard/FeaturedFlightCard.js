@@ -8,6 +8,11 @@ const FeaturedFlightCard = props => {
 
   return (
     <div className="featuredflightcard center full-width column card-shadow">
+      <div className="featuredflightcard-expiry center">
+        <h2 className="font--medium white bold">
+          Offer extended until July 20
+        </h2>
+      </div>
       <div className="featuredflightcard-title center middle">
         <h2 className="font--large white bold">Australia Day Special</h2>
       </div>
