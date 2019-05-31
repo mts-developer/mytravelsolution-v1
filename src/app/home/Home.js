@@ -15,7 +15,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    // this.setTimeout(5);
+    this.setTimeout(5);
   }
 
   clickBookingEngine = e => {

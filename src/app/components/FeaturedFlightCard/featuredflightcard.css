@@ -1,10 +1,15 @@
 :root {
-  --border-radius: 4px;
+  --border-radius: 8px;
 }
 
 .featuredflightcard {
   margin: 10px;
   border-radius: var(--border-radius);
+  transition: 0.4s ease;
+}
+
+.featuredflightcard:hover {
+  transform: translateY(-4px);
 }
 
 .featuredflightcard-title {

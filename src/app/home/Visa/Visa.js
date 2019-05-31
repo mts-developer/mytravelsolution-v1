@@ -10,7 +10,7 @@ const Visa = () => {
         Need a Travel Visa?
       </h1>
       <div className="center column">
-        <p className="font--medium dark-grey padding-20">
+        <p className="font--medium dark-grey">
           VisaLink is a fast, easy, and secure solution for your international
           travel document needs.
         </p>

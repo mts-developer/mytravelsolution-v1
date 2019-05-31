@@ -14,7 +14,7 @@ const Featured = props => {
           Featured Flights
         </h1>
         <p className="font--medium dark-grey">
-          See our range of great value flights
+          See My Travel Solution's range of great value flights
         </p>
       </div>
       <div className="featured-flight-card-container center">

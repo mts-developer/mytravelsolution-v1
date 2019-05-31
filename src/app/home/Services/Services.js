@@ -14,7 +14,7 @@ const Services = () => {
               Our Services
             </h1>
             <p className="font--medium dark-grey">
-              Tailor your holiday with our premium services
+              Tailor your holiday with My Travel Solution's premium services
             </p>
           </div>
         </div>
