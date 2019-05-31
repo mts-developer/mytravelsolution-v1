@@ -24,7 +24,7 @@ const ServicesList = props => {
                   alt="Service Icon"
                 />
               </div>
-              <p className={`label-spacing-left font--medium ${theme}`}>
+              <p className={`label-spacing-left font--medium bold ${theme}`}>
                 {service["label"]}
               </p>
             </a>

@@ -2,7 +2,7 @@ import React from "react";
 import "./contactus.css";
 
 import icons from "../../../assets/images/icons";
-import LinkButton from "../../../components/Buttons/LinkButton";
+import LinkButton from "../../Buttons/LinkButton";
 
 const ContactUs = props => {
   let address = props.address;
@@ -11,7 +11,7 @@ const ContactUs = props => {
   let email = props.email;
 
   return (
-    <div className="contactus margin-20">
+    <div className="contactus">
       <h1 className="font--header white bold left">Call us today</h1>
       <a href={addressUrl} className="row margin-top-20 middle">
         <img

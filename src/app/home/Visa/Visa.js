@@ -5,12 +5,12 @@ import logos from "../../assets/images/logos";
 
 const Visa = () => {
   return (
-    <div className="visa padding-50 column">
+    <div className="visa responsive-height responsive-width column padding-20">
       <h1 className="font--header bold primary-color margin-none">
         Need a Travel Visa?
       </h1>
       <div className="center column">
-        <p className="font--medium dark-grey">
+        <p className="font--medium dark-grey padding-20">
           VisaLink is a fast, easy, and secure solution for your international
           travel document needs.
         </p>

@@ -6,14 +6,10 @@ import logos from "../../assets/images/logos";
 const Services = () => {
   return (
     <div className="services angled-top">
-      <div className="padding-20">
-        <div className="row middle">
-          <img
-            className="logo--medium padding-20"
-            src={logos.mts_logo}
-            alt="MTS Logo"
-          />
-          <div className="column">
+      <div className="responsive-width responsive-height">
+        <div className="row middle padding-20">
+          <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
+          <div className="column label-spacing-left">
             <h1 className="font--header bold primary-color margin-none">
               Our Services
             </h1>
@@ -22,7 +18,6 @@ const Services = () => {
             </p>
           </div>
         </div>
-
         <div className="padding-20">
           <ServicesList theme="dark-grey" />
         </div>

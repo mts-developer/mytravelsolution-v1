@@ -1,7 +1,7 @@
 import React from "react";
 import "./sitemap.css";
-import quickLinks from "../../../components/QuickLinks";
-import services from "../../../components/Services";
+import quickLinks from "../../QuickLinks";
+import services from "../../Services";
 
 const Sitemap = props => {
   let facebookLabel = props.facebookLabel;

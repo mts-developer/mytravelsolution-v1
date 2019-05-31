@@ -8,18 +8,20 @@ import icons from "../../assets/images/icons";
 const Footer = () => {
   return (
     <div className="footer angled-top">
-      <div className="footer-container center padding-20">
+      <div className="responsive-width footer-container space-between padding-20">
         <ContactUs
           address="336 Somerville Rd, Kingsville VIC 3012"
           addressUrl="https://goo.gl/maps/ZtsRxAfE5AKscYe68"
           contactNumber="03 9314 6957"
           email="bookings@mytravelsolution.com.au"
         />
-        <Sitemap
-          facebookLabel="Like Us"
-          facebookIcon={icons.fb_white_svg}
-          facebookUrl="fb://page/mytravelsolutionau/"
-        />
+        <div className="center">
+          <Sitemap
+            facebookLabel="Like Us"
+            facebookIcon={icons.fb_white_svg}
+            facebookUrl="fb://page/mytravelsolutionau/"
+          />
+        </div>
       </div>
       <div className="center row middle">
         <img

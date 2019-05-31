@@ -2,10 +2,6 @@
   margin-bottom: 50px;
 }
 
-.featured-container {
+.featured-flight-card-container {
   flex-wrap: wrap;
-}
-
-.more-deals-button {
-  margin: 50px 0;
 }
