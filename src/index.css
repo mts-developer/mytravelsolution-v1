@@ -15,20 +15,20 @@ code {
 /* Custom Fonts */
 @font-face {
   font-family: "Fira Sans Regular";
-  src: url("./assets/fonts/FiraSans/FiraSans-Regular.ttf");
+  src: url("./app/assets/fonts/FiraSans/FiraSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Fira Sans Thin";
-  src: url("./assets/fonts/FiraSans/FiraSans-Thin.ttf");
+  src: url("./app/assets/fonts/FiraSans/FiraSans-Thin.ttf");
 }
 
 @font-face {
   font-family: "Fira Sans Semi Bold";
-  src: url("./assets/fonts/FiraSans/FiraSans-SemiBold.ttf");
+  src: url("./app/assets/fonts/FiraSans/FiraSans-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Fira Sans Bold";
-  src: url("./assets/fonts/FiraSans/FiraSans-Bold.ttf");
+  src: url("./app/assets/fonts/FiraSans/FiraSans-Bold.ttf");
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./app.css";
 import { ThemeProvider } from "@material-ui/styles";
-import mtsTheme from "../themes/mtsTheme";
-import Home from "../home";
+import mtsTheme from "./themes/mtsTheme";
+import Home from "./home";
 
 const App = () => {
   return (

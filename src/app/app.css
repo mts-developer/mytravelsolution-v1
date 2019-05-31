@@ -371,6 +371,12 @@ hr {
   height: 30px;
 }
 
+/* Cursors */
+
+.pointer {
+  cursor: pointer;
+}
+
 /* Media Queries */
 
 @media (min-width: 767px) {
