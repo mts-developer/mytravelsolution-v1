@@ -1,3 +1,7 @@
 .serviceslist-link {
   padding: 15px 0;
 }
+
+.serviceslist-label {
+  width: 90%;
+}
