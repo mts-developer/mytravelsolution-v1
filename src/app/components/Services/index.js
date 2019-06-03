@@ -18,7 +18,7 @@ const services = [
   {
     label: "Car Hire",
     description:
-      "Explore the fleet of vehicles and pick up a great deal for your next road trip",
+      "Explore a fleet of vehicles and pick up a great deal for your next road trip",
     white: icons.car_white_png,
     grey: icons.car_grey_png,
     url: "http://localhost:3000"
