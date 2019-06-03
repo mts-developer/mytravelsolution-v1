@@ -13,7 +13,7 @@ const Visa = () => {
         <p className="font--medium dark-grey">
           VisaLink is the global leader in travel visas.
         </p>
-        <p className="font--medium dark-grey margin-top-50">
+        <p className="font--medium dark-grey margin-top-20">
           Millions of international travellers have trusted VisaLink to secure
           their business visas or tourist visas.
         </p>
