@@ -280,13 +280,6 @@ hr {
     0 8px 16px -8px rgba(0, 0, 0, 0.25), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-.card-shadow:active {
-  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
 /* Buttons */
 
 .button {
@@ -343,7 +336,6 @@ hr {
   background-color: var(--white);
   border-radius: 3px;
   transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
   visibility: hidden;
   opacity: 0;
 }
