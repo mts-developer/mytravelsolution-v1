@@ -64,11 +64,15 @@ class FeaturedFlightsPage extends React.Component {
             {selectedRegion}
           </h1>
           <div className="featuredflightspage-container center wrap">
-            {/* <FeaturedFlightCard />
-            <FeaturedFlightCard />
-            <FeaturedFlightCard />
-            <FeaturedFlightCard />
-            <FeaturedFlightCard /> */}
+            {flights.map((flight, i) => {
+              return (
+                <FeaturedFlightCard
+                  key={i}
+                  // toggleBookingEngine={toggleBookingEngine}
+                  flight={flight}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="center margin-50">/ AIRLINE PARTNERS /</div>

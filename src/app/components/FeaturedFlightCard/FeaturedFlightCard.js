@@ -12,7 +12,7 @@ const FeaturedFlightCard = props => {
   let expiry = moment(flight.expiry).format("MMMM DD");
   let name = toTitleCase(flight.name);
   let featuredImage = flight.featuredImage;
-  let airline = flight.airline.toUpperCase();
+  // let airline = flight.airline.toUpperCase();
   let origin = toTitleCase(flight.origin);
   let destination = toTitleCase(flight.destination);
   var returnFlight =
