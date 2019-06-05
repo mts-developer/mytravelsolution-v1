@@ -2,7 +2,7 @@ import React from "react";
 import "./featuredflightspage.css";
 import PageWrapper from "../components/PageWrapper";
 import MenuItem from "@material-ui/core/MenuItem";
-import TextField from "@material-ui/core/Textfield";
+import TextField from "@material-ui/core/TextField";
 import FeaturedFlightCard from "../components/FeaturedFlightCard";
 import flights from "../components/Flights";
 import logos from "../assets/images/logos";
