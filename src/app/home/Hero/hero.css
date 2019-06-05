@@ -1,5 +1,5 @@
 .hero-background {
-  background: linear-gradient(-5deg, #ffffff00 60%, #5800ffa1 80%),
+  background: linear-gradient(-5deg, #ffffff00 30%, #5800ffa1 60%),
     url("../../assets/images/bg/test_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

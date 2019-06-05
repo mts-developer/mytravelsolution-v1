@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
+import services from "../Services";
 import HamburgerMenu from "./HamburgerMenu";
 
 class Header extends React.Component {
@@ -13,7 +14,22 @@ class Header extends React.Component {
           src={logos.mts_logo_full_white}
           alt="MTS Logo"
         />
-        <div className="row">
+        {/* Begin Tablet Only */}
+        <div className="responsive-width row">
+          {services.map((service, i) => {
+            return (
+              <a
+                key={i}
+                className="tablet font--small white margin-list"
+                href={service["url"]}
+              >
+                {service["shortLabel"]}
+              </a>
+            );
+          })}
+        </div>
+        {/* End Tablet Only */}
+        <div className="row middle">
           <a className="font--medium white" href="tel:0393146957">
             <img
               className="icon--small button-padding"
@@ -21,6 +37,7 @@ class Header extends React.Component {
               alt="MTS Phone"
             />
           </a>
+          <p className="desktop font--small white bold">03 9314 6957</p>
           <HamburgerMenu />
         </div>
       </div>

@@ -45,7 +45,7 @@ class HamburgerMenu extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mobile">
         {this.toggleHamburgerMenu()}
         {this.toggleDialog()}
       </div>
