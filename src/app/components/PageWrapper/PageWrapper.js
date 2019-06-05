@@ -21,7 +21,7 @@ const PageWrapper = props => {
         </div>
       </div>
       <div className="responsive-height">
-        <div className="responsive-height center column">{props.children}</div>
+        <div className="responsive-height">{props.children}</div>
       </div>
       <Footer />
     </div>

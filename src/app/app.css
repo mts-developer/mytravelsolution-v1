@@ -126,6 +126,10 @@ hr {
   flex-direction: row;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 /* Spacers */
 
 .margin-none {

@@ -31,7 +31,6 @@
 }
 
 .featuredflightcard-top {
-  background-image: url("../../assets/images/bg/beach_boat_clouds_bga.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--border-radius) var(--border-radius) 0 0;

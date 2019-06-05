@@ -2,10 +2,12 @@ import React from "react";
 import "./featured.css";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import LinkButton from "../../components/Buttons/LinkButton";
+import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 
 const Featured = props => {
   let toggleBookingEngine = props.toggleBookingEngine;
+
   return (
     <div className="featured responsive-height">
       <div className="column center padding-20">
@@ -17,10 +19,16 @@ const Featured = props => {
           See My Travel Solution's range of great value flights
         </p>
       </div>
-      <div className="featured-flight-card-container center">
-        <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
-        <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
-        <FeaturedFlightCard toggleBookingEngine={toggleBookingEngine} />
+      <div className="featured-flight-card-container wrap center">
+        {flights.map((flight, i) => {
+          return (
+            <FeaturedFlightCard
+              key={i}
+              toggleBookingEngine={toggleBookingEngine}
+              flight={flight}
+            />
+          );
+        })}
       </div>
       <div className="center padding-20">
         <LinkButton label="View More" />

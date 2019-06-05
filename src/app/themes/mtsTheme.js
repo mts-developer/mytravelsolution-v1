@@ -1,9 +1,10 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-// let primaryColor = "#5800ff";
+let primaryColor = "#5800ff";
 // let primaryColorLight = "#00cbff";
 // let secondaryColor = "#b914cc";
 // let secondaryColorLight = "#ff00f6";
+let darkGrey = "#444444";
 let lightGrey = "#777777";
 
 const mtsTheme = createMuiTheme({
@@ -12,8 +13,8 @@ const mtsTheme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: lightGrey,
-      dark: lightGrey,
+      main: primaryColor,
+      dark: darkGrey,
       contrastText: lightGrey
     }
   }
