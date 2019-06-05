@@ -20,10 +20,10 @@ class Header extends React.Component {
             return (
               <a
                 key={i}
-                className="tablet font--small white margin-list"
+                className="tablet font--small white"
                 href={service["url"]}
               >
-                {service["shortLabel"]}
+                <p className="margin-list">{service["shortLabel"]}</p>
               </a>
             );
           })}
