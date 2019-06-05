@@ -7,7 +7,7 @@ const services = [
     description: "Find exclusive airfares to destinations all around the world",
     white: icons.flight_white_png,
     grey: icons.flight_grey_png,
-    url: "http://localhost:3000"
+    url: "featured-flights/"
   },
   {
     label: "Hotels & Accommodation",

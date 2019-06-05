@@ -11,9 +11,7 @@ const Hero = props => {
         <Header />
         <div className="responsive-width">
           <div className="hero-title">
-            <h1 className="margin-none white font--title bold">
-              Your journey begins
-            </h1>
+            <h1 className="white font--title bold">Your journey begins</h1>
             <h2 className="white font--large thin">Discover the world today</h2>
           </div>
           <div className="column">

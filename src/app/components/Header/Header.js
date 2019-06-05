@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
@@ -9,22 +10,21 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header space-between middle">
-        <img
-          className="logo--medium"
-          src={logos.mts_logo_full_white}
-          alt="MTS Logo"
-        />
+        <Link to="/">
+          {" "}
+          <img
+            className="logo--medium"
+            src={logos.mts_logo_full_white}
+            alt="MTS Logo"
+          />
+        </Link>
         {/* Begin Tablet Only */}
-        <div className="responsive-width row">
+        <div className="tablet responsive-width row">
           {services.map((service, i) => {
             return (
-              <a
-                key={i}
-                className="tablet font--small white"
-                href={service["url"]}
-              >
+              <Link key={i} className="font--small white" to={service["url"]}>
                 <p className="margin-list">{service["shortLabel"]}</p>
-              </a>
+              </Link>
             );
           })}
         </div>

@@ -216,6 +216,10 @@ hr {
   height: 50px;
 }
 
+.logo--large {
+  height: 80px;
+}
+
 .icon--small {
   height: 20px;
 }
@@ -247,6 +251,10 @@ hr {
 
 .font--header {
   font-size: 28px;
+}
+
+.font--title {
+  font-size: 32px;
 }
 
 .bold {

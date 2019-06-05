@@ -1,0 +1,12 @@
+.pagenotfound {
+  background: linear-gradient(
+    var(--secondary-color-light),
+    var(--primary-color)
+  );
+  height: 100vh;
+}
+
+.pagenotfound-container {
+  display: flex;
+  align-items: center;
+}
