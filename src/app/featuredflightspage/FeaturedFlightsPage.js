@@ -1,7 +1,9 @@
 import React from "react";
 import "./featuredflightspage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import PageWrapper from "../components/PageWrapper";
+import MenuItem from "@material-ui/core/MenuItem";
+import TextField from "@material-ui/core/Textfield";
+import logos from "../assets/images/logos";
 
 class FeaturedFlightsPage extends React.Component {
   constructor(props) {
@@ -10,30 +12,36 @@ class FeaturedFlightsPage extends React.Component {
   }
 
   render() {
+    const regions = [
+      "Africa",
+      "Asia",
+      "Caribbean",
+      "Central America",
+      "Europe",
+      "North America",
+      "Oceania"
+    ];
+
+    const style = {
+      width: "200px"
+    };
+
     return (
-      <div>
-        <div className="featuredflights angled-bottom">
-          <div className="featuredflights-container padding-20">
-            <Header />
-            <div className="responsive-width">
-              <div className="hero-title margin-none">
-                <h1 className="white font--title bold">
-                  Airfares & Featured Flights
-                </h1>
-                <h2 className="white font--large thin">
-                  Find exclusive airfares to destinations all around the world
-                </h2>
-              </div>
-            </div>
-          </div>
+      <PageWrapper
+        title="Airfares & Featured Flights"
+        description="Find exclusive airfares to destinations all around the world"
+      >
+        <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
+        <div className="padding-20">
+          <TextField select label="Region" value="Asia" style={style}>
+            {regions.map((region, i) => (
+              <MenuItem key={i} value={region} style={style}>
+                {region}
+              </MenuItem>
+            ))}
+          </TextField>
         </div>
-        <div className="responsive-height">
-          <div className="responsive-height center column">
-            <h1>/ CONTENT /</h1>
-          </div>
-        </div>
-        <Footer />
-      </div>
+      </PageWrapper>
     );
   }
 }
