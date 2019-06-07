@@ -6,21 +6,22 @@ import TextField from "@material-ui/core/TextField";
 import FeaturedFlightCard from "../components/FeaturedFlightCard";
 import flights from "../components/Flights";
 import logos from "../assets/images/logos";
+import { toTitleCase } from "../utils";
 
 class FeaturedFlightsPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { selectedRegion: "Asia" };
+    this.state = { selectedRegion: "asia" };
   }
 
   regions = [
-    "Africa",
-    "Asia",
-    "Caribbean",
-    "Central America",
-    "Europe",
-    "North America",
-    "Oceania"
+    "africa",
+    "asia",
+    "the caribbean",
+    "central america",
+    "europe",
+    "north america",
+    "oceania"
   ];
 
   handleRegion = region => e => {
@@ -29,10 +30,34 @@ class FeaturedFlightsPage extends React.Component {
     });
   };
 
-  render() {
-    const selectedRegion = this.state.selectedRegion;
+  filteredFlights = () => {
+    let filteredByRegion = flights.filter(flight => {
+      return flight.region === this.state.selectedRegion ? flight : null;
+    });
+    if (!(filteredByRegion.length < 1)) {
+      return filteredByRegion.map((flight, i) => {
+        return (
+          <FeaturedFlightCard
+            key={i}
+            // toggleBookingEngine={toggleBookingEngine}
+            flight={flight}
+          />
+        );
+      });
+    } else {
+      let selectedRegion = toTitleCase(this.state.selectedRegion);
+      return (
+        <p className="font--large bold padding-20">
+          {`Sorry, there are currently no specials for ${selectedRegion} at the moment.`}
+        </p>
+      );
+    }
+  };
 
-    const style = {
+  render() {
+    let filteredFlights = this.filteredFlights();
+    let selectedRegion = this.state.selectedRegion;
+    let style = {
       width: "200px"
     };
 
@@ -53,7 +78,7 @@ class FeaturedFlightsPage extends React.Component {
             >
               {this.regions.map((region, i) => (
                 <MenuItem key={i} value={region} style={style}>
-                  {region}
+                  {toTitleCase(region)}
                 </MenuItem>
               ))}
             </TextField>
@@ -61,18 +86,10 @@ class FeaturedFlightsPage extends React.Component {
         </div>
         <div className="margin-top-50">
           <h1 className="center font--header primary-color bold">
-            {selectedRegion}
+            {toTitleCase(selectedRegion)}
           </h1>
           <div className="featuredflightspage-container center wrap">
-            {flights.map((flight, i) => {
-              return (
-                <FeaturedFlightCard
-                  key={i}
-                  // toggleBookingEngine={toggleBookingEngine}
-                  flight={flight}
-                />
-              );
-            })}
+            {filteredFlights}
           </div>
         </div>
         <div className="center margin-50">/ AIRLINE PARTNERS /</div>

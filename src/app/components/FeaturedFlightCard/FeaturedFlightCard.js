@@ -1,18 +1,23 @@
 import React from "react";
 import "./featuredflightcard.css";
 import LabelActionButton from "../Buttons/LabelActionButton";
-import logos from "../../assets/images/logos";
-import moment from "moment";
-import { toTitleCase, commaFormatNumbers } from "../../utils";
+import {
+  toTitleCase,
+  commaFormatNumbers,
+  dateFormatLongMonthDay,
+  dateFormatShortDayMonth,
+  dateFormatShortMonthDayYear,
+  pluraliseString
+} from "../../utils";
 
 const FeaturedFlightCard = props => {
   const toggleBookingEngine = props.toggleBookingEngine;
   const flight = props.flight;
 
-  let expiry = moment(flight.expiry).format("MMMM DD");
+  let expiry = dateFormatLongMonthDay(flight.expiry);
   let name = toTitleCase(flight.name);
   let featuredImage = flight.featuredImage;
-  // let airline = flight.airline.toUpperCase();
+  let airline = flight.airline;
   let origin = toTitleCase(flight.origin);
   let destination = toTitleCase(flight.destination);
   var returnFlight =
@@ -22,8 +27,7 @@ const FeaturedFlightCard = props => {
       : // eslint-disable-next-line
         (returnFlight = "");
   let price = commaFormatNumbers(flight.price);
-  let travelPeriodFrom = moment(flight.travelPeriodFrom).format("MMM DD");
-  let travelPeriodTo = moment(flight.travelPeriodTo).format("MMM DD YYYY");
+  let travelPeriods = flight.travelPeriods;
 
   const image = {
     backgroundImage: `url(${featuredImage})`
@@ -47,9 +51,9 @@ const FeaturedFlightCard = props => {
         <div className="padding-20">
           <div className="center">
             <img
-              className="logo--small"
-              src={logos.qantas_logo}
-              alt="Qantas Logo"
+              className="logo--small margin-10"
+              src={airline.airlineImage}
+              alt={airline.airlineName}
             />
           </div>
           <div className="featuredflightcard-grid grid-columns-2 full-width">
@@ -58,11 +62,21 @@ const FeaturedFlightCard = props => {
               <p className="font--large semi-bold">{`from $${price}*`}</p>
             </div>
             <div>
-              <p className="font--small">/ MORE INFORMATION /</p>
+              <p className="font--small">
+                {pluraliseString("Travel Period", travelPeriods)}
+              </p>
+              {travelPeriods.map((travelPeriod, i) => {
+                return (
+                  <p key={i} className="font--small semi-bold">
+                    {`${dateFormatShortDayMonth(
+                      travelPeriod.from
+                    )} - ${dateFormatShortMonthDayYear(travelPeriod.to)}`}
+                  </p>
+                );
+              })}
             </div>
             <div>
-              <p className="font--small">Travel Period</p>
-              <p className="font--small semi-bold">{`${travelPeriodFrom} - ${travelPeriodTo}`}</p>
+              <p className="font--small">/ MORE INFORMATION /</p>
             </div>
           </div>
           <p className="font--small light-grey">* Conditions Apply</p>

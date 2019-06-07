@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const toTitleCase = string => {
   return string
     .toLowerCase()
@@ -8,4 +10,20 @@ export const toTitleCase = string => {
 
 export const commaFormatNumbers = number => {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
+export const dateFormatLongMonthDay = date => {
+  return moment(date).format("MMMM DD");
+};
+
+export const dateFormatShortDayMonth = date => {
+  return moment(date).format("MMM DD");
+};
+
+export const dateFormatShortMonthDayYear = date => {
+  return moment(date).format("MMM DD YYYY");
+};
+
+export const pluraliseString = (string, data) => {
+  return data.length > 1 ? string + "s" : string;
 };

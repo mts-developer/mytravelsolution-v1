@@ -37,7 +37,7 @@ class Header extends React.Component {
               alt="MTS Phone"
             />
           </a>
-          <p className="desktop font--small white bold">03 9314 6957</p>
+          <p className="desktop font--medium white bold">03 9314 6957</p>
           <HamburgerMenu />
         </div>
       </div>

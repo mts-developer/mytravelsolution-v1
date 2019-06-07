@@ -1,5 +1,6 @@
 import React from "react";
 import "./linkbutton.css";
+import { Link } from "react-router-dom";
 
 const LinkButton = props => {
   let url = props.url;
@@ -13,14 +14,14 @@ const LinkButton = props => {
         (color = "button-color-secondary");
 
   return (
-    <a
+    <Link
       className={`${color} button button-padding button-shadow pointer middle center`}
       role="button"
       style={{ width: `${width}` }}
-      href={url}
+      to={url}
     >
       <p className="font--medium white bold">{label}</p>
-    </a>
+    </Link>
   );
 };
 
