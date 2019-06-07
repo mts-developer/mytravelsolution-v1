@@ -6,19 +6,25 @@ import mtsTheme from "./themes/mtsTheme";
 import Home from "./home";
 import FeaturedFlightsPage from "./featuredflightspage";
 import PageNotFound from "./pagenotfound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
-      <div>
-        <ThemeProvider theme={mtsTheme}>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/featured-flights/" component={FeaturedFlightsPage} />
-            <Route path="*" component={PageNotFound} />
-          </Switch>
-        </ThemeProvider>
-      </div>
+      <ScrollToTop>
+        <div>
+          <ThemeProvider theme={mtsTheme}>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route
+                path="/featured-flights/"
+                component={FeaturedFlightsPage}
+              />
+              <Route path="*" component={PageNotFound} />
+            </Switch>
+          </ThemeProvider>
+        </div>
+      </ScrollToTop>
     </Router>
   );
 };
