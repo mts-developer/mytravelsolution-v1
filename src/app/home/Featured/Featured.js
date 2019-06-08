@@ -9,7 +9,7 @@ const Featured = props => {
   let toggleBookingEngine = props.toggleBookingEngine;
 
   return (
-    <div className="featured responsive-height">
+    <div className="featured">
       <div className="column center padding-20">
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
         <h1 className="font--header bold primary-color margin-none">
@@ -30,7 +30,7 @@ const Featured = props => {
           );
         })}
       </div>
-      <div className="center padding-20">
+      <div className="center padding-20 margin-top-50">
         <LinkButton label="View More" url={"/featured-flights/"} />
       </div>
     </div>

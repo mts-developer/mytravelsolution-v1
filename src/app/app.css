@@ -1,6 +1,6 @@
 /* Global CSS Styles */
 
-:root {
+body {
   --primary-color: #5800ff;
   --primary-color-light: #00cbff;
   --secondary-color: #b914cc;
@@ -10,9 +10,6 @@
   --white: #ffffff;
   --off-white: #f6f9fc;
   --red: #d90000;
-  --visalink-red: #a41e23;
-
-  --container-angle: -12deg;
 }
 
 /* Color Palette */
@@ -43,10 +40,6 @@
 
 .red {
   color: var(--red);
-}
-
-.visalink-red {
-  color: var(--visalink-red);
 }
 
 /* Elements */
@@ -178,6 +171,10 @@ hr {
 
 .padding-top-20 {
   padding-top: 20px;
+}
+
+.padding-top-50 {
+  padding-top: 50px;
 }
 
 .padding-50 {
@@ -364,43 +361,18 @@ hr {
 
 /* Container Angles */
 
-.angled-top {
-  position: relative;
-}
-
-.angled-top:before {
-  background: inherit;
-  content: "";
+svg {
   position: absolute;
-  height: 100%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  transform: skewY(var(--container-angle));
-  -webkit-transform: skewY(var(--container-angle));
-  transform-origin: 0 100%;
-  -webkit-transform-origin: 0 100%;
-}
-
-.angled-bottom {
-  position: relative;
-  z-index: 1;
-}
-
-.angled-bottom:after {
-  background: inherit;
-  content: "";
-  position: absolute;
-  display: block;
-  height: 100%;
-  left: 0;
-  right: 0;
   bottom: 0;
-  -webkit-transform: skewY(var(--container-angle));
-  transform: skewY(var(--container-angle));
-  -webkit-transform-origin: 100%;
-  transform-origin: 100%;
-  z-index: -1;
+  height: 100px;
+}
+
+.angle-top {
+  top: -100px;
+}
+
+.angle-offset {
+  margin-top: 120px;
 }
 
 /* Horizontal Rules */
@@ -409,10 +381,6 @@ hr {
   border: 0.5px solid;
   border-color: var(--off-white);
   height: 30px;
-}
-
-.responsive-height {
-  padding: 60px 0;
 }
 
 .tablet,
@@ -432,17 +400,9 @@ hr {
     display: flex;
   }
 
-  :root {
-    --container-angle: -5deg;
-  }
-
   .responsive-width {
     max-width: 700px;
     margin: auto;
-  }
-
-  .responsive-height {
-    padding: 40px 0;
   }
 
   .hero-title {
@@ -459,6 +419,18 @@ hr {
 }
 
 @media (min-width: 992px) {
+  svg {
+    height: 150px;
+  }
+
+  .angle-top {
+    top: -150px;
+  }
+
+  .angle-offset {
+    margin-top: 170px;
+  }
+
   .desktop {
     display: flex;
   }
@@ -474,19 +446,5 @@ hr {
 
   .hero-background {
     background-position: 0 -120px !important;
-  }
-}
-
-@media (min-width: 1921px) {
-  .responsive-height {
-    padding: 100px 0;
-  }
-
-  .hero-background {
-    background: linear-gradient(
-      -5deg,
-      var(--primary-color-light) 10%,
-      var(--primary-color) 70%
-    ) !important;
   }
 }

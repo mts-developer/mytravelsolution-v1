@@ -1,13 +1,15 @@
 import React from "react";
 import "./services.css";
 import ServicesList from "../../components/ServicesList";
+import Angle from "../../components/Angle";
 import logos from "../../assets/images/logos";
+import colors from "../../themes/colors";
 
 const Services = () => {
   return (
-    <div className="services angled-top">
-      <div className="responsive-width">
-        <div className="row middle padding-20">
+    <div className="services angle-offset">
+      <div className="responsive-width padding-20">
+        <div className="row middle">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
           <div className="column label-spacing-left">
             <h1 className="font--header bold primary-color margin-none">
@@ -22,6 +24,7 @@ const Services = () => {
           <ServicesList theme="dark-grey" />
         </div>
       </div>
+      <Angle top fill={colors.offWhite} />
     </div>
   );
 };

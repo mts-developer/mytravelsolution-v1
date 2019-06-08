@@ -5,7 +5,7 @@ import logos from "../../assets/images/logos";
 
 const Visa = () => {
   return (
-    <div className="visa responsive-height responsive-width column margin-20">
+    <div className="visa responsive-width column padding-20 padding-top-50">
       <h1 className="font--header bold primary-color margin-none">
         Need a Travel Visa?
       </h1>
@@ -32,7 +32,7 @@ const Visa = () => {
         <h1 className="font--large bold dark-grey">
           The fastest way to get a visa.
         </h1>
-        <div className="margin-50">
+        <div className="padding-top-50">
           <LinkButton
             label="Enquire Now"
             url="https://visalink.com.au/?login=mytravelsolution"

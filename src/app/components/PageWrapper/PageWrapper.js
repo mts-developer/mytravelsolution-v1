@@ -1,15 +1,17 @@
 import React from "react";
 import "./pagewrapper.css";
 import Header from "../Header";
+import Angle from "../Angle";
 import Footer from "../Footer";
+import colors from "../../themes/colors";
 
 const PageWrapper = props => {
   let title = props.title;
   let description = props.description;
 
   return (
-    <div>
-      <div className="page-wrapper angled-bottom">
+    <div className="page-wrapper">
+      <div className="page-wrapper-container">
         <div className="padding-20">
           <Header />
           <div className="responsive-width">
@@ -19,10 +21,9 @@ const PageWrapper = props => {
             </div>
           </div>
         </div>
+        <Angle fill={colors.white} />
       </div>
-      <div className="responsive-height">
-        <div className="responsive-height">{props.children}</div>
-      </div>
+      {props.children}
       <Footer />
     </div>
   );

@@ -2,11 +2,13 @@ import React from "react";
 import "./hero.css";
 import Header from "../../components/Header";
 import ActionButton from "../../components/Buttons/ActionButton";
+import Angle from "../../components/Angle";
+import colors from "../../themes/colors";
 
 const Hero = props => {
   let toggleBookingEngine = props.toggleBookingEngine;
   return (
-    <div className="hero hero-background angled-bottom">
+    <div className="hero">
       <div className="hero-container padding-20">
         <Header />
         <div className="responsive-width">
@@ -28,6 +30,7 @@ const Hero = props => {
           </div>
         </div>
       </div>
+      <Angle fill={colors.white} />
     </div>
   );
 };

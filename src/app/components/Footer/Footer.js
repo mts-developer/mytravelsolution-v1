@@ -2,12 +2,14 @@ import React from "react";
 import "./footer.css";
 import ContactUs from "./ContactUs";
 import Sitemap from "./Sitemap";
+import Angle from "../Angle";
 import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
+import colors from "../../themes/colors";
 
 const Footer = () => {
   return (
-    <div className="footer angled-top">
+    <div className="footer angle-offset">
       <div className="responsive-width footer-container space-between padding-20">
         <ContactUs
           address="336 Somerville Rd, Kingsville VIC 3012"
@@ -39,6 +41,7 @@ const Footer = () => {
       <div className="center padding-20">
         <p className="font--small white">© 2019 MY TRAVEL SOLUTION</p>
       </div>
+      <Angle top fill={colors.secondaryColorLight} />
     </div>
   );
 };
