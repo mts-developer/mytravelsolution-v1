@@ -449,7 +449,7 @@ svg {
     margin: 20px;
   }
 
-  .hero-background {
-    background-position: 0 -120px !important;
+  .hero {
+    background-position: 0 -50px !important;
   }
 }
