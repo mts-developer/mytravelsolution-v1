@@ -47,7 +47,7 @@ class FeaturedFlightsPage extends React.Component {
     } else {
       let selectedRegion = toTitleCase(this.state.selectedRegion);
       return (
-        <p className="font--large bold padding-20">
+        <p className="font--large dark-grey bold padding-20">
           {`Sorry, there are currently no specials for ${selectedRegion} at the moment.`}
         </p>
       );
@@ -66,9 +66,9 @@ class FeaturedFlightsPage extends React.Component {
         title="Airfares & Featured Flights"
         description="Find exclusive airfares to destinations all around the world"
       >
-        <div className="center column">
+        <div className="center column padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
-          <div className="temp padding-20">
+          <div className="padding-20">
             <TextField
               select
               label="Select Region"
@@ -84,13 +84,11 @@ class FeaturedFlightsPage extends React.Component {
             </TextField>
           </div>
         </div>
-        <div className="margin-top-50">
-          <h1 className="center font--header primary-color bold">
-            {toTitleCase(selectedRegion)}
-          </h1>
-          <div className="featuredflightspage-container center wrap">
-            {filteredFlights}
-          </div>
+        <h1 className="center font--header primary-color bold">
+          {toTitleCase(selectedRegion)}
+        </h1>
+        <div className="featuredflightspage-container center wrap">
+          {filteredFlights}
         </div>
         <div className="center margin-50">/ AIRLINE PARTNERS /</div>
       </PageWrapper>

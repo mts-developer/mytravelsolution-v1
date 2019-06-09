@@ -5,7 +5,7 @@ import logos from "../../assets/images/logos";
 
 const Visa = () => {
   return (
-    <div className="visa responsive-width column padding-20 padding-top-50">
+    <div className="visa responsive-width column padding-top-50">
       <h1 className="font--header bold primary-color margin-none">
         Need a Travel Visa?
       </h1>
@@ -13,7 +13,7 @@ const Visa = () => {
         <p className="font--medium dark-grey">
           VisaLink is the global leader in travel visas.
         </p>
-        <p className="font--medium dark-grey margin-top-20">
+        <p className="font--medium dark-grey padding-20">
           Millions of international travellers have trusted VisaLink to secure
           their business visas or tourist visas.
         </p>
@@ -32,7 +32,7 @@ const Visa = () => {
         <h1 className="font--large bold dark-grey">
           The fastest way to get a visa.
         </h1>
-        <div className="padding-top-50">
+        <div className="padding-20 padding-top-50">
           <LinkButton
             label="Enquire Now"
             url="https://visalink.com.au/?login=mytravelsolution"

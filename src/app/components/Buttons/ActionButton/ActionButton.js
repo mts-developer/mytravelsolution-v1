@@ -15,7 +15,7 @@ const ActionButton = props => {
   return (
     <p
       onClick={action}
-      className={`${color} actionbutton button button-padding button-shadow middle center font--medium white bold pointer`}
+      className={`${color} cursor-default button button-padding button-shadow middle center font--medium white bold pointer`}
       role="button"
       style={{ width: `${width}` }}
     >

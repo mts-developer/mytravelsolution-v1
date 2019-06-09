@@ -9,7 +9,7 @@ const LabelActionButton = props => {
   return (
     <p
       onClick={onClick}
-      className="labelactionbutton ripple button button-padding middle center bold pointer"
+      className="labelactionbutton cursor-default button button-padding middle center bold pointer"
       role="button"
       style={{ width: `${width}` }}
     >

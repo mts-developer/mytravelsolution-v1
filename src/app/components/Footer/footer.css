@@ -1,6 +1,9 @@
 .footer {
   position: relative;
-  background: linear-gradient(#ff00f7, #b914cca1),
+  background: linear-gradient(
+      var(--secondary-color-light),
+      var(--secondary-color-transparent)
+    ),
     url("../../assets/images/bg/beach_boat_clouds_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

@@ -4,6 +4,7 @@ body {
   --primary-color: #5800ff;
   --primary-color-light: #00cbff;
   --secondary-color: #b914cc;
+  --secondary-color-transparent: #b914cca1;
   --secondary-color-light: #ff00f6;
   --dark-grey: #444444;
   --light-grey: #777777;
@@ -334,6 +335,10 @@ hr {
 .button-shadow:active {
   box-shadow: initial;
   transform: initial;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 /* Dialog Animations */

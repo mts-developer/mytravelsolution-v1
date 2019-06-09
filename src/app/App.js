@@ -15,11 +15,8 @@ const App = () => {
         <div>
           <ThemeProvider theme={mtsTheme}>
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route
-                path="/featured-flights/"
-                component={FeaturedFlightsPage}
-              />
+              <Route exact path="/" component={Home} />
+              <Route path="/featured-flights" component={FeaturedFlightsPage} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </ThemeProvider>
