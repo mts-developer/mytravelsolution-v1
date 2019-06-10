@@ -6,7 +6,7 @@ import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 
 const Featured = props => {
-  let clickBookingEngine = props.clickBookingEngine;
+  const clickBookingEngine = props.clickBookingEngine;
 
   return (
     <div className="featured">

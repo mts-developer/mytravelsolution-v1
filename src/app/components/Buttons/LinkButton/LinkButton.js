@@ -3,9 +3,7 @@ import "./linkbutton.css";
 import { Link } from "react-router-dom";
 
 const LinkButton = props => {
-  let url = props.url;
-  let label = props.label;
-  let width = props.width;
+  const { url, label, width } = props;
   var color =
     props.color === "primary"
       ? // eslint-disable-next-line

@@ -6,8 +6,7 @@ import Footer from "../Footer";
 import colors from "../../themes/colors";
 
 const PageWrapper = props => {
-  let title = props.title;
-  let description = props.description;
+  const { title, description } = props;
 
   return (
     <div className="page-wrapper">

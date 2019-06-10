@@ -11,8 +11,7 @@ import {
 } from "../../utils";
 
 const FeaturedFlightCard = props => {
-  const clickBookingEngine = props.clickBookingEngine;
-  const flight = props.flight;
+  const { clickBookingEngine, flight } = props;
 
   let expiry = dateFormatLongMonthDay(flight.expiry);
   let name = toTitleCase(flight.name);

@@ -2,9 +2,7 @@ import React from "react";
 import "./labelactionbutton.css";
 
 const LabelActionButton = props => {
-  let onClick = props.onClick;
-  let label = props.label;
-  let width = props.width;
+  const { onClick, label, width } = props;
 
   return (
     <p

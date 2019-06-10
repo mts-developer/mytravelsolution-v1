@@ -4,9 +4,7 @@ import logos from "../../assets/images/logos";
 import icons from "../../assets/images/icons";
 
 const Dialog = props => {
-  const action = props.action;
-  const open = props.open;
-  const position = props.position;
+  const { action, open, position } = props;
 
   return (
     <div

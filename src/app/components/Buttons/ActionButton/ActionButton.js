@@ -2,9 +2,7 @@ import React from "react";
 import "./actionbutton.css";
 
 const ActionButton = props => {
-  let action = props.action;
-  let label = props.label;
-  let width = props.width;
+  const { action, label, width } = props;
   var color =
     props.color === "primary"
       ? // eslint-disable-next-line

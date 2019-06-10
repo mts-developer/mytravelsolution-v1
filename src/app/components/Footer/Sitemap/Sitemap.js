@@ -4,9 +4,7 @@ import quickLinks from "../../QuickLinks";
 import services from "../../Services";
 
 const Sitemap = props => {
-  let facebookLabel = props.facebookLabel;
-  let facebookIcon = props.facebookIcon;
-  let facebookUrl = props.facebookUrl;
+  const { facebookLabel, facebookIcon, facebookUrl } = props;
 
   return (
     <div className="sitemap grid-columns-2">

@@ -3,8 +3,7 @@ import "./angle.css";
 import colors from "../../themes/colors";
 
 const Angle = props => {
-  let fill = props.fill;
-  let top = props.top;
+  const { fill, top } = props;
 
   return (
     <svg

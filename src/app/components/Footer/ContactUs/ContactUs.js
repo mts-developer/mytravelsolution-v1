@@ -5,10 +5,7 @@ import icons from "../../../assets/images/icons";
 import LinkButton from "../../Buttons/LinkButton";
 
 const ContactUs = props => {
-  let address = props.address;
-  let addressUrl = props.addressUrl;
-  let contactNumber = props.contactNumber;
-  let email = props.email;
+  const { address, addressUrl, contactNumber, email } = props;
 
   return (
     <div className="contactus">

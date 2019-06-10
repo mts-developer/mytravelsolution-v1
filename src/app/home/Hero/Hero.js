@@ -6,7 +6,8 @@ import Angle from "../../components/Angle";
 import colors from "../../themes/colors";
 
 const Hero = props => {
-  let clickBookingEngine = props.clickBookingEngine;
+  const clickBookingEngine = props.clickBookingEngine;
+
   return (
     <div className="hero">
       <div className="hero-container padding-20">
