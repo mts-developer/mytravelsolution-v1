@@ -11,30 +11,8 @@ import Dialog from "../components/Dialog";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { openSubscribe: false, openBookingEngine: false };
+    this.state = { openSubscribe: false };
   }
-
-  componentDidMount() {
-    // this.setTimeout(5);
-  }
-
-  clickBookingEngine = e => {
-    e.preventDefault();
-    this.setState({
-      openBookingEngine: !this.state.openBookingEngine
-    });
-  };
-
-  toggleBookingEngine = () => {
-    return (
-      <Dialog
-        action={this.clickBookingEngine}
-        open={this.state.openBookingEngine}
-      >
-        <div className="center padding-20">/ Sabre Booking Engine /</div>
-      </Dialog>
-    );
-  };
 
   clickSubscribe = e => {
     e.preventDefault();
@@ -64,15 +42,16 @@ class Home extends React.Component {
   };
 
   render() {
+    const clickBookingEngine = this.props.clickBookingEngine;
+
     return (
       <div className="home">
         {this.toggleSubscribeDialog()}
-        {this.toggleBookingEngine()}
         <section className="hero-section">
-          <Hero toggleBookingEngine={this.clickBookingEngine} />
+          <Hero clickBookingEngine={clickBookingEngine} />
         </section>
         <section className="featured-section">
-          <Featured toggleBookingEngine={this.clickBookingEngine} />
+          <Featured clickBookingEngine={clickBookingEngine} />
         </section>
         <section className="services-section">
           <Services />

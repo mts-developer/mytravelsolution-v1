@@ -39,7 +39,7 @@ class FeaturedFlightsPage extends React.Component {
         return (
           <FeaturedFlightCard
             key={i}
-            // toggleBookingEngine={toggleBookingEngine}
+            clickBookingEngine={this.props.clickBookingEngine}
             flight={flight}
           />
         );

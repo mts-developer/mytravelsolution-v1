@@ -6,7 +6,7 @@ import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 
 const Featured = props => {
-  let toggleBookingEngine = props.toggleBookingEngine;
+  let clickBookingEngine = props.clickBookingEngine;
 
   return (
     <div className="featured">
@@ -24,7 +24,7 @@ const Featured = props => {
           return (
             <FeaturedFlightCard
               key={i}
-              toggleBookingEngine={toggleBookingEngine}
+              clickBookingEngine={clickBookingEngine}
               flight={flight}
             />
           );

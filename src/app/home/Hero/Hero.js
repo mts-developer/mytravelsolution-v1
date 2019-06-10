@@ -6,7 +6,7 @@ import Angle from "../../components/Angle";
 import colors from "../../themes/colors";
 
 const Hero = props => {
-  let toggleBookingEngine = props.toggleBookingEngine;
+  let clickBookingEngine = props.clickBookingEngine;
   return (
     <div className="hero">
       <div className="hero-container padding-20">
@@ -18,7 +18,7 @@ const Hero = props => {
           </div>
           <div className="column">
             <ActionButton
-              action={e => toggleBookingEngine(e)}
+              action={e => clickBookingEngine(e)}
               label="Book Your Flight Now"
               width="160px"
             />

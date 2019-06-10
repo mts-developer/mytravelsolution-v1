@@ -11,7 +11,7 @@ import {
 } from "../../utils";
 
 const FeaturedFlightCard = props => {
-  const toggleBookingEngine = props.toggleBookingEngine;
+  const clickBookingEngine = props.clickBookingEngine;
   const flight = props.flight;
 
   let expiry = dateFormatLongMonthDay(flight.expiry);
@@ -83,7 +83,7 @@ const FeaturedFlightCard = props => {
           <div className="right">
             <LabelActionButton
               label="Book Now"
-              onClick={e => toggleBookingEngine(e)}
+              onClick={e => clickBookingEngine(e)}
             />
           </div>
         </div>
