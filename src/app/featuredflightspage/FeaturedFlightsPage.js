@@ -55,9 +55,9 @@ class FeaturedFlightsPage extends React.Component {
   };
 
   render() {
-    let filteredFlights = this.filteredFlights();
-    let selectedRegion = this.state.selectedRegion;
-    let style = {
+    const filteredFlights = this.filteredFlights();
+    const selectedRegion = this.state.selectedRegion;
+    const style = {
       width: "200px"
     };
 

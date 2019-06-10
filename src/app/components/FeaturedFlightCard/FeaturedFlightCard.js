@@ -13,20 +13,20 @@ import {
 const FeaturedFlightCard = props => {
   const { clickBookingEngine, flight } = props;
 
-  let expiry = dateFormatLongMonthDay(flight.expiry);
-  let name = toTitleCase(flight.name);
-  let featuredImage = flight.featuredImage;
-  let airline = flight.airline;
-  let origin = toTitleCase(flight.origin);
-  let destination = toTitleCase(flight.destination);
+  const expiry = dateFormatLongMonthDay(flight.expiry);
+  const name = toTitleCase(flight.name);
+  const featuredImage = flight.featuredImage;
+  const airline = flight.airline;
+  const origin = toTitleCase(flight.origin);
+  const destination = toTitleCase(flight.destination);
   var returnFlight =
     flight.returnFlight === true
       ? // eslint-disable-next-line
         (returnFlight = "Return")
       : // eslint-disable-next-line
         (returnFlight = "");
-  let price = commaFormatNumbers(flight.price);
-  let travelPeriods = flight.travelPeriods;
+  const price = commaFormatNumbers(flight.price);
+  const travelPeriods = flight.travelPeriods;
 
   const image = {
     backgroundImage: `url(${featuredImage})`

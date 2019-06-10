@@ -38,8 +38,7 @@ class App extends React.Component {
   };
 
   render() {
-    const toggleBookingEngine = this.toggleBookingEngine;
-    const clickBookingEngine = this.clickBookingEngine;
+    const { toggleBookingEngine, clickBookingEngine } = this;
 
     return (
       <Router>
