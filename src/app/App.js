@@ -5,8 +5,9 @@ import { ThemeProvider } from "@material-ui/styles";
 import mtsTheme from "./themes/mtsTheme";
 import Home from "./home";
 import Dialog from "./components/Dialog";
-import FeaturedFlightsPage from "./featuredflightspage";
-import PageNotFound from "./pagenotfound";
+import FeaturedFlightsPage from "./pages/featuredflightspage";
+import HotelsPage from "./pages/hotelspage";
+import PageNotFound from "./pages/pagenotfound";
 import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
@@ -63,6 +64,7 @@ class App extends React.Component {
                     />
                   )}
                 />
+                <Route path="/hotels" component={HotelsPage} />
                 <Route path="*" component={PageNotFound} />
               </Switch>
             </ThemeProvider>

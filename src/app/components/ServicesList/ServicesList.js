@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./serviceslist.css";
 import services from "../Services";
 
@@ -16,7 +17,7 @@ const ServicesList = props => {
       {services.map((service, i) => {
         return (
           <ul key={i}>
-            <a className="serviceslist-link" href={service["url"]}>
+            <Link className="serviceslist-link" to={service["url"]}>
               <div className={`icon-circle center middle ${theme}`}>
                 <img
                   className="icon--small"
@@ -32,7 +33,7 @@ const ServicesList = props => {
                   {service["description"]}
                 </p>
               </div>
-            </a>
+            </Link>
           </ul>
         );
       })}

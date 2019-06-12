@@ -1,12 +1,13 @@
 import React from "react";
 import "./featuredflightspage.css";
-import PageWrapper from "../components/PageWrapper";
+import PageWrapper from "../../components/PageWrapper";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
-import FeaturedFlightCard from "../components/FeaturedFlightCard";
-import flights from "../components/Flights";
-import logos from "../assets/images/logos";
-import { toTitleCase } from "../utils";
+import FeaturedFlightCard from "../../components/FeaturedFlightCard";
+import flights from "../../components/Flights";
+import logos from "../../assets/images/logos";
+import backgrounds from "../../assets/images/bg";
+import { toTitleCase } from "../../utils";
 
 class FeaturedFlightsPage extends React.Component {
   constructor(props) {
@@ -65,6 +66,7 @@ class FeaturedFlightsPage extends React.Component {
       <PageWrapper
         title="Airfares & Featured Flights"
         description="Find exclusive airfares to destinations all around the world"
+        backgroundImage={backgrounds.featuredFlights_bg}
       >
         <div className="center column padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />

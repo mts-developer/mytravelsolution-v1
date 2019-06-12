@@ -77,7 +77,7 @@ const FeaturedFlightCard = props => {
           </div>
           <div>
             <p className="font--small margin-bottom-10">
-              / EXTRA LINE FOR MORE OPTIONAL INFORMATION /
+              / EXTRA LINE FOR OPTIONAL INFORMATION /
             </p>
           </div>
           <p className="font--small light-grey">* Conditions Apply</p>

@@ -7,7 +7,7 @@ const services = [
     description: "Find exclusive airfares to destinations all around the world",
     white: icons.flight_white_png,
     grey: icons.flight_grey_png,
-    url: "featured-flights/"
+    url: "featured-flights"
   },
   {
     label: "Hotels & Accommodation",
@@ -15,7 +15,7 @@ const services = [
     description: "Book your stay from our range of budget to premium hotels",
     white: icons.hotel_white_png,
     grey: icons.hotel_grey_png,
-    url: "http://localhost:3000"
+    url: "hotels"
   },
   {
     label: "Car Hire",

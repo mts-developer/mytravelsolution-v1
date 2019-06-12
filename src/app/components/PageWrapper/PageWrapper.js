@@ -6,11 +6,16 @@ import Footer from "../Footer";
 import colors from "../../themes/colors";
 
 const PageWrapper = props => {
-  const { title, description } = props;
+  const { title, description, backgroundImage } = props;
+  const style = {
+    background: `url(${backgroundImage})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+  };
 
   return (
     <div className="page-wrapper">
-      <div className="page-wrapper-container">
+      <div className="page-wrapper-container" style={style}>
         <div className="padding-20">
           <Header />
           <div className="responsive-width">

@@ -1,7 +1,4 @@
 .page-wrapper-container {
   position: relative;
-  height: 420px;
-  background: url("../../assets/images/bg/featured-flights_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 500px;
 }
