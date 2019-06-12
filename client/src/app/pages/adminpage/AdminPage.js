@@ -1,72 +1,47 @@
 import React from "react";
 import "./adminpage.css";
 import DataTable from "./DataTable/";
-import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
-import { toTitleCase } from "../../utils/";
+import AddEditSection from "./AddEditSection/";
 
 class AdminPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", region: "" };
+    this.state = { flights: [] };
   }
 
-  regions = [
-    "africa",
-    "asia",
-    "the caribbean",
-    "central america",
-    "europe",
-    "north america",
-    "oceania"
-  ];
+  componentDidMount() {
+    this.fetchFlights();
+  }
 
-  handleChange = name => e => {
-    this.setState({
-      ...this.state,
-      [name]: e.target.value
-    });
+  // componentDidUpdate(prevProps, prevState) {
+  //   return prevState !== this.state ? this.fetchFlights() : null;
+  // }
+
+  fetchFlights = () => {
+    fetch("http://localhost:7000/flights")
+      .then(res => res.json())
+      .then(flights => this.setState({ flights: flights }))
+      .catch(err => console.log(err));
+  };
+
+  addFlight = flight => {
+    this.setState(prevState => ({
+      flights: [...prevState.flights, flight]
+    }));
   };
 
   render() {
-    const { name, region } = this.state;
-    const handleChange = this.handleChange;
-    const style = {
-      width: "500px"
-    };
+    const flights = this.state.flights;
+    const addFlight = this.addFlight;
+
     return (
-      <div className="adminpage">
+      <div className="adminpage center column">
         <h1 className="font--title primary-color bold center">
           Administration Dashboard
         </h1>
         <div className="adminpage-container column padding-20">
-          <DataTable />
-          <h1 className="font--large dark-grey bold">Edit Flights</h1>
-          <div className="margin-20">
-            <TextField
-              id="name"
-              label="Name"
-              value={name}
-              onChange={handleChange("name")}
-              helperText="Name of featured special"
-              style={style}
-            />
-          </div>
-          <div className="margin-20">
-            <TextField
-              select
-              label="Select Region"
-              value={region}
-              onChange={handleChange("region")}
-              style={style}
-            >
-              {this.regions.map((location, i) => (
-                <MenuItem key={i} value={location} style={style}>
-                  {toTitleCase(location)}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
+          <DataTable data={flights} />
+          <AddEditSection data={flights} addFlight={addFlight} />
         </div>
       </div>
     );

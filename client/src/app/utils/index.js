@@ -24,6 +24,10 @@ export const dateFormatShortMonthDayYear = date => {
   return moment(date).format("MMM DD YYYY");
 };
 
+export const dateFormatShortDayMonthYearTime = date => {
+  return moment(date).format("DD MMM YYYY HH:SS A");
+};
+
 export const pluraliseString = (string, data) => {
   return data.length > 1 ? string + "s" : string;
 };

@@ -1,3 +1,5 @@
 .adminpage-container {
   background-color: var(--off-white);
+  width: 80%;
+  border-radius: 5px;
 }
