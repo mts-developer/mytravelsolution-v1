@@ -71,7 +71,7 @@ class FeaturedFlightsPage extends React.Component {
           <div className="padding-20">
             <TextField
               select
-              label="Select Region"
+              label="Where are you going?"
               value={selectedRegion}
               style={style}
               onChange={this.handleRegion("region")}
@@ -87,7 +87,7 @@ class FeaturedFlightsPage extends React.Component {
         <h1 className="center font--header primary-color bold">
           {toTitleCase(selectedRegion)}
         </h1>
-        <div className="featuredflightspage-container center wrap">
+        <div className="featuredflightspage-container center wrap margin-bottom-50">
           {filteredFlights}
         </div>
         <div className="center margin-50">/ AIRLINE PARTNERS /</div>

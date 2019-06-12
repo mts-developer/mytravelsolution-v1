@@ -66,7 +66,7 @@ const FeaturedFlightCard = props => {
               </p>
               {travelPeriods.map((travelPeriod, i) => {
                 return (
-                  <p key={i} className="font--small semi-bold">
+                  <p key={i} className="font--small font--no-wrap semi-bold">
                     {`${dateFormatShortDayMonth(
                       travelPeriod.from
                     )} - ${dateFormatShortMonthDayYear(travelPeriod.to)}`}
@@ -74,17 +74,19 @@ const FeaturedFlightCard = props => {
                 );
               })}
             </div>
-            <div>
-              <p className="font--small">/ MORE INFORMATION /</p>
-            </div>
+          </div>
+          <div>
+            <p className="font--small margin-bottom-10">
+              / EXTRA LINE FOR MORE OPTIONAL INFORMATION /
+            </p>
           </div>
           <p className="font--small light-grey">* Conditions Apply</p>
-          <div className="right">
-            <LabelActionButton
-              label="Book Now"
-              onClick={e => clickBookingEngine(e)}
-            />
-          </div>
+        </div>
+        <div className="padding-20 right">
+          <LabelActionButton
+            label="Book Now"
+            onClick={e => clickBookingEngine(e)}
+          />
         </div>
       </div>
     </div>
