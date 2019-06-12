@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./app.css";
 import { ThemeProvider } from "@material-ui/styles";
 import mtsTheme from "./themes/mtsTheme";
+import AdminPage from "./pages/adminpage";
 import Home from "./home";
 import Dialog from "./components/Dialog";
 import FeaturedFlightsPage from "./pages/featuredflightspage";
@@ -55,6 +56,7 @@ class App extends React.Component {
                     <Home {...props} clickBookingEngine={clickBookingEngine} />
                   )}
                 />
+                <Route path="/admin" component={AdminPage} />
                 <Route
                   path="/featured-flights"
                   render={props => (
