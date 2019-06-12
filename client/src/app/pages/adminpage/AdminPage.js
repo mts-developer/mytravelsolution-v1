@@ -1,5 +1,6 @@
 import React from "react";
 import "./adminpage.css";
+import DataTable from "./DataTable/";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import { toTitleCase } from "../../utils/";
@@ -39,7 +40,8 @@ class AdminPage extends React.Component {
           Administration Dashboard
         </h1>
         <div className="adminpage-container column padding-20">
-          <h1 className="font--large bold">Edit Flights</h1>
+          <DataTable />
+          <h1 className="font--large dark-grey bold">Edit Flights</h1>
           <div className="margin-20">
             <TextField
               id="name"
