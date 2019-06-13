@@ -13,9 +13,8 @@ const getTableData = (req, res, db) => {
 
 const postTableData = (req, res, db) => {
   const { name, region } = req.body;
-  const date_created = new Date();
   db("flights")
-    .insert({ name, region, date_created })
+    .insert({ name, region })
     .returning("*")
     .then(item => {
       res.json(item);

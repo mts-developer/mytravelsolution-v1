@@ -11,8 +11,6 @@ import { toTitleCase, dateFormatShortDayMonthYearTime } from "../../../utils/";
 const DataTable = props => {
   const data = props.data;
 
-  console.log(props.data);
-
   return (
     <div className="datatable margin-bottom-50">
       <h1 className="font--large dark-grey bold">Currently Listed Flights</h1>

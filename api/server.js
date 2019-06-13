@@ -3,18 +3,9 @@ const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const morgan = require("morgan");
+const db = require("./knex/knex");
 
 // require(".dotenv").config();
-
-const db = require("knex")({
-  client: "pg",
-  connection: {
-    host: "127.0.0.1",
-    user: "postgres",
-    password: "postgres",
-    database: "mytravelsolution"
-  }
-});
 
 const clientUrl = "http://localhost:3000";
 const main = require("./controllers/main");

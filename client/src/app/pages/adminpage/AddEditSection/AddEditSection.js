@@ -43,8 +43,8 @@ class AddEditSection extends React.Component {
       .then(res => res.json())
       .then(data => {
         return Array.isArray(data)
-          ? this.props.addFlight
-          : console.log("Failed to add new flight.");
+          ? this.props.addFlight(data[0])
+          : console.log(data.dbError);
       })
       .catch(err => console.log(err));
   };

@@ -13,10 +13,6 @@ class AdminPage extends React.Component {
     this.fetchFlights();
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   return prevState !== this.state ? this.fetchFlights() : null;
-  // }
-
   fetchFlights = () => {
     fetch("http://localhost:7000/flights")
       .then(res => res.json())
