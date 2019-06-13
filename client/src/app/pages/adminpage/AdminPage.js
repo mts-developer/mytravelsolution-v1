@@ -2,6 +2,7 @@ import React from "react";
 import "./adminpage.css";
 import DataTable from "./DataTable/";
 import AddEditSection from "./AddEditSection/";
+import logos from "../../assets/images/logos";
 
 class AdminPage extends React.Component {
   constructor(props) {
@@ -32,8 +33,13 @@ class AdminPage extends React.Component {
 
     return (
       <div className="adminpage center column">
-        <h1 className="font--title primary-color bold center">
-          Administration Dashboard
+        <img
+          className="logo--large margin-20"
+          src={logos.mts_logo}
+          alt="MTS Logo"
+        />
+        <h1 className="font--title primary-color bold center margin-none">
+          Web Administration Dashboard
         </h1>
         <div className="adminpage-container column padding-20">
           <DataTable data={flights} />
