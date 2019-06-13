@@ -50,7 +50,7 @@ class AddEditSection extends React.Component {
   };
 
   render() {
-    const { id, name, region } = this.state;
+    const { name, region } = this.state;
     const handleChange = this.handleChange;
     const style = {
       width: "300px"
@@ -87,7 +87,7 @@ class AddEditSection extends React.Component {
         <div className="margin-20">
           <ActionButton
             action={e => this.dbAddItem(e)}
-            label="Submit"
+            label="Add"
             width="120px"
           />
         </div>

@@ -6,7 +6,7 @@ import AddEditSection from "./AddEditSection/";
 class AdminPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { flights: [] };
+    this.state = { flights: [], selected: 0 };
   }
 
   componentDidMount() {

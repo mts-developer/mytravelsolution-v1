@@ -1,6 +1,7 @@
 import React from "react";
 import "./datatable.css";
 import Paper from "@material-ui/core/Paper";
+import Checkbox from "@material-ui/core/Checkbox";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -10,6 +11,9 @@ import { toTitleCase, dateFormatShortDayMonthYearTime } from "../../../utils/";
 
 const DataTable = props => {
   const data = props.data;
+  const styles = {
+    checkboxWidth: "20px"
+  };
 
   return (
     <div className="datatable margin-bottom-50">
@@ -18,6 +22,7 @@ const DataTable = props => {
         <Table>
           <TableHead>
             <TableRow>
+              <TableCell width={styles.checkboxWidth} />
               <TableCell>ID</TableCell>
               <TableCell>Name</TableCell>
               <TableCell>Region</TableCell>
@@ -26,7 +31,10 @@ const DataTable = props => {
           </TableHead>
           <TableBody>
             {data.map(object => (
-              <TableRow key={object.name}>
+              <TableRow hover role="checkbox" key={object.name}>
+                <TableCell>
+                  <Checkbox />
+                </TableCell>
                 <TableCell>{object.id}</TableCell>
                 <TableCell>{toTitleCase(object.name)}</TableCell>
                 <TableCell>{toTitleCase(object.region)}</TableCell>
