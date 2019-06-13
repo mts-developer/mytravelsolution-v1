@@ -8,7 +8,7 @@ import { toTitleCase } from "../../../utils/";
 class AddEditSection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { id: 0, name: "", region: "" };
+    this.state = { expiry: "", name: "", region: "" };
   }
 
   regions = [
@@ -50,15 +50,27 @@ class AddEditSection extends React.Component {
   };
 
   render() {
-    const { name, region } = this.state;
+    const { expiry, name, region } = this.state;
     const handleChange = this.handleChange;
     const style = {
       width: "300px"
     };
 
+    console.log(this.state);
+
     return (
       <div>
         <h1 className="font--large dark-grey bold">Add/Edit Featured Flight</h1>
+        <div className="margin-20">
+          <TextField
+            id="expiry"
+            type="date"
+            value={expiry}
+            onChange={handleChange("expiry")}
+            helperText="Expiry date of featured special"
+            style={style}
+          />
+        </div>
         <div className="margin-20">
           <TextField
             id="name"
