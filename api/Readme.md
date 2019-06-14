@@ -26,7 +26,7 @@ For all intents and purposes, we will be describing installation via PSQL in you
 2. During installation, set the password for `postgres` and match these properties in the `knexfile.js` file. 
 3. In a separate terminal, type `psql -U postgres`. If you have done this correctly, you should see the following output:
 
-```shell
+```console
 PS C:\Windows\system32> psql -U postgres
 Password for user postgres:
 psql (11.3)
@@ -46,7 +46,7 @@ postgres=#
 2. Then type `npm run seed` to seed the tables.
 3. Finally, type `npm run start` to start the API.
 
-```shell
+```console
 $ npm run start
 
 > api@1.0.0 start C:\Users\aosorio\Development\projects\mytravelsolution\api
