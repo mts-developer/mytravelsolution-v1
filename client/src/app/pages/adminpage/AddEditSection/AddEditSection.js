@@ -6,7 +6,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 import ActionButton from "../../../components/Buttons/ActionButton";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-
 import { toTitleCase } from "../../../utils/";
 
 class AddEditSection extends React.Component {
