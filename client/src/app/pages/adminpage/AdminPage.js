@@ -2,6 +2,7 @@ import React from "react";
 import "./adminpage.css";
 import DataTable from "./DataTable/";
 import AddEditSection from "./AddEditSection/";
+import LabelLinkButton from "../../components/Buttons/LabelLinkButton";
 import logos from "../../assets/images/logos";
 
 class AdminPage extends React.Component {
@@ -32,14 +33,17 @@ class AdminPage extends React.Component {
     const addFlight = this.addFlight;
 
     return (
-      <div className="adminpage center column">
-        <img
-          className="logo--large margin-20"
-          src={logos.mts_logo}
-          alt="MTS Logo"
-        />
-        <h1 className="font--title primary-color bold center margin-none">
-          Web Administration Dashboard
+      <div className="adminpage padding-20">
+        <div className="row space-between">
+          <LabelLinkButton label="&#8592; Back to My Travel Solution" url="/" />
+          <img
+            className="logo--medium"
+            src={logos.mts_logo_full}
+            alt="MTS Logo"
+          />
+        </div>
+        <h1 className="font--title primary-color bold center margin-none padding-20">
+          Administration Dashboard
         </h1>
         <div className="adminpage-container column padding-20">
           <DataTable data={flights} />

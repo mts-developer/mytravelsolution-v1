@@ -349,8 +349,14 @@ hr {
   transform: initial;
 }
 
+/* Cursors */
+
 .cursor-default {
   cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 /* Dialog Animations */

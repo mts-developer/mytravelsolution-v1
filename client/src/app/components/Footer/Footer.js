@@ -10,7 +10,7 @@ import colors from "../../themes/colors";
 const Footer = () => {
   return (
     <div className="footer angle-offset">
-      <div className="responsive-width footer-container space-between padding-20">
+      <div className="responsive-width wrap space-between padding-20">
         <ContactUs
           address="336 Somerville Rd, Kingsville VIC 3012"
           addressUrl="https://goo.gl/maps/ZtsRxAfE5AKscYe68"

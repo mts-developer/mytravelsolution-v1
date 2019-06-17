@@ -22,6 +22,8 @@ class AddEditSection extends React.Component {
       price: 0,
       travelPeriods: []
     };
+
+    this.baseState = this.state;
   }
 
   regions = [
@@ -33,6 +35,11 @@ class AddEditSection extends React.Component {
     "north america",
     "oceania"
   ];
+
+  handleClear = e => {
+    e.preventDefault();
+    this.setState(this.baseState);
+  };
 
   handleChange = name => e => {
     this.setState({
@@ -46,6 +53,21 @@ class AddEditSection extends React.Component {
       ...this.state,
       [name]: e.target.checked
     });
+  };
+
+  travelPeriod = {};
+
+  pushTravelPeriod = (e, travelPeriod) => {
+    e.preventDefault();
+    const travelPeriods = this.state.travelPeriods.concat(travelPeriod);
+    this.setState({ travelPeriods });
+  };
+
+  handleTravelPeriod = name => e => {
+    this.travelPeriod = {
+      ...this.travelPeriod,
+      [name]: e.target.value
+    };
   };
 
   dbAddItem = e => {
@@ -82,14 +104,13 @@ class AddEditSection extends React.Component {
     } = this.state;
     const handleChange = this.handleChange;
     const handleCheckboxChange = this.handleCheckboxChange;
+    const handleTravelPeriod = this.handleTravelPeriod;
     const style = {
       width: "300px",
       checkBox: {
         margin: "10px"
       }
     };
-
-    console.log(this.state);
 
     return (
       <div>
@@ -168,7 +189,7 @@ class AddEditSection extends React.Component {
             label="Price"
             value={price}
             onChange={handleChange("price")}
-            helperText="Featured price (Whole number)"
+            helperText="Featured price (Whole number, Example: $899)"
             style={style}
             InputProps={{
               startAdornment: (
@@ -177,36 +198,67 @@ class AddEditSection extends React.Component {
             }}
           />
         </div>
-        <h1 className="margin-20 font--large bold dark-grey">Travel Dates</h1>
-        <div className="traveldates margin-20 column">
-          <div className="padding-20">
-            <TextField
-              id="travelPeriods"
-              type="date"
-              value={travelPeriods}
-              onChange={handleChange("from")}
-              helperText="Valid travel periods of featured special"
-              style={style}
-            />
+        <h1 className="margin-20 font--large bold dark-grey">Travel Periods</h1>
+        <div className="traveldates row">
+          <div className="margin-20">
+            <div className="padding-20">
+              <TextField
+                id="travelPeriods"
+                type="date"
+                onChange={handleTravelPeriod("from")}
+                helperText="Travel period start date"
+                style={style}
+              />
+            </div>
+            <div className="padding-20">
+              <TextField
+                id="travelPeriods"
+                type="date"
+                onChange={handleTravelPeriod("to")}
+                helperText="Travel period end date"
+                style={style}
+              />
+              <div className="margin-top-20">
+                <ActionButton
+                  action={e => this.pushTravelPeriod(e, this.travelPeriod)}
+                  label="Add Travel Period"
+                  width="150px"
+                  color="secondary"
+                />
+              </div>
+            </div>
           </div>
-          <div className="padding-20">
-            <TextField
-              id="travelPeriods"
-              type="date"
-              value={travelPeriods}
-              onChange={handleChange("to")}
-              helperText="Valid travel periods of featured special"
-              style={style}
-            />
+          <div className="traveldatespreview">
+            <ul className="padding-20 row wrap">
+              {travelPeriods.map((travelPeriod, i) => {
+                return (
+                  <li key={i} className="margin-20">
+                    <p className="bold">{`Travel Period ${i + 1}`}</p>
+                    <p className="font--small">{`From: ${
+                      travelPeriod.from
+                    }`}</p>
+                    <p className="font--small">{`To: ${travelPeriod.to}`}</p>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
-
-        <div className="margin-20 right">
-          <ActionButton
-            action={e => this.dbAddItem(e)}
-            label="Add"
-            width="120px"
-          />
+        <div className="row space-between">
+          <div className="margin-top-50">
+            <ActionButton
+              action={e => this.handleClear(e)}
+              label="Clear"
+              width="100px"
+            />
+          </div>
+          <div className="margin-top-50">
+            <ActionButton
+              action={e => this.dbAddItem(e)}
+              label="Add"
+              width="100px"
+            />
+          </div>
         </div>
       </div>
     );
