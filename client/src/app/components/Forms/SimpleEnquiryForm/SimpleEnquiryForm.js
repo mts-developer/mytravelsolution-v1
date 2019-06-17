@@ -8,93 +8,178 @@ import Checkbox from "@material-ui/core/Checkbox";
 class SimpleEnquiryForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: "email" };
+    this.state = {
+      email: "",
+      fullName: "",
+      contact: "",
+      destination: "",
+      travelDates: {},
+      replyPreference: {
+        email: true,
+        contact: false
+      },
+      comments: ""
+    };
   }
 
+  handleChange = name => e => {
+    this.setState({
+      ...this.state,
+      [name]: e.target.value
+    });
+  };
+
+  handleTravelDates = name => e => {
+    this.setState({
+      travelDates: { ...this.state.travelDates, [name]: e.target.value }
+    });
+  };
+
+  handleReplyPreference = name => e => {
+    this.setState({
+      replyPreference: {
+        ...this.state.replyPreference,
+        [name]: e.target.checked
+      }
+    });
+  };
+
   render() {
-    const { checked } = this.state;
+    const {
+      email,
+      fullName,
+      contact,
+      destination,
+      travelDates,
+      replyPreference,
+      comments
+    } = this.state;
+    const submitSample = this.submitSample;
+    const handleChange = this.handleChange;
+    const handleTravelDates = this.handleTravelDates;
+    const handleReplyPreference = this.handleReplyPreference;
     const style = {
       marginTop: "20px",
       checkBox: {
         margin: "10px",
         transform: "translateY(2px)"
+      },
+      datePicker: {
+        minWidth: "250px",
+        maxWidth: "300px",
+        margin: "20px"
       }
     };
+
+    console.log(this.state);
+
     return (
-      <div className="simpleenquiryform padding-20">
-        <p className="font--small font--center bold">
-          Fields marked with * are required
-        </p>
-        <TextField id="email" label="Email Address *" fullWidth style={style} />
-        <TextField id="fullname" label="Full Name" fullWidth style={style} />
+      <div className="simpleenquiryform">
+        <TextField
+          id="email"
+          label="Email Address *"
+          value={email}
+          onChange={handleChange("email")}
+          style={style}
+          fullWidth
+        />
+        <TextField
+          id="fullName"
+          label="Full Name"
+          value={fullName}
+          onChange={handleChange("fullName")}
+          style={style}
+          fullWidth
+        />
         <TextField
           id="contact"
           label="Contact Number"
-          fullWidth
+          value={contact}
+          onChange={handleChange("contact")}
           style={style}
+          fullWidth
         />
         <TextField
           id="destination"
-          label="Where are you travelling to?"
-          fullWidth
+          label="What city will you travelling to?"
+          value={destination}
+          onChange={handleChange("destination")}
           style={style}
+          fullWidth
         />
-        <div className="enquirydate padding-20" style={style}>
+        <div className="padding-top-50">
           <p className="bold">What dates will you be travelling between?</p>
-          <TextField
-            id="datefrom"
-            type="date"
-            fullWidth
-            helperText="Date From"
-            style={style}
-          />
-          <TextField
-            id="datefrom"
-            type="date"
-            fullWidth
-            helperText="Date To"
-            style={style}
-          />
+          <div className="wrap space-between">
+            <TextField
+              id="travelDates"
+              type="date"
+              onChange={handleTravelDates("from")}
+              helperText="Date From"
+              style={style.datePicker}
+              fullWidth
+            />
+            <TextField
+              id="travelDates"
+              type="date"
+              onChange={handleTravelDates("to")}
+              helperText="Date To"
+              style={style.datePicker}
+              fullWidth
+            />
+          </div>
         </div>
-        <p className="padding-top-20 bold">
+        <p className="padding-top-50 bold">
           How would you like us to contact you?
         </p>
         <div className="column padding-20">
           <FormControlLabel
             control={
               <Checkbox
-                checked={checked.email}
-                // onChange={handleCheckboxChange("returnTrip")}
-                value="email"
+                checked={replyPreference.email}
+                onChange={handleReplyPreference("email")}
                 style={style.checkBox}
               />
             }
-            label="Email"
+            label={`Reply Email ${email}`}
           />
           <FormControlLabel
             control={
               <Checkbox
-                checked={checked.contact}
-                // onChange={handleCheckboxChange("returnTrip")}
-                value="contact"
+                checked={replyPreference.contact}
+                onChange={handleReplyPreference("contact")}
                 style={{ ...style.checkBox }}
               />
             }
-            label="Contact Number"
+            label={`Contact ${contact}`}
           />
         </div>
         <TextField
-          id="standard-multiline-flexible"
-          label="Your Message"
+          id="comments"
+          label="Anything else you'd like to add?"
           multiline
           rowsMax="10"
-          // value={values.multiline}
-          // onChange={handleChange("multiline")}
+          value={comments}
+          onChange={handleChange("comments")}
           margin="normal"
           fullWidth
         />
-        <div className="padding-top-20 right">
-          <ActionButton label="Send" width="80px" />
+        <div className="padding-top-20 space-between">
+          <p className="font--small bold light-grey">
+            Fields marked with * are required
+          </p>
+          <a
+            href={`mailto:bookings@mytravelsolution.com.au?subject=MTS%20Email%20Enquiry%20Sample&body=Email%20Address%3A%0A${email}%0A%0AFull%20Name%3A%0A${fullName}%0A%0AContact%20Number%3A%0A${contact}%0A%0ATravelling%20To%3A%0A${destination}%0A%0ATravel%20Dates%3A%0A${
+              travelDates.from
+            }%20to%20${
+              travelDates.to
+            }%0A%0AContact%20Preference%3A%0AEmail%3A%20${
+              replyPreference.email
+            }%0AContact%3A%20${
+              replyPreference.contact
+            }%0A%0ARemarks%3A%0A${comments}`}
+          >
+            <ActionButton label="Send" width="80px" />
+          </a>
         </div>
       </div>
     );

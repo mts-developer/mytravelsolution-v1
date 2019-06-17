@@ -3,6 +3,7 @@ import "./hotelspage.css";
 import SimpleEnquiryForm from "../../components/Forms/SimpleEnquiryForm";
 import PageWrapper from "../../components/PageWrapper";
 import backgrounds from "../../assets/images/bg";
+import logos from "../../assets/images/logos";
 
 class HotelsPage extends React.Component {
   constructor(props) {
@@ -27,12 +28,17 @@ class HotelsPage extends React.Component {
               Call us now on 03 9314 6957
             </h1>
           </a>
-          <h1 className="font--center font--large bold margin-top-50">
+          <img
+            src={logos.mts_logo}
+            className="logo--medium margin-50"
+            alt="MTS Logo"
+          />
+          <h1 className="font--center font--large bold">
             Tired of waiting in line?
           </h1>
           <p className="font--center margin-20">
             Skip the service queue and get an emailed copy of all your enquiry
-            details, fill in the form below.
+            details. Simply fill in the form below.
           </p>
           <SimpleEnquiryForm />
         </div>

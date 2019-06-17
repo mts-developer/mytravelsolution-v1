@@ -104,6 +104,7 @@ class AddEditSection extends React.Component {
     const handleChange = this.handleChange;
     const handleCheckboxChange = this.handleCheckboxChange;
     const handleTravelPeriod = this.handleTravelPeriod;
+    const pushTravelPeriod = this.pushTravelPeriod;
     const style = {
       width: "300px",
       checkBox: {
@@ -219,7 +220,7 @@ class AddEditSection extends React.Component {
               />
               <div className="margin-top-20">
                 <ActionButton
-                  action={e => this.pushTravelPeriod(e, this.travelPeriod)}
+                  action={e => pushTravelPeriod(e, this.travelPeriod)}
                   label="Add Travel Period"
                   width="150px"
                   color="secondary"
