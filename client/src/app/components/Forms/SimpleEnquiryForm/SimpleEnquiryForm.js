@@ -175,7 +175,7 @@ class SimpleEnquiryForm extends React.Component {
             Fields marked with * are required
           </p>
           <a
-            href={`mailto:bookings@mytravelsolution.com.au?subject=MTS%20Email%20Enquiry%20Sample&body=Email%20Address%3A%0A${email}%0A%0AFull%20Name%3A%0A${fullName}%0A%0AContact%20Number%3A%0A${contact}%0A%0ATravelling%20To%3A%0A${destination}%0A%0ATravel%20Dates%3A%0A${
+            href={`mailto:bookings@mytravelsolution.com.au?cc=${email}&subject=MTS%20Email%20Enquiry%20Sample&body=Email%20Address%3A%0A${email}%0A%0AFull%20Name%3A%0A${fullName}%0A%0AContact%20Number%3A%0A${contact}%0A%0ATravelling%20To%3A%0A${destination}%0A%0ATravel%20Dates%3A%0A${
               travelDates.from
             }%20to%20${
               travelDates.to
