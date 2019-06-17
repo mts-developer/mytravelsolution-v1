@@ -13,7 +13,10 @@ class SimpleEnquiryForm extends React.Component {
       fullName: "",
       contact: "",
       destination: "",
-      travelDates: {},
+      travelDates: {
+        from: "Not Specified",
+        to: "Not Specified"
+      },
       replyPreference: {
         email: true,
         contact: false
