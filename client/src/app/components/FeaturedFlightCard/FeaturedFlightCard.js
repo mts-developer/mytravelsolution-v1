@@ -39,7 +39,7 @@ const FeaturedFlightCard = props => {
           {`Offer valid until ${expiry}`}
         </h2>
       </div>
-      <div className="featuredflightcard-title center middle">
+      <div className="featuredflightcard-title font--center center middle">
         <h2 className="font--large white bold">{name}</h2>
       </div>
       <div

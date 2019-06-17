@@ -9,7 +9,7 @@ const Sitemap = props => {
   return (
     <div className="sitemap grid-columns-2">
       <div className="white">
-        <h2 className="font--medium bold button-padding">QuickLinks</h2>
+        <h2 className="font--medium bold white button-padding">QuickLinks</h2>
         {quickLinks.map((quickLink, i) => {
           return (
             <ul key={i}>
@@ -29,7 +29,7 @@ const Sitemap = props => {
         </a>
       </div>
       <div className="white">
-        <h2 className="font--medium bold button-padding">Services</h2>
+        <h2 className="font--medium bold white button-padding">Services</h2>
         {services.map((service, i) => {
           return (
             <ul key={i}>

@@ -10,10 +10,10 @@ const Visa = () => {
         Need a Travel Visa?
       </h1>
       <div className="center column">
-        <p className="font--medium dark-grey">
+        <p className="font--medium">
           VisaLink is the global leader in travel visas.
         </p>
-        <p className="font--medium dark-grey padding-20">
+        <p className="font--medium padding-20">
           Millions of international travellers have trusted VisaLink to secure
           their business visas or tourist visas.
         </p>
@@ -29,9 +29,7 @@ const Visa = () => {
             alt="Visalink"
           />
         </div>
-        <h1 className="font--large bold dark-grey">
-          The fastest way to get a visa.
-        </h1>
+        <h1 className="font--large bold">The fastest way to get a visa.</h1>
         <div className="padding-20 padding-top-50">
           <LinkButton
             label="Enquire Now"

@@ -114,7 +114,7 @@ class AddEditSection extends React.Component {
 
     return (
       <div>
-        <h1 className="font--large dark-grey bold">Add/Edit Featured Flight</h1>
+        <h1 className="font--large bold">Add/Edit Featured Flight</h1>
         <div className="margin-20">
           <TextField
             id="expiry"
@@ -198,7 +198,7 @@ class AddEditSection extends React.Component {
             }}
           />
         </div>
-        <h1 className="margin-20 font--large bold dark-grey">Travel Periods</h1>
+        <h1 className="margin-20 font--large bold">Travel Periods</h1>
         <div className="traveldates row">
           <div className="margin-20">
             <div className="padding-20">

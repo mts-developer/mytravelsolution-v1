@@ -15,7 +15,7 @@ const Featured = props => {
         <h1 className="font--header bold primary-color margin-none">
           Featured Flights
         </h1>
-        <p className="font--medium dark-grey">
+        <p className="font--medium font--center">
           See My Travel Solution's range of great value flights
         </p>
       </div>

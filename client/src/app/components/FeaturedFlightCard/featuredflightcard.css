@@ -6,6 +6,7 @@
   margin: 10px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
+  max-width: 360px;
 }
 
 .featuredflightcard:hover {
@@ -15,7 +16,7 @@
 .featuredflightcard-expiry {
   background-color: var(--dark-grey);
   position: absolute;
-  transform: translateY(-270px);
+  transform: translateY(-280px);
   height: 25px;
   padding: 0 10px;
   text-align: right;
@@ -27,7 +28,6 @@
   position: absolute;
   height: 35px;
   padding: 0 10px;
-  text-align: center;
 }
 
 .featuredflightcard-top {

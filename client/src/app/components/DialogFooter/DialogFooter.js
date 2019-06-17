@@ -11,7 +11,7 @@ const DialogFooter = () => {
           return (
             <ul key={i}>
               <a className="button-padding" href={quickLink["url"]}>
-                <p className="font--small dark-grey">{quickLink["label"]}</p>
+                <p className="font--small">{quickLink["label"]}</p>
               </a>
             </ul>
           );

@@ -15,7 +15,7 @@ const Services = () => {
             <h1 className="font--header bold primary-color margin-none">
               Our Services
             </h1>
-            <p className="font--medium dark-grey">
+            <p className="font--medium">
               Tailor your holiday with My Travel Solution's premium services
             </p>
           </div>

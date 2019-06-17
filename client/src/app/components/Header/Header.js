@@ -11,7 +11,6 @@ class Header extends React.Component {
     return (
       <div className="header space-between middle">
         <Link to="/">
-          {" "}
           <img
             className="logo--medium"
             src={logos.mts_logo_full_white}
@@ -23,7 +22,7 @@ class Header extends React.Component {
           {services.map((service, i) => {
             return (
               <Link key={i} className="font--small white" to={service["url"]}>
-                <p className="margin-list">{service["shortLabel"]}</p>
+                <p className="margin-list white">{service["shortLabel"]}</p>
               </Link>
             );
           })}

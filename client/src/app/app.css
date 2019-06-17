@@ -49,6 +49,7 @@ h1,
 h2,
 h3 {
   font-weight: normal;
+  color: var(--dark-grey);
 }
 
 a {
@@ -61,6 +62,7 @@ a {
 
 p {
   margin: 0;
+  color: var(--dark-grey);
 }
 
 ul:first-child {
@@ -269,6 +271,10 @@ hr {
 
 .font--no-wrap {
   white-space: nowrap;
+}
+
+.font--center {
+  text-align: center;
 }
 
 .bold {

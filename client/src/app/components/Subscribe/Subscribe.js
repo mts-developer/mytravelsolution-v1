@@ -14,7 +14,7 @@ class Subscribe extends React.Component {
         <h1 className="font--header primary-color bold margin-none">
           Never miss a deal
         </h1>
-        <p className="font--medium dark-grey">Subscribe to our mailing list!</p>
+        <p className="font--medium">Subscribe to our mailing list!</p>
         <div className="padding-20">
           <Input
             className="textfield-width"

@@ -17,7 +17,7 @@ const DataTable = props => {
 
   return (
     <div className="datatable margin-bottom-50">
-      <h1 className="font--large dark-grey bold">Currently Listed Flights</h1>
+      <h1 className="font--large bold">Currently Listed Flights</h1>
       <Paper>
         <Table>
           <TableHead>

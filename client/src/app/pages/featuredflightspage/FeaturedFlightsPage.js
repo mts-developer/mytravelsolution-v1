@@ -48,7 +48,7 @@ class FeaturedFlightsPage extends React.Component {
     } else {
       let selectedRegion = toTitleCase(this.state.selectedRegion);
       return (
-        <p className="font--large dark-grey bold padding-20">
+        <p className="font--large bold padding-20">
           {`Sorry, there are currently no specials for ${selectedRegion} at the moment.`}
         </p>
       );
