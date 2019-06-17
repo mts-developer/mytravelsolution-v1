@@ -68,6 +68,9 @@ class SimpleEnquiryForm extends React.Component {
         minWidth: "250px",
         maxWidth: "300px",
         margin: "20px"
+      },
+      comments: {
+        whiteSpace: "pre"
       }
     };
 
@@ -161,6 +164,7 @@ class SimpleEnquiryForm extends React.Component {
           value={comments}
           onChange={handleChange("comments")}
           margin="normal"
+          style={style.comments}
           fullWidth
         />
         <div className="padding-top-20 space-between">
