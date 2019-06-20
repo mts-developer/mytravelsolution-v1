@@ -320,9 +320,7 @@ hr {
 }
 
 .thin {
-  font-family: "Fira Sans Regular";
-  letter-spacing: -1px;
-  font-weight: 200;
+  font-family: "Fira Sans Thin";
 }
 
 /* Shadows, Blurs & Opacity */

@@ -23,7 +23,7 @@ class Header extends React.Component {
             return (
               <Link key={i} className="font--small white" to={service["url"]}>
                 <div className="center column">
-                  <p className="margin-x-20 padding-5 font--center white bold">
+                  <p className="margin-x-20 font--center white">
                     {service["shortLabel"]}
                   </p>
                 </div>

@@ -42,7 +42,7 @@ class Home extends React.Component {
   };
 
   render() {
-    const clickBookingEngine = this.props.clickBookingEngine;
+    const { clickBookingEngine } = this.props;
 
     return (
       <div className="home">

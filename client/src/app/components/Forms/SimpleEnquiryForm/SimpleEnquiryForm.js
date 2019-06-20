@@ -70,7 +70,7 @@ class SimpleEnquiryForm extends React.Component {
       datePicker: {
         minWidth: "250px",
         maxWidth: "300px",
-        margin: "20px"
+        margin: "10px 20px"
       },
       comments: {
         whiteSpace: "pre"
