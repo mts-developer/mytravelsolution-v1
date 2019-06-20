@@ -17,8 +17,8 @@ const FeaturedFlightCard = props => {
   const name = toTitleCase(flight.name);
   const featuredImage = flight.featuredImage;
   const airline = flight.airline;
-  const origin = toTitleCase(flight.origin);
-  const destination = toTitleCase(flight.destination);
+  const origin = flight.origin.toUpperCase();
+  const destination = flight.destination.toUpperCase();
   var returnFlight =
     flight.returnFlight === true
       ? // eslint-disable-next-line
@@ -27,6 +27,7 @@ const FeaturedFlightCard = props => {
         (returnFlight = "");
   const price = commaFormatNumbers(flight.price);
   const travelPeriods = flight.travelPeriods;
+  const remarks = flight.remarks;
 
   const image = {
     backgroundImage: `url(${featuredImage})`
@@ -75,14 +76,18 @@ const FeaturedFlightCard = props => {
               })}
             </div>
           </div>
-          <div>
-            <p className="font--small margin-bottom-10">
-              / EXTRA LINE FOR OPTIONAL INFORMATION /
-            </p>
+          <div className="featuredflightcard-remarks margin-bottom-10">
+            {remarks.map((remark, i) => {
+              return (
+                <p key={i} className="font--small light-grey padding-y-5">
+                  {`- ${remark}`}
+                </p>
+              );
+            })}
           </div>
-          <p className="font--small light-grey">* Conditions Apply</p>
         </div>
-        <div className="padding-20 right">
+        <div className="padding-20 space-between row middle">
+          <p className="font--small light-grey bold">* Conditions Apply</p>
           <LabelActionButton
             label="Book Now"
             onClick={e => clickBookingEngine(e)}

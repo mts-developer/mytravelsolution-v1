@@ -9,6 +9,7 @@ import oceania_jpg from "./oceania-1.jpg";
 import philippines_1 from "./philippines-1.jpg";
 import philippines_2 from "./philippines-2.jpg";
 import philippines_3 from "./philippines-3.jpg";
+import philippines_4 from "./philippines-4.jpg";
 
 export default {
   africa_jpg,
@@ -20,5 +21,6 @@ export default {
   oceania_jpg,
   philippines_1,
   philippines_2,
-  philippines_3
+  philippines_3,
+  philippines_4
 };

@@ -132,6 +132,10 @@ hr {
   margin: 0;
 }
 
+.margin-top-5 {
+  margin-top: 5px;
+}
+
 .margin-10 {
   margin: 10px;
 }
@@ -142,6 +146,10 @@ hr {
 
 .margin-bottom-10 {
   margin-bottom: 10px;
+}
+
+.margin-x-20 {
+  margin: 0 14px;
 }
 
 .margin-20 {
@@ -166,6 +174,14 @@ hr {
 
 .margin-list {
   margin: 10px;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-y-5 {
+  padding: 5px 0;
 }
 
 .padding-10 {
@@ -286,10 +302,16 @@ hr {
 }
 
 .thin {
-  font-family: "Fira Sans Thin";
+  font-family: "Fira Sans Regular";
+  letter-spacing: -1px;
+  font-weight: 200;
 }
 
 /* Shadows, Blurs & Opacity */
+
+.font-shadow {
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
 
 .box-shadow {
   -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
@@ -310,6 +332,25 @@ hr {
     0 8px 16px -8px rgba(0, 0, 0, 0.25), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   box-shadow: 0 16px 27px 5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.25), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.button-shadow {
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.button-shadow:hover {
+  -webkit-box-shadow: 0 6px 8px rgba(50, 50, 93, 0.21),
+    0 1px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 6px 10px rgba(50, 50, 93, 0.21), 0 1px 3px rgba(0, 0, 0, 0.16);
+  transform: translateY(-1px);
+}
+
+.button-shadow:active {
+  box-shadow: initial;
+  transform: initial;
 }
 
 /* Buttons */
@@ -334,25 +375,6 @@ hr {
     var(--secondary-color) 30%,
     var(--secondary-color-light) 100%
   );
-}
-
-.button-shadow {
-  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
-    0 1px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: 0.2s;
-}
-
-.button-shadow:hover {
-  -webkit-box-shadow: 0 6px 8px rgba(50, 50, 93, 0.21),
-    0 1px 3px rgba(0, 0, 0, 0.16);
-  box-shadow: 0 6px 10px rgba(50, 50, 93, 0.21), 0 1px 3px rgba(0, 0, 0, 0.16);
-  transform: translateY(-1px);
-}
-
-.button-shadow:active {
-  box-shadow: initial;
-  transform: initial;
 }
 
 /* Cursors */
@@ -443,7 +465,7 @@ svg {
   }
 
   .featuredflightcard {
-    max-width: 400px;
+    max-width: 360px;
   }
 }
 
@@ -467,13 +489,5 @@ svg {
   .responsive-width {
     max-width: 800px;
     margin: auto;
-  }
-
-  .margin-list {
-    margin: 20px;
-  }
-
-  .hero {
-    background-position: 0 -50px !important;
   }
 }

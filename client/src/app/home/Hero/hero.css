@@ -2,6 +2,7 @@
   position: relative;
   height: 560px;
   background: url("../../assets/images/bg/home_bg.jpg");
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 }

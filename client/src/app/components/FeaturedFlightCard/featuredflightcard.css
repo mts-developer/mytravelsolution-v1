@@ -6,7 +6,6 @@
   margin: 10px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
-  max-width: 360px;
 }
 
 .featuredflightcard:hover {
@@ -16,7 +15,7 @@
 .featuredflightcard-expiry {
   background-color: var(--dark-grey);
   position: absolute;
-  transform: translateY(-280px);
+  transform: translateY(-290px);
   height: 25px;
   padding: 0 10px;
   text-align: right;
@@ -42,11 +41,15 @@
 }
 
 .featuredflightcard-height {
-  height: 310px;
+  height: 320px;
 }
 
 .featuredflightcard-grid {
   margin: 20px 0;
   grid-template-rows: 30px auto;
   grid-gap: 20px 0;
+}
+
+.featuredflightcard-remarks {
+  height: 45px;
 }

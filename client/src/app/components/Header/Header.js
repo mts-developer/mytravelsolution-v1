@@ -22,7 +22,16 @@ class Header extends React.Component {
           {services.map((service, i) => {
             return (
               <Link key={i} className="font--small white" to={service["url"]}>
-                <p className="margin-list white">{service["shortLabel"]}</p>
+                <div className="center column">
+                  <img
+                    className="icon--small margin-x-20"
+                    src={service["white"]}
+                    alt="Service Icon"
+                  />
+                  <p className="margin-x-20 padding-5 font--center white bold">
+                    {service["shortLabel"]}
+                  </p>
+                </div>
               </Link>
             );
           })}

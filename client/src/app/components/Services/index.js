@@ -3,7 +3,7 @@ import icons from "../../assets/images/icons";
 const services = [
   {
     label: "Airfares & Featured Flights",
-    shortLabel: "Airfares",
+    shortLabel: "Flights",
     description: "Find exclusive airfares to destinations all around the world",
     white: icons.flight_white_png,
     grey: icons.flight_grey_png,
@@ -19,7 +19,7 @@ const services = [
   },
   {
     label: "Car Hire",
-    shortLabel: "Car Hire",
+    shortLabel: "Rentals",
     description:
       "Explore a fleet of vehicles and pick up a great deal for your next road trip",
     white: icons.car_white_png,
@@ -37,7 +37,7 @@ const services = [
   },
   {
     label: "Packaged Deals",
-    shortLabel: "Packaged Deals",
+    shortLabel: "Packages",
     description:
       "Save for your next trip and discover our menu of low-cost holiday packages",
     white: icons.packaged_deals_white_png,
@@ -55,7 +55,7 @@ const services = [
   },
   {
     label: "Rail Tickets",
-    shortLabel: "Rail Tickets",
+    shortLabel: "Rail",
     description:
       "Book your rail passes and tickets for worldwide transit networks",
     white: icons.railway_white_png,

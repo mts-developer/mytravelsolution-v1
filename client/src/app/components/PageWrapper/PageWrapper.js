@@ -9,6 +9,7 @@ const PageWrapper = props => {
   const { title, description, backgroundImage } = props;
   const style = {
     background: `url(${backgroundImage})`,
+    backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
   };
@@ -20,8 +21,12 @@ const PageWrapper = props => {
           <Header />
           <div className="responsive-width">
             <div className="hero-title margin-none">
-              <h1 className="white font--title bold">{title}</h1>
-              <h2 className="white font--large thin">{description}</h2>
+              <h1 className="white font--title bold font-shadow margin-none">
+                {title}
+              </h1>
+              <h2 className="white font--large thin margin-top-5">
+                {description}
+              </h2>
             </div>
           </div>
         </div>

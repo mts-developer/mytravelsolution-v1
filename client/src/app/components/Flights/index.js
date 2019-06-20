@@ -28,7 +28,8 @@ const flights = [
         from: "2020-01-13",
         to: "2020-02-29"
       }
-    ]
+    ],
+    remarks: []
   },
   {
     expiry: "2019-06-08",
@@ -49,7 +50,8 @@ const flights = [
         from: "2019-07-07",
         to: "2019-11-30"
       }
-    ]
+    ],
+    remarks: []
   },
   {
     expiry: "2019-05-31",
@@ -70,6 +72,33 @@ const flights = [
         from: "2019-08-30",
         to: "2019-11-30"
       }
+    ],
+    remarks: []
+  },
+  {
+    expiry: "2019-06-30",
+    name: "Philippine Airlines Special",
+    featuredImage: featureImages.philippines_4,
+    airline: {
+      airlineName: "Philippine Airlines",
+      airlineCode: "PR",
+      airlineImage: logos.philippine_airlines_logo
+    },
+    region: "asia",
+    origin: "MEL",
+    destination: "MNL",
+    returnFlight: true,
+    price: 545,
+    travelPeriods: [
+      {
+        from: "2019-07-16",
+        to: "2020-03-31"
+      }
+    ],
+    remarks: [
+      "DEC to JAN 2020 not available",
+      "Blackout periods apply",
+      "Subject to availability"
     ]
   }
 ];

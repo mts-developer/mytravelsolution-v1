@@ -14,7 +14,7 @@ class HotelsPage extends React.Component {
   render() {
     return (
       <PageWrapper
-        title="Hotels"
+        title="Hotels & Accommodation"
         description="Book your stay from our range of budget to premium hotels"
         backgroundImage={backgrounds.hotels_bg}
       >
