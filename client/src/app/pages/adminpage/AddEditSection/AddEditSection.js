@@ -133,8 +133,6 @@ class AddEditSection extends React.Component {
       }
     };
 
-    console.log(this.state);
-
     return (
       <div>
         <h1 className="font--large bold">Add/Edit Featured Flight</h1>

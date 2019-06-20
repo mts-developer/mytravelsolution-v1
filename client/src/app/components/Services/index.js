@@ -60,7 +60,7 @@ const services = [
       "Book your rail passes and tickets for worldwide transit networks",
     white: icons.railway_white_png,
     grey: icons.railway_grey_png,
-    url: "http://localhost:3000"
+    url: "/rail"
   }
 ];
 

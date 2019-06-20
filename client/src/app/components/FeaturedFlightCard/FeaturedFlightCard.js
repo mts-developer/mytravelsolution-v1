@@ -30,7 +30,8 @@ const FeaturedFlightCard = props => {
   const remarks = flight.remarks;
 
   const image = {
-    backgroundImage: `url(${featuredImage})`
+    backgroundImage: `url(${featuredImage})`,
+    backgroundPosition: "center"
   };
 
   return (
@@ -58,16 +59,19 @@ const FeaturedFlightCard = props => {
           </div>
           <div className="featuredflightcard-grid grid-columns-2 full-width">
             <div>
-              <p className="font--small">{`${origin} - ${destination} ${returnFlight}`}</p>
-              <p className="font--large semi-bold">{`from $${price}*`}</p>
+              <p className="font--medium bold">{`${origin} - ${destination} ${returnFlight}`}</p>
+              <div className="row margin-top-5">
+                <p className="font--small bold">from</p>
+                <p className="font--header bold margin-x-5">{`$${price}*`}</p>
+              </div>
             </div>
             <div>
-              <p className="font--small">
+              <p className="font--medium bold">
                 {pluraliseString("Travel Period", travelPeriods)}
               </p>
               {travelPeriods.map((travelPeriod, i) => {
                 return (
-                  <p key={i} className="font--small font--no-wrap semi-bold">
+                  <p key={i} className="font--small font--no-wrap padding-y-5">
                     {`${dateFormatShortDayMonth(
                       travelPeriod.from
                     )} - ${dateFormatShortMonthDayYear(travelPeriod.to)}`}
@@ -76,7 +80,7 @@ const FeaturedFlightCard = props => {
               })}
             </div>
           </div>
-          <div className="featuredflightcard-remarks margin-bottom-10">
+          <div className="featuredflightcard-remarks padding-top-15">
             {remarks.map((remark, i) => {
               return (
                 <p key={i} className="font--small light-grey padding-y-5">

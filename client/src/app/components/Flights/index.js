@@ -29,7 +29,11 @@ const flights = [
         to: "2020-02-29"
       }
     ],
-    remarks: []
+    remarks: [
+      "Base fare only",
+      "SYD to MNL also available",
+      "Subject to availability"
+    ]
   },
   {
     expiry: "2019-06-08",
@@ -44,14 +48,18 @@ const flights = [
     origin: "MEL",
     destination: "MNL",
     returnFlight: true,
-    price: 520,
+    price: 589,
     travelPeriods: [
       {
         from: "2019-07-07",
         to: "2019-11-30"
       }
     ],
-    remarks: []
+    remarks: [
+      "MNL & beyond also available",
+      "SYD to MNL also available",
+      "Black out periods apply"
+    ]
   },
   {
     expiry: "2019-05-31",
@@ -73,7 +81,7 @@ const flights = [
         to: "2019-11-30"
       }
     ],
-    remarks: []
+    remarks: ["Subject to availability"]
   },
   {
     expiry: "2019-06-30",

@@ -161,7 +161,7 @@ class SimpleEnquiryForm extends React.Component {
         </div>
         <TextField
           id="comments"
-          label="Anything else you'd like to add?"
+          label="What's your enquiry about?"
           multiline
           rowsMax="10"
           value={comments}

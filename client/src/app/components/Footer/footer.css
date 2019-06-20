@@ -5,6 +5,7 @@
       var(--secondary-color-transparent)
     ),
     url("../../assets/images/bg/footer_bg.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
