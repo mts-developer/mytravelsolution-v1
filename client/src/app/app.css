@@ -132,6 +132,10 @@ hr {
   margin: 0;
 }
 
+.margin-5 {
+  margin: 5px;
+}
+
 .margin-top-5 {
   margin-top: 5px;
 }

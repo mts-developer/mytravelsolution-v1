@@ -19,7 +19,8 @@ class AddEditSection extends React.Component {
       destination: "",
       returnTrip: true,
       price: 0,
-      travelPeriods: []
+      travelPeriods: [],
+      remarks: []
     };
 
     this.baseState = this.state;
@@ -54,6 +55,8 @@ class AddEditSection extends React.Component {
     });
   };
 
+  // Begin TO DO: Refactor this with form handler
+
   travelPeriod = {};
 
   pushTravelPeriod = (e, travelPeriod) => {
@@ -68,6 +71,21 @@ class AddEditSection extends React.Component {
       [name]: e.target.value
     };
   };
+
+  remark = "";
+
+  pushRemark = (e, remark) => {
+    e.preventDefault();
+    this.setState({
+      remarks: [...this.state.remarks, remark]
+    });
+  };
+
+  handleRemark = name => e => {
+    this.remark = e.target.value;
+  };
+
+  // End TO DO
 
   dbAddItem = e => {
     e.preventDefault();
@@ -99,18 +117,23 @@ class AddEditSection extends React.Component {
       destination,
       returnTrip,
       price,
-      travelPeriods
+      travelPeriods,
+      remarks
     } = this.state;
     const handleChange = this.handleChange;
     const handleCheckboxChange = this.handleCheckboxChange;
     const handleTravelPeriod = this.handleTravelPeriod;
     const pushTravelPeriod = this.pushTravelPeriod;
+    const handleRemark = this.handleRemark;
+    const pushRemark = this.pushRemark;
     const style = {
-      width: "300px",
+      width: "400px",
       checkBox: {
         margin: "10px"
       }
     };
+
+    console.log(this.state);
 
     return (
       <div>
@@ -238,6 +261,46 @@ class AddEditSection extends React.Component {
                       travelPeriod.from
                     }`}</p>
                     <p className="font--small">{`To: ${travelPeriod.to}`}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className="remarks row">
+          <div className="padding-20">
+            <h1 className="font--large bold">Remarks</h1>
+            <p className="font--small">
+              Remarks are additional details you can add to the featured flight.
+            </p>
+            <p className="font--small">
+              Only 3 remarks can be added per featured flight.
+            </p>
+            <div className="padding-20">
+              <TextField
+                id="remarks"
+                label="Remark"
+                onChange={handleRemark("remark")}
+                helperText="Example: Subject to availability (Character limit: 28)"
+                style={style}
+              />
+            </div>
+            <div className="margin-top-20">
+              <ActionButton
+                action={e => pushRemark(e, this.remark)}
+                label="Add Remark"
+                width="100px"
+                color="secondary"
+              />
+            </div>
+          </div>
+          <div className="remarkspreview">
+            <ul className="padding-20 column wrap">
+              {remarks.map((remark, i) => {
+                return (
+                  <li key={i} className="padding-10">
+                    <p className="bold">{`Remark ${i + 1}`}</p>
+                    <p className="font--medium ">{remark}</p>
                   </li>
                 );
               })}
