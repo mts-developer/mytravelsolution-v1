@@ -4,12 +4,17 @@ import Header from "../../components/Header";
 import ActionButton from "../../components/Buttons/ActionButton";
 import Angle from "../../components/Angle";
 import colors from "../../themes/colors";
+import videos from "../../assets/videos";
 
 const Hero = props => {
   const clickBookingEngine = props.clickBookingEngine;
 
   return (
     <div className="hero">
+      <video className="herovideo" autoPlay muted loop>
+        <source src={videos.clouds_mp4} type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
       <div className="hero-container padding-20">
         <Header />
         <div className="responsive-width">
