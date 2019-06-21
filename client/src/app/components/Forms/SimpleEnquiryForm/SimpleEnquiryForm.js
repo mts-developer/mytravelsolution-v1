@@ -57,7 +57,6 @@ class SimpleEnquiryForm extends React.Component {
       replyPreference,
       comments
     } = this.state;
-    const submitSample = this.submitSample;
     const handleChange = this.handleChange;
     const handleTravelDates = this.handleTravelDates;
     const handleReplyPreference = this.handleReplyPreference;
@@ -76,8 +75,6 @@ class SimpleEnquiryForm extends React.Component {
         whiteSpace: "pre"
       }
     };
-
-    console.log(this.state);
 
     return (
       <div className="simpleenquiryform">
