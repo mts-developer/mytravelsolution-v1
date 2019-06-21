@@ -15,6 +15,7 @@ import cebu_pacific_logo from "./airlines/cebu_pacific_logo.png";
 
 // Partner Logos
 import visalink_logo from "./partners/visalink_logo.png";
+import driveaway_logo from "./partners/driveaway_logo.svg";
 
 // Accreditation Logos
 import atas_white_logo from "./accreditations/atas_white_logo.png";
@@ -31,6 +32,7 @@ export default {
   royal_brunei_logo,
   cebu_pacific_logo,
   visalink_logo,
+  driveaway_logo,
   atas_white_logo,
   afta_white_logo
 };

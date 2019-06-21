@@ -24,7 +24,7 @@ const services = [
       "Explore a fleet of vehicles and pick up a great deal for your next road trip",
     white: icons.car_white_png,
     grey: icons.car_grey_png,
-    url: "http://localhost:3000"
+    url: "rentals"
   },
   {
     label: "Cruise & Cruise Packages",
@@ -60,7 +60,7 @@ const services = [
       "Book your rail passes and tickets for worldwide transit networks",
     white: icons.railway_white_png,
     grey: icons.railway_grey_png,
-    url: "/rail"
+    url: "rail"
   }
 ];
 

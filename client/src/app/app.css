@@ -218,6 +218,10 @@ hr {
   padding-top: 20px;
 }
 
+.padding-y-20 {
+  padding: 20px 0;
+}
+
 .padding-top-50 {
   padding-top: 50px;
 }
