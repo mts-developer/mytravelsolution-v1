@@ -218,6 +218,10 @@ hr {
   padding-top: 20px;
 }
 
+.padding-x-20 {
+  padding: 0 20px;
+}
+
 .padding-y-20 {
   padding: 20px 0;
 }
@@ -257,6 +261,10 @@ hr {
 }
 
 /* Images */
+
+.logo--x-small {
+  height: 30px;
+}
 
 .logo--small {
   height: 40px;

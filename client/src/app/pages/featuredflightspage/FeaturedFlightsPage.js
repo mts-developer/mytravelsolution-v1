@@ -4,6 +4,7 @@ import PageWrapper from "../../components/PageWrapper";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
+import Carousel from "../../components/Carousel";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 import backgrounds from "../../assets/images/bg";
@@ -68,6 +69,12 @@ class FeaturedFlightsPage extends React.Component {
         description="Find exclusive airfares to destinations all around the world"
         backgroundImage={backgrounds.featuredFlights_bg}
       >
+        <h2 className="font--large bold center">
+          Choose from our preferred airline partners
+        </h2>
+        <div className="padding-x-20">
+          <Carousel />
+        </div>
         <div className="center column padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
           <div className="padding-20">
@@ -92,7 +99,6 @@ class FeaturedFlightsPage extends React.Component {
         <div className="featuredflightspage-container center wrap margin-bottom-50">
           {filteredFlights}
         </div>
-        <div className="center margin-50">/ AIRLINE PARTNERS /</div>
       </PageWrapper>
     );
   }
