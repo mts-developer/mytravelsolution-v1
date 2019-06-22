@@ -5,17 +5,15 @@ import logos from "../../assets/images/logos/airlines";
 const Carousel = props => {
   return (
     <div className="center">
-      <div className="slider center">
+      <div className="slider responsive-width center">
         <div className="slide-track">
-          {logos.map(logo => {
+          {logos.map((logo, i) => {
             return (
-              <div className="slide">
+              <div key={i} className="slide center">
                 <img
-                  className="logo--x-small"
+                  className="logo--x-small padding-x-20"
                   src={logo}
                   alt="Airline Logo"
-                  height="100"
-                  width="250"
                 />
               </div>
             );

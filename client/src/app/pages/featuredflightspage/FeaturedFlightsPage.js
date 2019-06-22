@@ -60,7 +60,7 @@ class FeaturedFlightsPage extends React.Component {
     const filteredFlights = this.filteredFlights();
     const selectedRegion = this.state.selectedRegion;
     const style = {
-      width: "200px"
+      width: "250px"
     };
 
     return (
@@ -69,10 +69,10 @@ class FeaturedFlightsPage extends React.Component {
         description="Find exclusive airfares to destinations all around the world"
         backgroundImage={backgrounds.featuredFlights_bg}
       >
-        <h2 className="font--large bold center">
-          Choose from our preferred airline partners
-        </h2>
-        <div className="padding-x-20">
+        <div className="padding-20">
+          <h2 className="font--large font--center bold">
+            Choose from My Travel Solution's preferred airline partners
+          </h2>
           <Carousel />
         </div>
         <div className="center column padding-20">
