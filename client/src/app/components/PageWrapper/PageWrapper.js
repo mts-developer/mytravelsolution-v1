@@ -8,7 +8,7 @@ import colors from "../../themes/colors";
 const PageWrapper = props => {
   const { title, description, backgroundImage } = props;
   const style = {
-    background: `linear-gradient(var(--primary-color) 5%, var(--transparent) 50%), url(${backgroundImage})`,
+    background: `linear-gradient(var(--black-transparent) 10%, var(--transparent) 50%), url(${backgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
