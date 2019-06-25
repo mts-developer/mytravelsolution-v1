@@ -24,7 +24,7 @@ const PageWrapper = props => {
               <h1 className="white font--title bold font-shadow margin-none">
                 {title}
               </h1>
-              <h2 className="white font--large thin margin-top-5">
+              <h2 className="page-wrapper__description white font--large thin margin-top-5 padding-5">
                 {description}
               </h2>
             </div>

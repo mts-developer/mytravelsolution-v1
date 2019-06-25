@@ -2,3 +2,12 @@
   position: relative;
   height: 360px;
 }
+
+.page-wrapper__description {
+  background: linear-gradient(
+    to right,
+    var(--black-transparent) 10%,
+    var(--transparent)
+  );
+  transform: translateX(-5px);
+}
