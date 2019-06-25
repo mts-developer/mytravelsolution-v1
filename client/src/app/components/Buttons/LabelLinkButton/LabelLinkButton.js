@@ -3,12 +3,22 @@ import "./labellinkbutton.css";
 import { Link } from "react-router-dom";
 
 export default props => {
-  const { url, label, width } = props;
+  const { url, label, width, external } = props;
 
-  return (
+  return external === true ? (
+    <a href={url}>
+      <p
+        className="labellinkbutton cursor-pointer button middle center bold"
+        role="button"
+        style={{ width: `${width}` }}
+      >
+        {label.toUpperCase()}
+      </p>
+    </a>
+  ) : (
     <Link to={url}>
       <p
-        className="labellinkbutton cursor-pointer button button-padding middle center bold pointer"
+        className="labellinkbutton cursor-pointer button middle center bold"
         role="button"
         style={{ width: `${width}` }}
       >

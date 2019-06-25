@@ -3,7 +3,7 @@
     transform: translateX(4500px);
   }
   100% {
-    transform: translateX(calc(-250px * 18));
+    transform: translateX(calc(-250px * 15.5));
   }
 }
 .slider {

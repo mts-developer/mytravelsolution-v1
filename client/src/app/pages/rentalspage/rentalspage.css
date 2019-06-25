@@ -1,0 +1,11 @@
+.rentalspage {
+  min-height: 450px;
+}
+
+.rentalspage-info {
+  max-width: 400px;
+}
+
+.rentalspage-logos {
+  filter: grayscale(100%) brightness(150%);
+}

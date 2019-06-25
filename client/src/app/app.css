@@ -11,7 +11,7 @@ body {
   --white: #ffffff;
   --off-white: #f6f9fc;
   --red: #d90000;
-  --black-transparent: #000000c4;
+  --black-transparent: #00000098;
   --transparent: #00000000;
 }
 
@@ -264,7 +264,7 @@ hr {
 /* Images */
 
 .logo--x-small {
-  height: 30px;
+  height: 25px;
 }
 
 .logo--small {
@@ -305,7 +305,7 @@ hr {
 }
 
 .font--large {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .font--header {
@@ -448,7 +448,7 @@ svg {
 }
 
 .angle-top {
-  top: -100px;
+  top: -99px;
 }
 
 .angle-offset {
@@ -468,12 +468,30 @@ svg {
   display: none;
 }
 
+.partnercard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.partnercard-right {
+  border-radius: 0 0 8px 8px;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
   .mobile,
   .desktop {
     display: none;
+  }
+
+  .partnercard-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partnercard-right {
+    border-radius: 0 8px 8px 0;
   }
 
   .tablet {

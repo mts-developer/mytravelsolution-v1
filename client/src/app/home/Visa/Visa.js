@@ -34,6 +34,7 @@ const Visa = () => {
           <LinkButton
             label="Enquire Now"
             url="https://visalink.com.au/?login=mytravelsolution"
+            external
             width="100px"
             color="primary"
           />

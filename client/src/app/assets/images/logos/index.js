@@ -9,7 +9,7 @@ import mts_alt_full from "./2c_logo_full.png";
 
 // Partner Logos
 import visalink_logo from "./partners/visalink_logo.png";
-import driveaway_logo from "./partners/driveaway_logo.svg";
+import driveaway_logo from "./partners/driveaway_logo.png";
 
 // Accreditation Logos
 import atas_white_logo from "./accreditations/atas_white_logo.png";

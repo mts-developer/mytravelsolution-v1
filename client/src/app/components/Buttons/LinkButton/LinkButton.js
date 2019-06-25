@@ -3,7 +3,7 @@ import "./linkbutton.css";
 import { Link } from "react-router-dom";
 
 const LinkButton = props => {
-  const { url, label, width } = props;
+  const { url, label, width, external } = props;
   var color =
     props.color === "primary"
       ? // eslint-disable-next-line
@@ -11,7 +11,16 @@ const LinkButton = props => {
       : // eslint-disable-next-line
         (color = "button-color-secondary");
 
-  return (
+  return external === true ? (
+    <a
+      className={`${color} button button-padding button-shadow pointer middle center`}
+      role="button"
+      style={{ width: `${width}` }}
+      href={url}
+    >
+      <p className="font--medium white bold">{label}</p>
+    </a>
+  ) : (
     <Link
       className={`${color} button button-padding button-shadow pointer middle center`}
       role="button"

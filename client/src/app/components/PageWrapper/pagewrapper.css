@@ -6,8 +6,8 @@
 .page-wrapper__description {
   background: linear-gradient(
     to right,
-    var(--black-transparent) 10%,
-    var(--transparent)
+    var(--black-transparent) 70%,
+    var(--transparent) 100%
   );
   transform: translateX(-5px);
 }
