@@ -46,7 +46,7 @@ const RentalsPage = () => {
           />
         </div>
       </div>
-      <div className="rentalspage-logos row wrap center">
+      <div className="rentalspage-logos margin-top-50 row wrap center">
         {rentalLogos.map((logo, i) => (
           <img
             key={i}
