@@ -42,7 +42,7 @@ import united_airlines_logo from "./united_airlines_logo.png";
 import vietnam_airlines_logo from "./vietnam_airlines_logo.png";
 import xiamen_airlines_logo from "./xiamen_airlines_logo.png";
 
-const logos = [
+export default {
   aircalin_logo,
   air_canada_logo,
   air_china_logo,
@@ -86,6 +86,4 @@ const logos = [
   united_airlines_logo,
   vietnam_airlines_logo,
   xiamen_airlines_logo
-];
-
-export default logos;
+};

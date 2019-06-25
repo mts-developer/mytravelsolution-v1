@@ -1,5 +1,5 @@
 import featureImages from "../../assets/images/feature_images";
-import logos from "../../assets/images/logos";
+import logos from "../../assets/images/logos/airlines";
 
 // https://www.world-airport-codes.com
 // https://www.iata.org/publications/Pages/code-search.aspx
