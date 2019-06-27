@@ -13,6 +13,7 @@ body {
   --red: #d90000;
   --black-transparent: #00000098;
   --transparent: #00000000;
+  background-color: var(--off-white);
 }
 
 /* Color Palette */
@@ -179,6 +180,14 @@ hr {
   margin-top: 20px;
 }
 
+.margin-right-20 {
+  margin-right: 20px;
+}
+
+.margin-y-20 {
+  margin: 20px 0;
+}
+
 .margin-50 {
   margin: 50px;
 }
@@ -197,6 +206,10 @@ hr {
 
 .padding-5 {
   padding: 5px;
+}
+
+.padding-top-5 {
+  padding-top: 5px;
 }
 
 .padding-y-5 {
@@ -354,6 +367,7 @@ hr {
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  transition: 0.2s;
 }
 
 .card-shadow:hover {
@@ -446,6 +460,8 @@ hr {
   border-color: var(--off-white);
   height: 30px;
 }
+
+/* Responsive Modifiers */
 
 .tablet,
 .desktop {

@@ -30,7 +30,7 @@ const PageWrapper = props => {
             </div>
           </div>
         </div>
-        <Angle fill={colors.white} />
+        <Angle fill={colors.offWhite} />
       </div>
       {props.children}
       <Footer />

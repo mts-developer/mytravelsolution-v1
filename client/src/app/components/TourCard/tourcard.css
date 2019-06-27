@@ -1,7 +1,43 @@
+.tourcard {
+  border-radius: 8px;
+}
+
+.tourcard-locations {
+  grid-gap: 0 20px;
+}
+
 .tourcard-left {
-  background-color: lightpink;
+  border-radius: 8px 8px 0 0;
+  background-image: url("../../assets/images/feature_images/europe-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
 }
 
 .tourcard-right {
-  background-color: lightsteelblue;
+  border-radius: 0 0 8px 8px;
+}
+
+.tourcard-info-bottom {
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .tourcard {
+    flex-direction: row;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .tourcard-left {
+    border-radius: 8px 0 0 8px;
+    width: 50%;
+    height: auto;
+  }
+
+  .tourcard-right {
+    border-radius: 0 8px 8px 0;
+    width: 50%;
+  }
 }

@@ -1,9 +1,11 @@
 .partnercard-container {
-  display: flex;
   flex-direction: column;
   border-radius: 8px;
-  transition: 0.2s ease;
   max-width: 500px;
+}
+
+.partnercard-left {
+  border-radius: 8px 8px 0 0;
 }
 
 .partnercard-right {
@@ -14,6 +16,10 @@
   .partnercard-container {
     display: flex;
     flex-direction: row;
+  }
+
+  .partnercard-left {
+    border-radius: 8px 0 0 8px;
   }
 
   .partnercard-right {

@@ -2,7 +2,7 @@ import React from "react";
 import "./labellinkbutton.css";
 import { Link } from "react-router-dom";
 
-export default props => {
+const LabelLinkButton = props => {
   const { url, label, width, external } = props;
 
   return external === true ? (
@@ -27,3 +27,9 @@ export default props => {
     </Link>
   );
 };
+
+LabelLinkButton.defaultProps = {
+  label: "Label Link"
+};
+
+export default LabelLinkButton;

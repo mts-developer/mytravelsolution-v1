@@ -11,8 +11,16 @@ const ToursPage = () => {
       description="Save for your next trip and discover our menu of low-cost holiday packages"
       backgroundImage={backgrounds.tours_bg}
     >
-      <div className="responsive-width padding-20">
-        <TourCard />
+      <div className="tourspage">
+        <div className="padding-10">
+          <TourCard />
+        </div>
+        <div className="padding-10">
+          <TourCard />
+        </div>
+        <div className="padding-10">
+          <TourCard />
+        </div>
       </div>
     </PageWrapper>
   );
