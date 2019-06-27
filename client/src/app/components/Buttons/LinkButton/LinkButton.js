@@ -34,7 +34,8 @@ const LinkButton = props => {
 
 LinkButton.defaultProps = {
   label: "Link Button",
-  color: "secondary"
+  color: "secondary",
+  url: "#"
 };
 
 export default LinkButton;

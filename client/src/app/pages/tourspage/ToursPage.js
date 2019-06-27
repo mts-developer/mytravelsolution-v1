@@ -3,6 +3,7 @@ import "./tourspage.css";
 import PageWrapper from "../../components/PageWrapper";
 import TourCard from "../../components/TourCard";
 import backgrounds from "../../assets/images/bg";
+import tours from "../../components/Tours";
 
 const ToursPage = () => {
   return (
@@ -12,15 +13,11 @@ const ToursPage = () => {
       backgroundImage={backgrounds.tours_bg}
     >
       <div className="tourspage">
-        <div className="padding-10">
-          <TourCard />
-        </div>
-        <div className="padding-10">
-          <TourCard />
-        </div>
-        <div className="padding-10">
-          <TourCard />
-        </div>
+        {tours.map((tour, i) => (
+          <div key={i} className="padding-10">
+            <TourCard tour={tour} />
+          </div>
+        ))}
       </div>
     </PageWrapper>
   );

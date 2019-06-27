@@ -2,25 +2,32 @@
   border-radius: 8px;
 }
 
+.tourcard:hover {
+  transform: translateY(-5px);
+}
+
 .tourcard-locations {
   grid-gap: 0 20px;
 }
 
 .tourcard-left {
   border-radius: 8px 8px 0 0;
-  background-image: url("../../assets/images/feature_images/europe-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   height: 200px;
 }
 
 .tourcard-right {
+  background-color: var(--white);
   border-radius: 0 0 8px 8px;
 }
 
 .tourcard-info-bottom {
   height: 30px;
+}
+
+.tourcard-remarks {
+  height: 70px;
 }
 
 @media (min-width: 768px) {

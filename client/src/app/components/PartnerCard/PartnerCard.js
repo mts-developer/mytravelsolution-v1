@@ -8,8 +8,8 @@ const PartnerCard = props => {
   };
 
   return (
-    <a className="partnercard" href={url}>
-      <div className="partnercard-container card-shadow">
+    <a href={url}>
+      <div className="partnercard card-shadow">
         <div className="partnercard-left middle padding-20">
           <img className="logo--medium" src={logo} alt="Partner Logo" />
         </div>

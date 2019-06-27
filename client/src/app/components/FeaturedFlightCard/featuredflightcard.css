@@ -36,7 +36,7 @@
 }
 
 .featuredflightcard-bottom {
-  background-color: var(--off-white);
+  background-color: var(--white);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 

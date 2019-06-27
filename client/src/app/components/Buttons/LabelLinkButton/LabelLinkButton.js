@@ -29,7 +29,8 @@ const LabelLinkButton = props => {
 };
 
 LabelLinkButton.defaultProps = {
-  label: "Label Link"
+  label: "Label Link",
+  url: "#"
 };
 
 export default LabelLinkButton;

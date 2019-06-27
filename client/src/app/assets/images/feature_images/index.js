@@ -5,6 +5,7 @@ import central_america_jpg from "./central-america-1.jpg";
 import europe_jpg from "./europe-1.jpg";
 import north_america_jpg from "./north-america-1.jpg";
 import oceania_jpg from "./oceania-1.jpg";
+import canada_jpg from "./canada-1.jpg";
 
 import philippines_1 from "./philippines-1.jpg";
 import philippines_2 from "./philippines-2.jpg";
@@ -19,6 +20,7 @@ export default {
   europe_jpg,
   north_america_jpg,
   oceania_jpg,
+  canada_jpg,
   philippines_1,
   philippines_2,
   philippines_3,
