@@ -59,7 +59,7 @@ const FeaturedFlightCard = props => {
           </div>
           <div className="featuredflightcard-grid grid-columns-2 full-width">
             <div>
-              <p className="font--medium bold">{`${origin} - ${destination} ${returnFlight}`}</p>
+              <p className="font--medium primary-color bold">{`${origin} - ${destination} ${returnFlight}`}</p>
               <div className="row margin-top-5">
                 <p className="font--small bold">from</p>
                 <p className="font--header bold margin-x-5">{`$${price}*`}</p>

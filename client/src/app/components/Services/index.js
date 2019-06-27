@@ -51,7 +51,7 @@ const services = [
       "Ensure peace of mind on your journey and get a quote from our travel insurance providers",
     white: icons.insurance_white_png,
     grey: icons.insurance_grey_png,
-    url: "http://localhost:3000"
+    url: "insurance"
   },
   {
     label: "Rail Tickets",

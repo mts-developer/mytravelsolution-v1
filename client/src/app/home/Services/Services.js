@@ -24,7 +24,7 @@ const Services = () => {
           <ServicesList theme="dark-grey" />
         </div>
       </div>
-      <Angle top fill={colors.offWhite} />
+      <Angle top fill={colors.white} />
     </div>
   );
 };
