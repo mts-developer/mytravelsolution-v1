@@ -53,3 +53,9 @@
 .featuredflightcard-remarks {
   height: 40px;
 }
+
+@media (min-width: 768px) {
+  .featuredflightcard {
+    max-width: 360px;
+  }
+}

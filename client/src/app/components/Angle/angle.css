@@ -1,0 +1,27 @@
+svg {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+}
+
+.angle-top {
+  top: -99px;
+}
+
+.angle-offset {
+  margin-top: 120px;
+}
+
+@media (min-width: 992px) {
+  svg {
+    height: 150px;
+  }
+
+  .angle-top {
+    top: -150px;
+  }
+
+  .angle-offset {
+    margin-top: 170px;
+  }
+}

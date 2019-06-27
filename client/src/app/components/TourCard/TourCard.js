@@ -3,8 +3,11 @@ import "./tourcard.css";
 
 const TourCard = () => {
   return (
-    <div>
-      <h1>Tour Card</h1>
+    <div className="tourcard">
+      <div className="row center middle">
+        <div className="tourcard-left padding-20">Content</div>
+        <div className="tourcard-right padding-20">Content</div>
+      </div>
     </div>
   );
 };

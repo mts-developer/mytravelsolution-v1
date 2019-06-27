@@ -439,22 +439,6 @@ hr {
   opacity: 1;
 }
 
-/* Container Angles */
-
-svg {
-  position: absolute;
-  bottom: 0;
-  height: 100px;
-}
-
-.angle-top {
-  top: -99px;
-}
-
-.angle-offset {
-  margin-top: 120px;
-}
-
 /* Horizontal Rules */
 
 .vertical-rule {
@@ -468,30 +452,12 @@ svg {
   display: none;
 }
 
-.partnercard-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.partnercard-right {
-  border-radius: 0 0 8px 8px;
-}
-
 /* Media Queries */
 
 @media (min-width: 768px) {
   .mobile,
   .desktop {
     display: none;
-  }
-
-  .partnercard-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .partnercard-right {
-    border-radius: 0 8px 8px 0;
   }
 
   .tablet {
@@ -510,25 +476,9 @@ svg {
   .font--title {
     font-size: 40px;
   }
-
-  .featuredflightcard {
-    max-width: 360px;
-  }
 }
 
 @media (min-width: 992px) {
-  svg {
-    height: 150px;
-  }
-
-  .angle-top {
-    top: -150px;
-  }
-
-  .angle-offset {
-    margin-top: 170px;
-  }
-
   .desktop {
     display: flex;
   }

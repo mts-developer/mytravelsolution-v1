@@ -1,5 +1,22 @@
 .partnercard-container {
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   transition: 0.2s ease;
   max-width: 500px;
+}
+
+.partnercard-right {
+  border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 768px) {
+  .partnercard-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partnercard-right {
+    border-radius: 0 8px 8px 0;
+  }
 }

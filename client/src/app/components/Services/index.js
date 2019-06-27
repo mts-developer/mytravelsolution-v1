@@ -36,7 +36,7 @@ const services = [
     url: "http://localhost:3000"
   },
   {
-    label: "Packaged Deals",
+    label: "Tours & Packaged Deals",
     shortLabel: "Tours",
     description:
       "Save for your next trip and discover our menu of low-cost holiday packages",
