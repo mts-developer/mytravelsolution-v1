@@ -9,9 +9,10 @@ import Dialog from "./components/Dialog";
 import FeaturedFlightsPage from "./pages/featuredflightspage";
 import HotelsPage from "./pages/hotelspage";
 import RailPage from "./pages/railpage";
+import RentalsPage from "./pages/rentalspage";
+import ToursPage from "./pages/tourspage";
 import PageNotFound from "./pages/pagenotfound";
 import ScrollToTop from "./components/ScrollToTop";
-import RentalsPage from "./pages/rentalspage";
 
 class App extends React.Component {
   constructor(props) {
@@ -71,6 +72,7 @@ class App extends React.Component {
                 <Route path="/hotels" component={HotelsPage} />
                 <Route path="/rail" component={RailPage} />
                 <Route path="/rentals" component={RentalsPage} />
+                <Route path="/tours" component={ToursPage} />
                 <Route path="*" component={PageNotFound} />
               </Switch>
             </ThemeProvider>

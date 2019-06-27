@@ -37,12 +37,12 @@ const services = [
   },
   {
     label: "Packaged Deals",
-    shortLabel: "Packages",
+    shortLabel: "Tours",
     description:
       "Save for your next trip and discover our menu of low-cost holiday packages",
     white: icons.packaged_deals_white_png,
     grey: icons.packaged_deals_grey_png,
-    url: "http://localhost:3000"
+    url: "tours"
   },
   {
     label: "Travel Insurance",
