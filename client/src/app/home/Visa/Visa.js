@@ -1,42 +1,72 @@
 import React from "react";
 import "./visa.css";
-import LinkButton from "../../components/Buttons/LinkButton";
+import LabelLinkButton from "../../components/Buttons/LabelLinkButton";
+import PartnerCard from "../../components/PartnerCard";
 import logos from "../../assets/images/logos";
+import icons from "../../assets/images/icons";
+
+const visaLinkFacts = [
+  {
+    adjective: "Fast",
+    description: "Visalink is the fastest way to get a travel visa or passport."
+  },
+  {
+    adjective: "Easy",
+    description:
+      "Visalink can help. Visalink experts are available by phone or email."
+  },
+  {
+    adjective: "Secure",
+    description:
+      "Visalink maintains the highest industry standard in data security."
+  }
+];
 
 const Visa = () => {
   return (
-    <div className="visa responsive-width column padding-top-50">
-      <h1 className="font--header bold primary-color margin-none">
-        Need a Travel Visa?
-      </h1>
-      <div className="center column">
-        <p className="font--medium">
-          VisaLink is the global leader in travel visas.
-        </p>
-        <p className="font--medium padding-20">
-          Millions of international travellers have trusted VisaLink to secure
-          their business visas or tourist visas.
-        </p>
-        <div className="row margin-top-50">
-          <img
-            className="logo--small margin-20"
-            src={logos.visalink_logo}
-            alt="Visalink"
-          />
-          <img
-            className="logo--small margin-20"
-            src={logos.mts_logo_full}
-            alt="Visalink"
-          />
+    <div className="visa padding-20 padding-top-50">
+      <div className="center row wrap">
+        <div className="visa-left column">
+          <h2 className="font--large bold primary-color margin-none">
+            MY TRAVEL SOLUTION PARTNER
+          </h2>
+          <h2 className="font--header bold margin-none">VisaLink</h2>
+          <h2 className="font--large bold">
+            Over 10 million travellers have used VisaLink
+          </h2>
+
+          {visaLinkFacts.map((fact, i) => {
+            return (
+              <div key={i} className="row middle">
+                <img
+                  className="icon--small margin-right-20"
+                  src={icons.tick_grey_svg}
+                  alt="Tick"
+                />
+                <div className="column margin-y-10">
+                  <p className="font--medium bold">{`${fact.adjective}.`}</p>
+                  <p className="font--medium">{fact.description}</p>
+                </div>
+              </div>
+            );
+          })}
+
+          <div className="padding-top-50">
+            <LabelLinkButton
+              label="Enquire Now →"
+              external
+              url="https://visalink.com.au/?login=mytravelsolution"
+            />
+          </div>
         </div>
-        <h1 className="font--large bold">The fastest way to get a visa.</h1>
-        <div className="padding-20 padding-top-50">
-          <LinkButton
-            label="Enquire Now"
+        <div className="visa-right middle">
+          <PartnerCard
             url="https://visalink.com.au/?login=mytravelsolution"
-            external
-            width="100px"
-            color="primary"
+            logo={logos.visalink_logo}
+            color="var(--dark-grey)"
+            description="VisaLink is the global leader in travel visas. Millions of
+          international travellers have trusted VisaLink to secure their
+          business visas or tourist visas."
           />
         </div>
       </div>

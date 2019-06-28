@@ -14,16 +14,15 @@
 .servicesgrid__box {
   flex-grow: 1;
   height: 150px;
-  background-color: var(--white);
-  transition: 0.3s ease;
   border-radius: 3px;
+  transition: 0.3s ease;
 }
 
 .servicesgrid__box:hover {
   transform: translateY(-3px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services-container {
     width: 80%;
   }

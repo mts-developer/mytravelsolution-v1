@@ -33,7 +33,7 @@ const Services = () => {
                       <h2 className="bold font--large font-shadow white margin-none">
                         {service.label}
                       </h2>
-                      <p className="service-description font--medium white padding-5">
+                      <p className="service-description thin white padding-5">
                         {service.description}
                       </p>
                     </div>

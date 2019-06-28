@@ -30,7 +30,7 @@ const Featured = props => {
           );
         })}
       </div>
-      <div className="center padding-20 margin-top-50">
+      <div className="center padding-20 margin-top-20">
         <LinkButton label="View More" url={"/featured-flights"} />
       </div>
     </div>

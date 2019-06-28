@@ -15,6 +15,7 @@
 
 .partnercard-right {
   border-radius: 0 0 8px 8px;
+  min-height: 150px;
 }
 
 @media (min-width: 768px) {

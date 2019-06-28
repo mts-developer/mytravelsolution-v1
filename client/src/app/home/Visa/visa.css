@@ -1,3 +1,10 @@
-.visa {
-  text-align: center;
+.visa-right {
+  width: 500px;
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .visa-right {
+    padding: 50px;
+  }
 }

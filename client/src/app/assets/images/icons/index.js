@@ -4,11 +4,13 @@ import phone_white_svg from "./svg/mts-icon-white_phone.svg";
 import marker_white_svg from "./svg/mts-icon-white_marker.svg";
 import mail_white_svg from "./svg/mts-icon-white_mail.svg";
 import fb_white_svg from "./svg/mts-icon-white_facebook.svg";
+import tick_white_svg from "./svg/mts-icon-white_tick.svg";
 
 import phone_grey_svg from "./svg/mts-icon-grey_phone.svg";
 import close_grey_svg from "./svg/mts-icon-grey_close.svg";
 import flight_grey_svg from "./svg/mts-category-grey_flight.svg";
 import mail_grey_svg from "./svg/mts-icon-grey_mail.svg";
+import tick_grey_svg from "./svg/mts-icon-grey_tick.svg";
 
 // PNG
 
@@ -33,11 +35,13 @@ export default {
   marker_white_svg,
   mail_white_svg,
   fb_white_svg,
+  tick_white_svg,
   phone_grey_svg,
   close_grey_svg,
   flight_grey_svg,
   flight_grey_png,
   mail_grey_svg,
+  tick_grey_svg,
   hotel_grey_png,
   car_grey_png,
   cruise_grey_png,
