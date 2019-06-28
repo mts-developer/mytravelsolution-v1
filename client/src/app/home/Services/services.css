@@ -14,7 +14,6 @@
 .servicesgrid__box {
   flex-grow: 1;
   height: 150px;
-  width: 500px;
   background-color: var(--white);
   transition: 0.3s ease;
   border-radius: 3px;
@@ -27,5 +26,9 @@
 @media (min-width: 768px) {
   .services-container {
     width: 80%;
+  }
+
+  .servicesgrid__box {
+    width: 400px;
   }
 }
