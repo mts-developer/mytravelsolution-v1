@@ -1,4 +1,31 @@
 .services {
+  background-color: var(--off-white);
+}
+
+.service-description {
+  transform: translateX(-5px);
+}
+
+.servicesgrid__box:first-child {
+  flex-grow: 0;
+  width: 100%;
+}
+
+.servicesgrid__box {
+  flex-grow: 1;
+  height: 150px;
+  width: 500px;
   background-color: var(--white);
-  position: relative;
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+
+.servicesgrid__box:hover {
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .services-container {
+    width: 80%;
+  }
 }

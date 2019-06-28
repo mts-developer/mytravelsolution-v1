@@ -1,30 +1,47 @@
 import React from "react";
 import "./services.css";
-import ServicesList from "../../components/ServicesList";
-import Angle from "../../components/Angle";
-import logos from "../../assets/images/logos";
-import colors from "../../themes/colors";
+import services from "../../components/Services";
 
 const Services = () => {
   return (
-    <div className="services angle-offset">
-      <div className="responsive-width padding-20">
-        <div className="row middle">
-          <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
-          <div className="column label-spacing-left">
-            <h1 className="font--header bold primary-color margin-none">
-              Our Services
-            </h1>
-            <p className="font--medium">
-              Tailor your holiday with My Travel Solution's premium services
-            </p>
+    <div className="services center">
+      <div className="services-container full-width padding-5">
+        <div className="padding-top-20">
+          <div className="servicesgrid row wrap">
+            {services.map((service, i) => {
+              return (
+                <div
+                  key={i}
+                  className="servicesgrid__box margin-5 padding-20 middle box-shadow"
+                  style={{
+                    background: `url(${service.background})`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <div className="grid-columns-2">
+                    <div className="middle">
+                      <img
+                        className="service__icon icon--medium padding-20"
+                        src={service.white}
+                        alt="Service"
+                      />
+                    </div>
+                    <div className="column padding-20">
+                      <h2 className="bold font--header font-shadow white margin-none">
+                        {service.label}
+                      </h2>
+                      <p className="service-description font--medium white padding-5">
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="padding-20">
-          <ServicesList theme="dark-grey" />
-        </div>
       </div>
-      <Angle top fill={colors.white} />
     </div>
   );
 };

@@ -20,7 +20,7 @@
   background: linear-gradient(
     to right,
     var(--off-white) 5%,
-    var(--transparent) 30%
+    rgba(255, 255, 255, 0) 30%
   );
   content: "";
   height: 100px;
