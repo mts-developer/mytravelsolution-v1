@@ -5,7 +5,7 @@ import services from "../../components/Services";
 
 const Services = () => {
   return (
-    <div className="services center">
+    <div className="services center margin-bottom-50">
       <div className="services-container full-width padding-5">
         <div className="padding-top-20">
           <div className="servicesgrid row wrap">

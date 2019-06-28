@@ -7,16 +7,16 @@ import icons from "../../assets/images/icons";
 
 const visaLinkFacts = [
   {
-    adjective: "Fast",
+    word: "Fast",
     description: "Visalink is the fastest way to get a travel visa or passport."
   },
   {
-    adjective: "Easy",
+    word: "Easy",
     description:
       "Visalink can help. Visalink experts are available by phone or email."
   },
   {
-    adjective: "Secure",
+    word: "Secure",
     description:
       "Visalink maintains the highest industry standard in data security."
   }
@@ -24,7 +24,7 @@ const visaLinkFacts = [
 
 const Visa = () => {
   return (
-    <div className="visa padding-20 padding-top-50">
+    <div className="visa padding-20">
       <div className="center row wrap">
         <div className="visa-left column">
           <h2 className="font--large bold primary-color margin-none">
@@ -44,7 +44,7 @@ const Visa = () => {
                   alt="Tick"
                 />
                 <div className="column margin-y-10">
-                  <p className="font--medium bold">{`${fact.adjective}.`}</p>
+                  <p className="font--medium bold">{`${fact.word}.`}</p>
                   <p className="font--medium">{fact.description}</p>
                 </div>
               </div>
