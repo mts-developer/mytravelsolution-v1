@@ -31,14 +31,14 @@ const services = [
     url: "rentals"
   },
   {
-    label: "Cruise & Cruise Packages",
+    label: "Cruises & Cruise Packages",
     shortLabel: "Cruises",
     description:
       "Get onboard your next cruise holiday to your perfect getaway destinations",
     background: backgrounds.cruises_bg,
     white: icons.cruise_white_png,
     grey: icons.cruise_grey_png,
-    url: "http://localhost:3000"
+    url: "cruises"
   },
   {
     label: "Tours & Packaged Deals",

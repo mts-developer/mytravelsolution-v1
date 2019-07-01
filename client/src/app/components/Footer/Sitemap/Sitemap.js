@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./sitemap.css";
 import quickLinks from "../../QuickLinks";
 import services from "../../Services";
@@ -13,9 +14,12 @@ const Sitemap = props => {
         {quickLinks.map((quickLink, i) => {
           return (
             <ul key={i}>
-              <a className="button-padding" href={quickLink["url"]}>
-                <p className="font--small white">{quickLink["label"]}</p>
-              </a>
+              <Link
+                className="button-padding font--small white"
+                to={quickLink["url"]}
+              >
+                {quickLink["label"]}
+              </Link>
             </ul>
           );
         })}
@@ -33,9 +37,12 @@ const Sitemap = props => {
         {services.map((service, i) => {
           return (
             <ul key={i}>
-              <a className="button-padding" href={service["url"]}>
-                <p className="font--small white">{service["label"]}</p>
-              </a>
+              <Link
+                className="font--small button-padding white"
+                to={service["url"]}
+              >
+                {service["label"]}
+              </Link>
             </ul>
           );
         })}

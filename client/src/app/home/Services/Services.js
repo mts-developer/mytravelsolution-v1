@@ -14,7 +14,7 @@ const Services = () => {
                 <Link
                   key={i}
                   to={service.url}
-                  className="servicesgrid__box margin-5 padding-20 middle box-shadow"
+                  className="servicesgrid__box margin-5 padding-20 middle box-shadow white"
                   style={{
                     background: `url(${service.background})`,
                     backgroundPosition: "center",

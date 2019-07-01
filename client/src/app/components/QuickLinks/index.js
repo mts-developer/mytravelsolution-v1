@@ -1,7 +1,7 @@
 const quickLinks = [
   {
     label: "Home",
-    url: "http://localhost:3000"
+    url: "/"
   },
   {
     label: "Terms & Conditions",

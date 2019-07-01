@@ -11,7 +11,7 @@ const InsurancePage = () => {
       backgroundImage={backgrounds.insurance_bg}
     >
       <div className="insurancepage responsive-width center">
-        <h1>😃😃😃😃😃</h1>
+        <h1>/ COVERMORE /</h1>
       </div>
     </PageWrapper>
   );
