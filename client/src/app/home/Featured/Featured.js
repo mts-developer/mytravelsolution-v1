@@ -7,6 +7,7 @@ import logos from "../../assets/images/logos";
 
 const Featured = props => {
   const clickBookingEngine = props.clickBookingEngine;
+  const numberOfFeatures = 3;
 
   return (
     <div className="featured">
@@ -20,7 +21,7 @@ const Featured = props => {
         </p>
       </div>
       <div className="featured-flight-card-container wrap center">
-        {flights.map((flight, i) => {
+        {flights.slice(0, numberOfFeatures).map((flight, i) => {
           return (
             <FeaturedFlightCard
               key={i}
@@ -31,7 +32,7 @@ const Featured = props => {
         })}
       </div>
       <div className="center padding-20 margin-top-20">
-        <LinkButton label="View More" url={"/featured-flights"} />
+        <LinkButton label="More Flights" url={"/featured-flights"} />
       </div>
     </div>
   );
