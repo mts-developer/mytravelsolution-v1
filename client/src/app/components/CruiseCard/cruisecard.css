@@ -1,0 +1,48 @@
+:root {
+  --border-radius: 8px;
+}
+
+.cruisecard {
+  position: relative;
+  margin: 10px;
+  border-radius: var(--border-radius);
+  transition: 0.2s ease;
+}
+
+.cruisecard:hover {
+  transform: translateY(-5px);
+}
+
+.cruisecard__image {
+  height: 340px;
+}
+
+.cruisecard-title {
+  background-color: var(--red);
+  position: absolute;
+  height: 35px;
+  padding: 0 10px;
+  top: 323px;
+}
+
+.cruisecard-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.cruisecard-bottom {
+  background-color: var(--white);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.cruisecard-grid {
+  margin: 0;
+  grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .cruisecard {
+    max-width: 360px;
+  }
+}

@@ -49,17 +49,17 @@ const TourCard = props => {
           {countriesVisited.length === 1 ? (
             <div>
               <p className="bold">Cities visited</p>
-              <p className="font--small">{citiesVisited.join(", ")}</p>
+              <p className="font--medium">{citiesVisited.join(", ")}</p>
             </div>
           ) : (
             <div>
               <p className="bold">Countries visited</p>
-              <p className="font--small">{countriesVisited.join(", ")}</p>
+              <p className="font--medium">{countriesVisited.join(", ")}</p>
             </div>
           )}
         </div>
         <p className="bold margin">Duration</p>
-        <p className="font--small">
+        <p className="font--medium">
           {duration.days} Days, {duration.nights} Nights
         </p>
         <div className="tourcard-remarks margin-top-20 padding-10">

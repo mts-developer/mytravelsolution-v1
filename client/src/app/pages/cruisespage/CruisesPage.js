@@ -2,12 +2,14 @@ import React from "react";
 import "./cruisespage.css";
 import PageWrapper from "../../components/PageWrapper";
 import Carousel from "../../components/Carousel";
+import CruiseCard from "../../components/CruiseCard";
+import cruises from "../../components/Cruises";
 import logos from "../../assets/images/logos";
-import cruiselinerLogos from "../../assets/images/logos/cruiselines";
+import cruiseLineLogos from "../../assets/images/logos/cruise_lines";
 import backgrounds from "../../assets/images/bg";
 
 const CruisesPage = () => {
-  const carouselLogos = Object.values(cruiselinerLogos);
+  const carouselLogos = Object.values(cruiseLineLogos);
   return (
     <PageWrapper
       title="Cruises & Cruise Packages"
@@ -24,7 +26,9 @@ const CruisesPage = () => {
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
       </div>
       <div className="featuredflightspage-container center wrap margin-bottom-50">
-        Cruises
+        {cruises.map((cruise, i) => {
+          return <CruiseCard key={i} cruise={cruise} />;
+        })}
       </div>
     </PageWrapper>
   );

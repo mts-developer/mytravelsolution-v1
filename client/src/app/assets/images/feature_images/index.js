@@ -4,8 +4,10 @@ import caribbean_jpg from "./caribbean-1.jpg";
 import central_america_jpg from "./central-america-1.jpg";
 import europe_jpg from "./europe-1.jpg";
 import north_america_jpg from "./north-america-1.jpg";
-import oceania_jpg from "./oceania-1.jpg";
 import canada_jpg from "./canada-1.jpg";
+
+import oceania_1 from "./oceania-1.jpg";
+import oceania_2 from "./oceania-2.jpg";
 
 import philippines_1 from "./philippines-1.jpg";
 import philippines_2 from "./philippines-2.jpg";
@@ -19,8 +21,9 @@ export default {
   central_america_jpg,
   europe_jpg,
   north_america_jpg,
-  oceania_jpg,
   canada_jpg,
+  oceania_1,
+  oceania_2,
   philippines_1,
   philippines_2,
   philippines_3,
