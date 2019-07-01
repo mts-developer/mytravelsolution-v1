@@ -1,9 +1,18 @@
-@keyframes scroll {
+@keyframes flights {
   0% {
-    transform: translateX(4500px);
+    transform: translateX(3900px);
   }
   100% {
     transform: translateX(calc(-250px * 15.5));
+  }
+}
+
+@keyframes cruise {
+  0% {
+    transform: translateX(1550px);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
 }
 
@@ -40,9 +49,18 @@
   top: 0;
 }
 
-.slider .slide-track {
-  animation: scroll 50s linear infinite;
+.slider {
   display: flex;
+}
+
+.slide-track-cruises {
+  display: flex;
+  animation: cruise 30s linear infinite;
+}
+
+.slide-track-flights {
+  display: flex;
+  animation: flights 50s linear infinite;
 }
 
 .slider .slide {

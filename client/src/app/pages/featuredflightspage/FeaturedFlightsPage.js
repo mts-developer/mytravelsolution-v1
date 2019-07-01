@@ -7,6 +7,7 @@ import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import Carousel from "../../components/Carousel";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
+import airlineLogos from "../../assets/images/logos/airlines";
 import backgrounds from "../../assets/images/bg";
 import { toTitleCase } from "../../utils";
 
@@ -62,6 +63,7 @@ class FeaturedFlightsPage extends React.Component {
     const style = {
       width: "250px"
     };
+    const carouselLogos = Object.values(airlineLogos);
 
     return (
       <PageWrapper
@@ -73,7 +75,7 @@ class FeaturedFlightsPage extends React.Component {
           <h2 className="font--large font--center bold">
             Choose from My Travel Solution's preferred airline partners
           </h2>
-          <Carousel />
+          <Carousel logos={carouselLogos} component="flights" />
         </div>
         <div className="center column padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
