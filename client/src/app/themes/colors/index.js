@@ -1,12 +1,12 @@
-let primaryColor = "#5800ff";
-let primaryColorLight = "#00cbff";
-let secondaryColor = "#b914cc";
-let secondaryColorLight = "#ff00f6";
-let darkGrey = "#444444";
-let lightGrey = "#777777";
-let white = "#ffffff";
-let offWhite = "#f6f9fc";
-let red = "#d90000";
+const primaryColor = "#5800ff";
+const primaryColorLight = "#00cbff";
+const secondaryColor = "#b914cc";
+const secondaryColorLight = "#ff00f6";
+const darkGrey = "#444444";
+const lightGrey = "#777777";
+const white = "#ffffff";
+const offWhite = "#f6f9fc";
+const red = "#d90000";
 
 export default {
   primaryColor,
