@@ -1,5 +1,5 @@
 import React from "react";
-import "./featurecard.css";
+import "./featuredflightcard.css";
 import LabelActionButton from "../Buttons/LabelActionButton";
 import {
   toTitleCase,
@@ -10,7 +10,7 @@ import {
   pluraliseString
 } from "../../utils";
 
-const FeatureCard = props => {
+const FeaturedFlightCard = props => {
   const { clickBookingEngine, flight } = props;
 
   const expiry = dateFormatLongMonthDay(flight.expiry);
@@ -35,20 +35,20 @@ const FeatureCard = props => {
   };
 
   return (
-    <div className="featurecard center full-width column card-shadow">
-      <div className="featurecard-expiry center">
+    <div className="featuredflightcard center full-width column card-shadow">
+      <div className="featuredflightcard-expiry center">
         <h2 className="font--medium white bold">
           {`Offer valid until ${expiry}`}
         </h2>
       </div>
-      <div className="featurecard-title font--center center middle">
+      <div className="featuredflightcard-title font--center center middle">
         <h2 className="font--large white bold">{name}</h2>
       </div>
       <div
-        className="featurecard-top featurecard-height full-width"
+        className="featuredflightcard-top featuredflightcard-height full-width"
         style={image}
       />
-      <div className="featurecard-bottom featurecard-height full-width">
+      <div className="featuredflightcard-bottom featuredflightcard-height full-width">
         <div className="padding-20">
           <div className="center">
             <img
@@ -57,7 +57,7 @@ const FeatureCard = props => {
               alt={airline.airlineName}
             />
           </div>
-          <div className="featurecard-grid grid-columns-2 full-width">
+          <div className="featuredflightcard-grid grid-columns-2 full-width">
             <div>
               <p className="font--medium primary-color bold">{`${origin} - ${destination} ${returnFlight}`}</p>
               <div className="row margin-top-5">
@@ -80,7 +80,7 @@ const FeatureCard = props => {
               })}
             </div>
           </div>
-          <div className="featurecard-remarks padding-top-15">
+          <div className="featuredflightcard-remarks padding-top-15">
             {remarks.map((remark, i) => {
               return (
                 <p key={i} className="font--small light-grey padding-y-5">
@@ -102,4 +102,4 @@ const FeatureCard = props => {
   );
 };
 
-export default FeatureCard;
+export default FeaturedFlightCard;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./featured.css";
-import FeatureCard from "../../components/FeatureCard";
+import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import LinkButton from "../../components/Buttons/LinkButton";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
@@ -22,7 +22,7 @@ const Featured = props => {
       <div className="featured-flight-card-container wrap center">
         {flights.map((flight, i) => {
           return (
-            <FeatureCard
+            <FeaturedFlightCard
               key={i}
               clickBookingEngine={clickBookingEngine}
               flight={flight}

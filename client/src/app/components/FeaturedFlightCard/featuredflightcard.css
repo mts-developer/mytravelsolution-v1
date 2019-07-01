@@ -2,17 +2,17 @@
   --border-radius: 8px;
 }
 
-.featurecard {
+.featuredflightcard {
   margin: 10px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
 }
 
-.featurecard:hover {
+.featuredflightcard:hover {
   transform: translateY(-5px);
 }
 
-.featurecard-expiry {
+.featuredflightcard-expiry {
   background-color: var(--dark-grey);
   position: absolute;
   transform: translateY(-290px);
@@ -22,40 +22,40 @@
   border-radius: 12px;
 }
 
-.featurecard-title {
+.featuredflightcard-title {
   background-color: var(--red);
   position: absolute;
   height: 35px;
   padding: 0 10px;
 }
 
-.featurecard-top {
+.featuredflightcard-top {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.featurecard-bottom {
+.featuredflightcard-bottom {
   background-color: var(--white);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.featurecard-height {
+.featuredflightcard-height {
   height: 320px;
 }
 
-.featurecard-grid {
+.featuredflightcard-grid {
   margin: 20px 0;
   grid-template-rows: 30px auto;
   grid-gap: 20px 0;
 }
 
-.featurecard-remarks {
+.featuredflightcard-remarks {
   height: 40px;
 }
 
 @media (min-width: 768px) {
-  .featurecard {
+  .featuredflightcard {
     max-width: 360px;
   }
 }
