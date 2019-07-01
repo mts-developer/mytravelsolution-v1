@@ -3,7 +3,7 @@ import "./featuredflightspage.css";
 import PageWrapper from "../../components/PageWrapper";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
-import FeaturedFlightCard from "../../components/FeaturedFlightCard";
+import FeatureCard from "../../components/FeatureCard";
 import Carousel from "../../components/Carousel";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
@@ -39,7 +39,7 @@ class FeaturedFlightsPage extends React.Component {
     if (!(filteredByRegion.length < 1)) {
       return filteredByRegion.map((flight, i) => {
         return (
-          <FeaturedFlightCard
+          <FeatureCard
             key={i}
             clickBookingEngine={this.props.clickBookingEngine}
             flight={flight}
