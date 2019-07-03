@@ -7,7 +7,7 @@
 }
 
 .servicesgrid__box:first-child {
-  flex-grow: 0;
+  flex-grow: 1;
   width: 100%;
 }
 
@@ -24,7 +24,7 @@
 
 @media (min-width: 992px) {
   .services-container {
-    width: 80%;
+    /* width: 80%; */
   }
 
   .servicesgrid__box {
