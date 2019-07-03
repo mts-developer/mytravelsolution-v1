@@ -54,6 +54,7 @@ class Home extends React.Component {
         </section>
         <section className="featured-section">
           <Featured
+            bottomPadding="padding-bottom-50"
             title="Featured Flights"
             description="See My Travel Solution's range of great value flights"
           >
@@ -65,6 +66,8 @@ class Home extends React.Component {
         </section>
         <section className="featured-section">
           <Featured
+            topPadding="padding-top-50"
+            bottomPadding="padding-bottom-50"
             title="Featured Cruises"
             description="Discover a selection of My Travel Solution's premium and luxury cruises"
           >
