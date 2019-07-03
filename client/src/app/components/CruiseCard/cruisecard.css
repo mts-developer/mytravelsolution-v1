@@ -5,7 +5,7 @@
 .cruisecard {
   position: relative;
   margin: 10px auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
   max-width: 380px;
