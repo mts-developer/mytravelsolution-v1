@@ -1,0 +1,24 @@
+.slide-container {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
+  max-width: 1650px;
+}
+
+/* Remove outline on select */
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+
+@media (min-width: 767px) and (max-width: 1124px) {
+  .slide-container {
+    max-width: 830px;
+  }
+}
+
+@media (min-width: 1125px) and (max-width: 1494px) {
+  .slide-container {
+    max-width: 1300px;
+  }
+}

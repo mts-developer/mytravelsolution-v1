@@ -35,7 +35,7 @@ const FeaturedFlightCard = props => {
   };
 
   return (
-    <div className="featuredflightcard center full-width column card-shadow">
+    <div className="featuredflightcard column center card-shadow">
       <div className="featuredflightcard-expiry center">
         <h2 className="font--medium white bold">
           {`Offer valid until ${expiry}`}
@@ -44,11 +44,8 @@ const FeaturedFlightCard = props => {
       <div className="featuredflightcard-title font--center center middle">
         <h2 className="font--large white bold">{name}</h2>
       </div>
-      <div
-        className="featuredflightcard-top featuredflightcard-height full-width"
-        style={image}
-      />
-      <div className="featuredflightcard-bottom featuredflightcard-height full-width">
+      <div className="featuredflightcard-top full-width" style={image} />
+      <div className="featuredflightcard-bottom full-width">
         <div className="padding-20">
           <div className="center">
             <img
@@ -59,7 +56,7 @@ const FeaturedFlightCard = props => {
           </div>
           <div className="featuredflightcard-grid grid-columns-2 full-width">
             <div>
-              <p className="font--medium primary-color bold">{`${origin} - ${destination} ${returnFlight}`}</p>
+              <p className="font--large primary-color bold">{`${origin} - ${destination} ${returnFlight}`}</p>
               <div className="row margin-top-5">
                 <p className="font--small bold">from</p>
                 <p className="font--header bold margin-x-5">{`$${price}*`}</p>
@@ -80,7 +77,7 @@ const FeaturedFlightCard = props => {
               })}
             </div>
           </div>
-          <div className="featuredflightcard-remarks padding-top-15">
+          <div className="featuredflightcard-remarks">
             {remarks.map((remark, i) => {
               return (
                 <p key={i} className="font--small light-grey padding-y-5">
@@ -89,13 +86,13 @@ const FeaturedFlightCard = props => {
               );
             })}
           </div>
-        </div>
-        <div className="padding-20 space-between row middle">
-          <p className="font--small light-grey bold">* Conditions Apply</p>
-          <LabelActionButton
-            label="Book Now"
-            onClick={e => clickBookingEngine(e)}
-          />
+          <div className="padding-top-20 space-between row middle">
+            <p className="font--small light-grey bold">* Conditions Apply</p>
+            <LabelActionButton
+              label="Book Now"
+              onClick={e => clickBookingEngine(e)}
+            />
+          </div>
         </div>
       </div>
     </div>

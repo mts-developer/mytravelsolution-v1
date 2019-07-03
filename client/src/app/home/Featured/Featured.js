@@ -5,9 +5,37 @@ import LinkButton from "../../components/Buttons/LinkButton";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 
+import Slider from "react-slick";
+
 const Featured = props => {
   const clickBookingEngine = props.clickBookingEngine;
-  const numberOfFeatures = 3;
+  const settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 4,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1124,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 1495,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
+  };
 
   return (
     <div className="featured">
@@ -20,19 +48,21 @@ const Featured = props => {
           See My Travel Solution's range of great value flights
         </p>
       </div>
-      <div className="featured-flight-card-container wrap center">
-        {flights.slice(0, numberOfFeatures).map((flight, i) => {
-          return (
-            <FeaturedFlightCard
-              key={i}
-              clickBookingEngine={clickBookingEngine}
-              flight={flight}
-            />
-          );
-        })}
+      <div className="slide-container">
+        <Slider {...settings}>
+          {flights.map((flight, i) => {
+            return (
+              <FeaturedFlightCard
+                key={i}
+                clickBookingEngine={clickBookingEngine}
+                flight={flight}
+              />
+            );
+          })}
+        </Slider>
       </div>
       <div className="center padding-20 margin-top-20">
-        <LinkButton label="More Flights" url={"/featured-flights"} />
+        <LinkButton label="View More Flights" url={"/featured-flights"} />
       </div>
     </div>
   );

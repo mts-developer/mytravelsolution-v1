@@ -3,9 +3,11 @@
 }
 
 .featuredflightcard {
-  margin: 10px;
+  margin: 10px auto;
+  margin-bottom: 40px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
+  max-width: 380px;
 }
 
 .featuredflightcard:hover {
@@ -15,7 +17,7 @@
 .featuredflightcard-expiry {
   background-color: var(--dark-grey);
   position: absolute;
-  transform: translateY(-290px);
+  transform: translateY(-280px);
   height: 25px;
   padding: 0 10px;
   text-align: right;
@@ -23,6 +25,7 @@
 }
 
 .featuredflightcard-title {
+  transform: translateY(-54px);
   background-color: var(--red);
   position: absolute;
   height: 35px;
@@ -30,6 +33,7 @@
 }
 
 .featuredflightcard-top {
+  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -40,18 +44,20 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.featuredflightcard-height {
-  height: 320px;
-}
-
 .featuredflightcard-grid {
+  height: 80px;
   margin: 20px 0;
-  grid-template-rows: 30px auto;
-  grid-gap: 20px 0;
+  grid-gap: 20px 10px;
 }
 
 .featuredflightcard-remarks {
-  height: 40px;
+  height: 80px;
+}
+
+@media (max-width: 412px) {
+  .featuredflightcard {
+    max-width: 95%;
+  }
 }
 
 @media (min-width: 768px) {
