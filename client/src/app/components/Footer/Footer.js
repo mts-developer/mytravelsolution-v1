@@ -9,8 +9,7 @@ import colors from "../../themes/colors";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <hr />
+    <div className="footer angle-offset">
       <div className="responsive-width wrap space-between padding-20">
         <ContactUs
           address="336 Somerville Rd, Kingsville VIC 3012"
@@ -21,7 +20,7 @@ const Footer = () => {
         <div className="center">
           <Sitemap
             facebookLabel="Like Us"
-            facebookIcon={icons.fb_grey_svg}
+            facebookIcon={icons.fb_white_svg}
             facebookUrl="fb://page/mytravelsolutionau/"
           />
         </div>
@@ -40,8 +39,9 @@ const Footer = () => {
         />
       </div>
       <div className="center padding-20">
-        <p className="font--small">© 2019 MY TRAVEL SOLUTION</p>
+        <p className="font--small white">© 2019 MY TRAVEL SOLUTION</p>
       </div>
+      <Angle top fill={colors.secondaryColorLight} />
     </div>
   );
 };

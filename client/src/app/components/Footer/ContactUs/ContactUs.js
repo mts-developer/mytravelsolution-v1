@@ -9,32 +9,32 @@ const ContactUs = props => {
 
   return (
     <div className="contactus">
-      <h1 className="font--header bold left margin-none">Call us today</h1>
+      <h1 className="font--header white bold left">Call us today</h1>
       <a href={addressUrl} className="row margin-top-20 middle">
         <img
           className="icon--small margin-right-10"
-          src={icons.marker_grey_svg}
+          src={icons.marker_white_svg}
           alt="Marker"
         />
-        <p className="font-small">{address}</p>
+        <p className="font-small white">{address}</p>
       </a>
       <a href={`tel:${contactNumber}`} className="row margin-top-20 middle">
         <img
           className="icon--small margin-right-10"
-          src={icons.phone_grey_svg}
+          src={icons.phone_white_svg}
           alt="Marker"
         />
-        <p className="font-small">{contactNumber}</p>
+        <p className="font-small white">{contactNumber}</p>
       </a>
       <a href={`mailto:${email}`} className="row margin-top-20 middle">
         <img
           className="icon--small margin-right-10"
-          src={icons.mail_grey_svg}
+          src={icons.mail_white_svg}
           alt="Marker"
         />
-        <p className="font-small">{email}</p>
+        <p className="font-small white">{email}</p>
       </a>
-      <div className="margin-top-20">
+      <div className="margin-top-50">
         <LinkButton
           label="Call Us Now"
           width="90px"
