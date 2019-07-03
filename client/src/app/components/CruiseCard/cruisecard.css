@@ -5,7 +5,7 @@
 .cruisecard {
   position: relative;
   margin: 10px auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
   max-width: 380px;
@@ -16,7 +16,7 @@
 }
 
 .cruisecard__image {
-  height: 340px;
+  height: 280px;
 }
 
 .cruisecard-title {
@@ -24,7 +24,7 @@
   position: absolute;
   height: 35px;
   padding: 0 10px;
-  top: 323px;
+  top: 263px;
 }
 
 .cruisecard-top {
