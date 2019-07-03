@@ -18,7 +18,7 @@ const Hero = props => {
       <div className="hero-container padding-20">
         <Header />
         <div className="responsive-width">
-          <div className="hero-title">
+          <div className="margin-top-20">
             <h1 className="white font--title bold font-shadow margin-none">
               Your journey begins
             </h1>

@@ -8,14 +8,14 @@ const Sitemap = props => {
   const { facebookLabel, facebookIcon, facebookUrl } = props;
 
   return (
-    <div className="sitemap grid-columns-2">
-      <div className="white">
-        <h2 className="font--medium bold white button-padding">QuickLinks</h2>
+    <div className="sitemap grid-columns-2 margin-top-20">
+      <div className="dark-grey">
+        <h2 className="font--medium bold dark-grey padding-10">QuickLinks</h2>
         {quickLinks.map((quickLink, i) => {
           return (
             <ul key={i}>
               <Link
-                className="button-padding font--small white"
+                className="font--small dark-grey padding-10"
                 to={quickLink["url"]}
               >
                 {quickLink["label"]}
@@ -24,7 +24,7 @@ const Sitemap = props => {
           );
         })}
         <a href={facebookUrl} className="middle button-padding">
-          <p className="font--large center white bold">{facebookLabel}</p>
+          <p className="font--large center bold">{facebookLabel}</p>
           <img
             className="icon--medium"
             src={facebookIcon}
@@ -32,13 +32,13 @@ const Sitemap = props => {
           />
         </a>
       </div>
-      <div className="white">
-        <h2 className="font--medium bold white button-padding">Services</h2>
+      <div>
+        <h2 className="font--medium bold dark-grey padding-10">Services</h2>
         {services.map((service, i) => {
           return (
             <ul key={i}>
               <Link
-                className="font--small button-padding white"
+                className="font--small dark-grey padding-10"
                 to={service["url"]}
               >
                 {service["label"]}

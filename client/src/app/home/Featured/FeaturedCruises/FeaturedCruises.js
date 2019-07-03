@@ -1,7 +1,7 @@
 import React from "react";
 import "./featuredcruises.css";
 import CruiseCard from "../../../components/CruiseCard";
-import LinkButton from "../../../components/Buttons/LinkButton";
+import LabelLinkButton from "../../../components/Buttons/LabelLinkButton";
 import Carousel from "../../../components/Carousel";
 import cruises from "../../../components/Cruises";
 
@@ -13,8 +13,8 @@ const FeaturedCruises = () => {
           return <CruiseCard key={i} cruise={cruise} />;
         })}
       </Carousel>
-      <div className="center padding-20 margin-top-20">
-        <LinkButton label="View More Cruises" url={"/cruises"} />
+      <div className="center margin-y-20">
+        <LabelLinkButton label="View More Cruises →" url={"cruises"} />
       </div>
     </div>
   );

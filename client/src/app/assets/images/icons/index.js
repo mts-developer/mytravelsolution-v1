@@ -7,9 +7,11 @@ import fb_white_svg from "./svg/mts-icon-white_facebook.svg";
 import tick_white_svg from "./svg/mts-icon-white_tick.svg";
 
 import phone_grey_svg from "./svg/mts-icon-grey_phone.svg";
+import marker_grey_svg from "./svg/mts-icon-grey_marker.svg";
 import close_grey_svg from "./svg/mts-icon-grey_close.svg";
 import flight_grey_svg from "./svg/mts-category-grey_flight.svg";
 import mail_grey_svg from "./svg/mts-icon-grey_mail.svg";
+import fb_grey_svg from "./svg/mts-icon-grey_facebook.svg";
 import tick_grey_svg from "./svg/mts-icon-grey_tick.svg";
 import swipe_right_grey_svg from "./svg/mts-icon-grey_swipe_right.svg";
 
@@ -38,10 +40,12 @@ export default {
   fb_white_svg,
   tick_white_svg,
   phone_grey_svg,
+  marker_grey_svg,
   close_grey_svg,
   flight_grey_svg,
   flight_grey_png,
   mail_grey_svg,
+  fb_grey_svg,
   tick_grey_svg,
   swipe_right_grey_svg,
   hotel_grey_png,

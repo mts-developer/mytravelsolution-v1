@@ -86,7 +86,7 @@ const FeaturedFlightCard = props => {
               );
             })}
           </div>
-          <div className="padding-top-20 space-between row middle">
+          <div className="space-between row middle">
             <p className="font--small light-grey bold">* Conditions Apply</p>
             <LabelActionButton
               label="Book Now"

@@ -1,10 +1,9 @@
 .visa {
-  background-color: var(--off-white);
+  background-color: var(--white);
 }
 
 .visa-right {
   width: 500px;
-  padding-top: 50px;
 }
 
 @media (min-width: 768px) {

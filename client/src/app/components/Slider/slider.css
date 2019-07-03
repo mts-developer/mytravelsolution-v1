@@ -21,14 +21,14 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  background-color: var(--off-white);
+  background-color: var(--white);
 }
 
 .slider::before,
 .slider::after {
   background: linear-gradient(
     to right,
-    var(--off-white) 5%,
+    var(--white) 5%,
     rgba(255, 255, 255, 0) 30%
   );
   content: "";

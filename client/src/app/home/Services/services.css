@@ -1,5 +1,5 @@
 .services {
-  background-color: var(--off-white);
+  background-color: var(--white);
 }
 
 .service-description {
@@ -14,12 +14,9 @@
 .servicesgrid__box {
   flex-grow: 1;
   height: 150px;
-  border-radius: 3px;
+  width: 250px;
+  /* border-radius: 3px; */
   transition: 0.3s ease;
-}
-
-.servicesgrid__box:hover {
-  transform: translateY(-3px);
 }
 
 @media (min-width: 992px) {

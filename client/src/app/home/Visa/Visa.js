@@ -31,10 +31,9 @@ const Visa = () => {
             MY TRAVEL SOLUTION PARTNER
           </h2>
           <h2 className="font--header bold margin-none">VisaLink</h2>
-          <h2 className="font--large bold">
+          <h2 className="font--large margin-none padding-bottom-20">
             Over 10 million travellers have used VisaLink
           </h2>
-
           {visaLinkFacts.map((fact, i) => {
             return (
               <div key={i} className="row middle">
@@ -43,15 +42,15 @@ const Visa = () => {
                   src={icons.tick_grey_svg}
                   alt="Tick"
                 />
-                <div className="column margin-y-10">
+                <div className="column padding-y-5">
                   <p className="font--medium bold">{`${fact.word}.`}</p>
-                  <p className="font--medium">{fact.description}</p>
+                  <p className="font--small">{fact.description}</p>
                 </div>
               </div>
             );
           })}
 
-          <div className="padding-top-50">
+          <div className="margin-top-20 margin-bottom-50">
             <LabelLinkButton
               label="Enquire Now →"
               external

@@ -1,6 +1,6 @@
 .partnercard {
   flex-direction: column;
-  border-radius: 8px;
+
   max-width: 500px;
 }
 
@@ -10,12 +10,9 @@
 
 .partnercard-left {
   background-color: var(--white);
-  border-radius: 8px 8px 0 0;
 }
 
 .partnercard-right {
-  border-radius: 0 0 8px 8px;
-  min-height: 150px;
 }
 
 @media (min-width: 768px) {

@@ -21,7 +21,7 @@ const PageWrapper = props => {
           <Header />
           <div className="responsive-width">
             <div className="hero-title margin-none">
-              <h1 className="white font--title bold font-shadow margin-none">
+              <h1 className="white font--title bold font-shadow margin-none padding-top-20">
                 {title}
               </h1>
               <h2 className="page-wrapper__description white font--large thin margin-top-5 padding-5">
@@ -30,7 +30,7 @@ const PageWrapper = props => {
             </div>
           </div>
         </div>
-        <Angle fill={colors.offWhite} />
+        <Angle fill={colors.white} />
       </div>
       {props.children}
       <Footer />

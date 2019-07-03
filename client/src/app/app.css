@@ -13,7 +13,6 @@ body {
   --red: #d90000;
   --black-transparent: #00000098;
   --transparent: #00000000;
-  background-color: var(--off-white);
 }
 
 /* Color Palette */
@@ -78,7 +77,7 @@ ul {
 }
 
 hr {
-  border: 0.5px solid;
+  border: 0.2px solid;
   border-color: var(--light-grey);
 }
 
@@ -208,6 +207,10 @@ hr {
   margin-bottom: 50px;
 }
 
+.margin-y-50 {
+  margin: 50px 0;
+}
+
 .margin-list {
   margin: 10px;
 }
@@ -232,12 +235,20 @@ hr {
   padding-top: 10px;
 }
 
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
 .padding-20 {
   padding: 20px;
 }
 
 .padding-top-20 {
   padding-top: 20px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
 }
 
 .padding-x-20 {
@@ -267,7 +278,6 @@ hr {
 .grid-columns-2 {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
 }
 
 .textfield-width {
@@ -378,12 +388,12 @@ hr {
   transition: 0.2s;
 }
 
-.card-shadow:hover {
+/* .card-shadow:hover {
   -webkit-box-shadow: 0 16px 27px 5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.25), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   box-shadow: 0 16px 27px 5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.25), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
+} */
 
 .button-shadow {
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),

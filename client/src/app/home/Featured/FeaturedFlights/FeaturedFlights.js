@@ -1,7 +1,7 @@
 import React from "react";
 import "./featuredflights.css";
 import FeaturedFlightCard from "../../../components/FeaturedFlightCard";
-import LinkButton from "../../../components/Buttons/LinkButton";
+import LabelLinkButton from "../../../components/Buttons/LabelLinkButton";
 import Carousel from "../../../components/Carousel";
 import flights from "../../../components/Flights";
 
@@ -20,8 +20,8 @@ const FeaturedFlights = props => {
           );
         })}
       </Carousel>
-      <div className="center padding-20 margin-top-20">
-        <LinkButton label="View More Flights" url={"/featured-flights"} />
+      <div className="center margin-y-20">
+        <LabelLinkButton label="View More Flights →" url={"featured-flights"} />
       </div>
     </div>
   );
