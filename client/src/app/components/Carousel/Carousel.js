@@ -1,6 +1,7 @@
 import React from "react";
 import "./carousel.css";
 import Slider from "react-slick";
+import icons from "../../assets/images/icons";
 
 const settings = {
   dots: true,

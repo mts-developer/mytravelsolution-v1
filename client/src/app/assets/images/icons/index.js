@@ -11,6 +11,7 @@ import close_grey_svg from "./svg/mts-icon-grey_close.svg";
 import flight_grey_svg from "./svg/mts-category-grey_flight.svg";
 import mail_grey_svg from "./svg/mts-icon-grey_mail.svg";
 import tick_grey_svg from "./svg/mts-icon-grey_tick.svg";
+import swipe_right_grey_svg from "./svg/mts-icon-grey_swipe_right.svg";
 
 // PNG
 
@@ -42,6 +43,7 @@ export default {
   flight_grey_png,
   mail_grey_svg,
   tick_grey_svg,
+  swipe_right_grey_svg,
   hotel_grey_png,
   car_grey_png,
   cruise_grey_png,

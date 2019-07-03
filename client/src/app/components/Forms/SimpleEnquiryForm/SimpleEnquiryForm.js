@@ -143,7 +143,7 @@ class SimpleEnquiryForm extends React.Component {
                 style={style.checkBox}
               />
             }
-            label={`Reply Email ${email}`}
+            label={`Send a reply email ${email !== "" ? `to ${email}` : ""}`}
           />
           <FormControlLabel
             control={

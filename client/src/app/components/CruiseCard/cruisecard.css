@@ -4,9 +4,11 @@
 
 .cruisecard {
   position: relative;
-  margin: 10px;
+  margin: 10px auto;
+  margin-bottom: 40px;
   border-radius: var(--border-radius);
   transition: 0.2s ease;
+  max-width: 380px;
 }
 
 .cruisecard:hover {
@@ -39,6 +41,12 @@
 .cruisecard-grid {
   margin: 0;
   grid-gap: 10px;
+}
+
+@media (max-width: 412px) {
+  .cruisecard {
+    max-width: 95%;
+  }
 }
 
 @media (min-width: 768px) {

@@ -2,6 +2,8 @@ import React from "react";
 import "./home.css";
 import Hero from "./Hero";
 import Featured from "./Featured";
+import FeaturedFlights from "./Featured/FeaturedFlights";
+import FeaturedCruises from "./Featured/FeaturedCruises";
 import Services from "./Services";
 import Visa from "./Visa";
 import Footer from "../components/Footer";
@@ -51,10 +53,23 @@ class Home extends React.Component {
           <Hero clickBookingEngine={clickBookingEngine} />
         </section>
         <section className="featured-section">
-          <Featured clickBookingEngine={clickBookingEngine} />
+          <Featured
+            title="Featured Flights"
+            description="See My Travel Solution's range of great value flights"
+          >
+            <FeaturedFlights clickBookingEngine={clickBookingEngine} />
+          </Featured>
         </section>
         <section className="services-section">
           <Services />
+        </section>
+        <section className="featured-section">
+          <Featured
+            title="Featured Cruises"
+            description="Discover a selection of My Travel Solution's premium and luxury cruises"
+          >
+            <FeaturedCruises />
+          </Featured>
         </section>
         <section className="visa-section">
           <Visa />

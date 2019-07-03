@@ -1,38 +1,17 @@
 import React from "react";
 import "./featured.css";
-import FeaturedFlightCard from "../../components/FeaturedFlightCard";
-import LinkButton from "../../components/Buttons/LinkButton";
-import Carousel from "../../components/Carousel";
-import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 
 const Featured = props => {
-  const clickBookingEngine = props.clickBookingEngine;
+  const { title, description } = props;
   return (
-    <div className="featured">
+    <div className="featured margin-bottom-50">
       <div className="column center padding-20">
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
-        <h1 className="font--header bold primary-color margin-none">
-          Featured Flights
-        </h1>
-        <p className="font--medium font--center">
-          See My Travel Solution's range of great value flights
-        </p>
+        <h1 className="font--header bold primary-color margin-none">{title}</h1>
+        <p className="font--medium font--center">{description}</p>
       </div>
-      <Carousel>
-        {flights.map((flight, i) => {
-          return (
-            <FeaturedFlightCard
-              key={i}
-              clickBookingEngine={clickBookingEngine}
-              flight={flight}
-            />
-          );
-        })}
-      </Carousel>
-      <div className="center padding-20 margin-top-20">
-        <LinkButton label="View More Flights" url={"/featured-flights"} />
-      </div>
+      {props.children}
     </div>
   );
 };
