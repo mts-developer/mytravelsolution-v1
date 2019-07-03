@@ -5,6 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import Slider from "../../components/Slider";
+import Carousel from "../../components/Carousel";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 import airlineLogos from "../../assets/images/logos/airlines";
@@ -38,19 +39,23 @@ class FeaturedFlightsPage extends React.Component {
       return flight.region === this.state.selectedRegion ? flight : null;
     });
     if (!(filteredByRegion.length < 1)) {
-      return filteredByRegion.map((flight, i) => {
-        return (
-          <FeaturedFlightCard
-            key={i}
-            clickBookingEngine={this.props.clickBookingEngine}
-            flight={flight}
-          />
-        );
-      });
+      return (
+        <Carousel>
+          {filteredByRegion.map((flight, i) => {
+            return (
+              <FeaturedFlightCard
+                key={i}
+                clickBookingEngine={this.props.clickBookingEngine}
+                flight={flight}
+              />
+            );
+          })}
+        </Carousel>
+      );
     } else {
       let selectedRegion = toTitleCase(this.state.selectedRegion);
       return (
-        <p className="font--large bold padding-20">
+        <p className="font--large font--center bold padding-20">
           {`Sorry, there are currently no specials for ${selectedRegion} at the moment.`}
         </p>
       );
@@ -98,7 +103,7 @@ class FeaturedFlightsPage extends React.Component {
         <h1 className="center font--header primary-color bold">
           {toTitleCase(selectedRegion)}
         </h1>
-        <div className="featuredflightspage-container center wrap margin-bottom-50">
+        <div className="featuredflightspage-container margin-bottom-50">
           {filteredFlights}
         </div>
       </PageWrapper>
