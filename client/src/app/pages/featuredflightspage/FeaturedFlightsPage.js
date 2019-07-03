@@ -4,7 +4,7 @@ import PageWrapper from "../../components/PageWrapper";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
-import Carousel from "../../components/Carousel";
+import Slider from "../../components/Slider";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
 import airlineLogos from "../../assets/images/logos/airlines";
@@ -63,7 +63,7 @@ class FeaturedFlightsPage extends React.Component {
     const style = {
       width: "250px"
     };
-    const carouselLogos = Object.values(airlineLogos);
+    const sliderLogos = Object.values(airlineLogos);
 
     return (
       <PageWrapper
@@ -75,7 +75,7 @@ class FeaturedFlightsPage extends React.Component {
           <h2 className="font--large font--center bold">
             Choose from My Travel Solution's preferred airline partners
           </h2>
-          <Carousel logos={carouselLogos} component="flights" />
+          <Slider logos={sliderLogos} component="flights" />
         </div>
         <div className="center column padding-20">
           <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />

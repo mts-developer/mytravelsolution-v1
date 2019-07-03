@@ -2,10 +2,9 @@ import React from "react";
 import "./featured.css";
 import FeaturedFlightCard from "../../components/FeaturedFlightCard";
 import LinkButton from "../../components/Buttons/LinkButton";
+import Slider from "react-slick";
 import flights from "../../components/Flights";
 import logos from "../../assets/images/logos";
-
-import Slider from "react-slick";
 
 const Featured = props => {
   const clickBookingEngine = props.clickBookingEngine;

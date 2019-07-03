@@ -1,7 +1,7 @@
 import React from "react";
-import "./carousel.css";
+import "./slider.css";
 
-const Carousel = props => {
+const Slider = props => {
   const { logos, component } = props;
 
   return (
@@ -25,4 +25,4 @@ const Carousel = props => {
   );
 };
 
-export default Carousel;
+export default Slider;

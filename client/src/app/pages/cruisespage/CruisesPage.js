@@ -1,7 +1,7 @@
 import React from "react";
 import "./cruisespage.css";
 import PageWrapper from "../../components/PageWrapper";
-import Carousel from "../../components/Carousel";
+import Slider from "../../components/Slider";
 import CruiseCard from "../../components/CruiseCard";
 import cruises from "../../components/Cruises";
 import logos from "../../assets/images/logos";
@@ -9,7 +9,7 @@ import cruiseLineLogos from "../../assets/images/logos/cruise_lines";
 import backgrounds from "../../assets/images/bg";
 
 const CruisesPage = () => {
-  const carouselLogos = Object.values(cruiseLineLogos);
+  const sliderLogos = Object.values(cruiseLineLogos);
   return (
     <PageWrapper
       title="Cruises & Cruise Packages"
@@ -20,7 +20,7 @@ const CruisesPage = () => {
         <h2 className="font--large font--center bold">
           Choose from My Travel Solution's preferred cruise partners
         </h2>
-        <Carousel logos={carouselLogos} component="cruises" />
+        <Slider logos={sliderLogos} component="cruises" />
       </div>
       <div className="center column padding-20">
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
