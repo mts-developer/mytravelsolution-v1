@@ -176,7 +176,11 @@ hr {
 }
 
 .margin-x-20 {
-  margin: 0 14px;
+  margin: 0 20px;
+}
+
+.margin-y-20 {
+  margin: 20px 0;
 }
 
 .margin-20 {

@@ -11,10 +11,6 @@
   max-width: 380px;
 }
 
-.cruisecard:hover {
-  transform: translateY(-5px);
-}
-
 .cruisecard__image {
   height: 280px;
 }

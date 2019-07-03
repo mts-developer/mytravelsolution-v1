@@ -1,6 +1,5 @@
 .partnercard {
   flex-direction: column;
-
   max-width: 500px;
 }
 
@@ -12,20 +11,9 @@
   background-color: var(--white);
 }
 
-.partnercard-right {
-}
-
 @media (min-width: 768px) {
   .partnercard {
     display: flex;
     flex-direction: row;
-  }
-
-  .partnercard-left {
-    border-radius: 8px 0 0 8px;
-  }
-
-  .partnercard-right {
-    border-radius: 0 8px 8px 0;
   }
 }

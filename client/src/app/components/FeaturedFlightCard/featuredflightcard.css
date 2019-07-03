@@ -13,7 +13,7 @@
 .featuredflightcard-expiry {
   background-color: var(--dark-grey);
   position: absolute;
-  transform: translateY(-240px);
+  transform: translateY(-250px);
   height: 25px;
   padding: 0 10px;
   text-align: right;
@@ -21,7 +21,7 @@
 }
 
 .featuredflightcard-title {
-  transform: translateY(-20px);
+  transform: translateY(-35px);
   background-color: var(--red);
   position: absolute;
   height: 35px;
@@ -41,6 +41,7 @@
 }
 
 .featuredflightcard-grid {
+  height: 100px;
   grid-gap: 20px 10px;
 }
 

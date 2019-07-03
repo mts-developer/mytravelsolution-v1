@@ -9,7 +9,9 @@ const Featured = props => {
       <div className="column center">
         <img className="logo--medium" src={logos.mts_logo} alt="MTS Logo" />
         <h1 className="font--header bold primary-color margin-none">{title}</h1>
-        <p className="font--medium font--center">{description}</p>
+        <p className="font--medium font--center padding-bottom-20">
+          {description}
+        </p>
       </div>
       {props.children}
     </div>
