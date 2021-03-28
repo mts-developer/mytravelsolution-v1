@@ -39,7 +39,7 @@ const Footer = () => {
         />
       </div>
       <div className="center padding-20">
-        <p className="font--small white">© 2019 MY TRAVEL SOLUTION</p>
+        <p className="font--small white">© 2021 MY TRAVEL SOLUTION</p>
       </div>
       <Angle top fill={colors.secondaryColorLight} />
     </div>

@@ -9,7 +9,7 @@ const ServiceEnquiry = props => {
   return (
     <div className="hotelspage center column padding-20">
       <h1 className="font--large bold font--center">
-        {`To make a booking or for more information on our range of ${service.toLowerCase()}`}
+        {`To make a booking or for more information on ${service.toLowerCase()}`}
       </h1>
       <a href={`tel:${contactNumber}`} className="padding-20 column">
         <h1 className="center font--large font--center font--no-wrap bold primary-color margin-none">

@@ -12,7 +12,7 @@ const quickLinks = [
     url: "http://localhost:3000"
   },
   {
-    label: "Checklist & Notes",
+    label: "Checklists & Notes",
     url: "http://localhost:3000"
   },
   {

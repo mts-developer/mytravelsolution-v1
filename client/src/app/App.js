@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./app.css";
+import icons from "./assets/images/icons"
 import { ThemeProvider } from "@material-ui/styles";
 import mtsTheme from "./themes/mtsTheme";
 import AdminPage from "./pages/adminpage";
@@ -15,6 +16,7 @@ import InsurancePage from "./pages/insurancepage";
 import RailPage from "./pages/railpage";
 import PageNotFound from "./pages/pagenotfound";
 import ScrollToTop from "./components/ScrollToTop";
+import { Button } from "@material-ui/core";
 
 class App extends React.Component {
   constructor(props) {
@@ -39,7 +41,14 @@ class App extends React.Component {
         action={this.clickBookingEngine}
         open={this.state.openBookingEngine}
       >
-        <div className="center padding-20">/ Sabre Booking Engine /</div>
+        <div className="center padding-20">
+          <a href="tel:0393146957">
+            <p className="font--medium bold">
+              For all bookings and enquiries
+            <br />please call our office on 03 9314 6957.
+          </p>
+          </a>
+        </div>
       </Dialog>
     );
   };
